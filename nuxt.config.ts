@@ -1,4 +1,4 @@
-const TITLE = 'Suivi du Plan Vélo AMP par Vélos en Ville';
+const TITLE = 'Observatoire du Plan Vélo AMP par Vélos en Ville';
 const DESCRIPTION =
   "Plateforme citoyenne et associative, par Vélos en Ville. Etat d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du réseau cyclable marseillais";
 const BASE_URL = 'https://observatoire-plan-velo-amp.vercel.app/';
