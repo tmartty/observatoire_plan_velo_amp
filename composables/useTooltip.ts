@@ -101,7 +101,7 @@ export const useTooltip = () => {
 
   function getTooltipCompteur(properties: CompteurProperties) {
     return `
-      <div class="flex items-center bg-lvv-blue-600 not-prose text-black rounded-t">
+      <div class="flex items-center bg-cvv-blue-600 not-prose text-black rounded-t">
         <div class="p-2">
           <a class='text-white font-bold text-lg hover:underline' href='${properties.link}'>
             ${properties.name}

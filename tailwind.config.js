@@ -4,19 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'lvv-blue-600': '#152B68',
-        'lvv-blue-500': '#433E61',
-        'lvv-blue-400': '#665E7B',
-        'lvv-blue-300': '#C2BDC3',
-        'lvv-blue-200': '#DEDBDD',
-        'lvv-blue-100': '#EFEDF1',
-        'lvv-pink': '#C84271',
-        'lvv-green': '#83C0B7'
+        'cvv-blue-600': '#429ada',
+        'cvv-blue-500': '#55a4dd',
+        'cvv-blue-400': '#7fbbe6',
+        'cvv-blue-300': '#aad2ee',
+        'cvv-blue-200': '#d4e8f7',
+        'cvv-blue-100': '#e9f3fb',
+        'cvv-pink': '#C84271',
+        'cvv-green': '#83C0B7'
       },
       typography: {
         DEFAULT: {
           css: {
-            a: { color: '#152B68' }
+            a: { color: '#429ada' }
           }
         }
       }

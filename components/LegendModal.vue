@@ -19,27 +19,27 @@
             <div class="my-auto rounded-md border-gray-500 border">
               <div class="h-1 relative">
                 <div class="absolute h-full w-full">
-                  <div class="h-full bg-lvv-blue-600 dashed-line" />
+                  <div class="h-full bg-cvv-blue-600 dashed-line" />
                 </div>
               </div>
             </div>
             <div>prévu pour 2026</div>
 
             <div class="my-auto rounded-md border-gray-500 border">
-              <div class="h-1 bg-lvv-blue-600" />
+              <div class="h-1 bg-cvv-blue-600" />
             </div>
             <div>terminé</div>
 
             <div class="my-auto rounded-md border-gray-500 border">
               <div class="h-1 relative">
                 <div class="absolute h-full w-full">
-                  <div class="h-full bg-lvv-blue-600 dashed-line animated-dashes" />
+                  <div class="h-full bg-cvv-blue-600 dashed-line animated-dashes" />
                 </div>
               </div>
             </div>
             <div>en travaux</div>
 
-            <div class="my-auto h-4 rounded-md bg-lvv-blue-600 opacity-20 px-1">
+            <div class="my-auto h-4 rounded-md bg-cvv-blue-600 opacity-20 px-1">
               <div class="flex items-center justify-center h-full">
                 <div class="h-1 w-full rounded-md border-2 border-gray-500" />
               </div>
@@ -48,7 +48,7 @@
 
             <div class="my-auto rounded-md border-gray-500 border relative">
               <div class="h-1 bg-white" />
-              <div class="text-lvv-blue-600 font-bold leading-none absolute -top-2 leading-none">x x x x x</div>
+              <div class="text-cvv-blue-600 font-bold leading-none absolute -top-2 leading-none">x x x x x</div>
             </div>
             <div>reporté après 2026</div>
           </div>

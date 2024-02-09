@@ -5,11 +5,11 @@
     <img
       v-if="options.logo"
       class="my-0 absolute bottom-0 right-0 z-10"
-      src="https://cyclopolis.lavilleavelo.org/logo-lvv-carte.png"
+      src="https://cyclopolis.lavilleavelo.org/logo-cvv-carte.png"
       width="75"
       height="75"
       alt="logo la ville à vélo"
-    >
+    />
   </div>
 </template>
 
@@ -161,7 +161,9 @@ onMounted(() => {
         .addTo(map);
     } else {
       const { line, name } = features[0].properties;
-      const feature = props.features.find(feature => feature.properties.line === line && feature.properties.name === name);
+      const feature = props.features.find(
+        feature => feature.properties.line === line && feature.properties.name === name
+      );
       new maplibregl.Popup({ closeButton: false, closeOnClick: true })
         .setLngLat(e.lngLat)
         .setHTML(getTooltipHtml(feature))

@@ -8,7 +8,7 @@
       class="text-center mx-auto"
     >
       <img
-        src="/public/images/carte-piste-cyclable-plan-velo.jpg"
+        src="/images/carte-piste-cyclable-plan-velo.jpg"
         class="object-contain hover:cursor-zoom-in max-h-[130vh]"
         alt="plan officiel du plan vélo métropolitain"
         title="Cliquez pour agrandir la carte"

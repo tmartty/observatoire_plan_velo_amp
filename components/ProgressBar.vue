@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="max-w-2xl mx-auto bg-gray-200 rounded-full">
-      <div class="bg-lvv-blue-600 text-xs font-medium text-white text-center p-1 leading-none rounded-full" :style="`width: ${percent}%`">
+      <div
+        class="bg-cvv-blue-600 text-xs font-medium text-white text-center p-1 leading-none rounded-full"
+        :style="`width: ${percent}%`"
+      >
         {{ percent }}%
       </div>
     </div>
@@ -21,5 +24,5 @@ const doneFeatures = features.filter(feature => feature.properties.status === 'd
 const totalDistance = getDistance({ features });
 const doneDistance = getDistance({ features: doneFeatures });
 
-const percent = Math.round(doneDistance / totalDistance * 100);
+const percent = Math.round((doneDistance / totalDistance) * 100);
 </script>
