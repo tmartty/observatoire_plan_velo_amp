@@ -14,7 +14,7 @@
 <script setup>
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import style from '@/assets/style.json';
+import style from '@/assets/map-styles.json';
 import LegendControl from '@/maplibre/LegendControl';
 import FullscreenControl from '@/maplibre/FullscreenControl';
 import ShrinkControl from '@/maplibre/ShrinkControl';
@@ -47,14 +47,14 @@ const legendModalComponent = ref(null);
 
 const {
   plotUnderlinedSections,
+  plotPlannedSections,
   plotDoneSections,
   plotWipSections,
-  plotPlannedSections,
-  plotVarianteSections,
-  plotVariantePostponedSections,
-  plotUnknownSections,
-  plotPostponedSections,
-  plotPerspective,
+  // plotVarianteSections,
+  // plotVariantePostponedSections,
+  // plotUnknownSections,
+  // plotPostponedSections,
+  // plotPerspective,
   fitBounds
 } = useMap();
 
@@ -62,14 +62,14 @@ const { getTooltipHtml, getTooltipPerspective } = useTooltip();
 
 function plotFeatures({ map, features }) {
   plotUnderlinedSections({ map, features });
-  plotDoneSections({ map, features });
   plotPlannedSections({ map, features });
-  plotVarianteSections({ map, features });
-  plotVariantePostponedSections({ map, features });
+  plotDoneSections({ map, features });
   plotWipSections({ map, features });
-  plotUnknownSections({ map, features });
-  plotPostponedSections({ map, features });
-  plotPerspective({ map, features });
+  // plotVarianteSections({ map, features });
+  // plotVariantePostponedSections({ map, features });
+  // plotUnknownSections({ map, features });
+  // plotPostponedSections({ map, features });
+  // plotPerspective({ map, features });
 }
 
 onMounted(() => {
@@ -164,7 +164,7 @@ onMounted(() => {
 
 <style>
 .maplibregl-popup-content {
-  @apply p-0 rounded-lg overflow-hidden;
+  @apply p-0 rounded-lg overflow-hidden max-w-full w-56;
 }
 
 .maplibregl-info {

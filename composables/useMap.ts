@@ -55,19 +55,19 @@ function getCrossIconUrl(color: string): string {
   return canvas.toDataURL();
 }
 
-function groupFeaturesByColor(features: Array<LineStringFeature & { properties: { color: string } }>) {
-  const featuresByColor: any = {};
-  for (const feature of features) {
-    const color = feature.properties.color;
+// function groupFeaturesByColor(features: Array<LineStringFeature & { properties: { color: string } }>) {
+//   const featuresByColor: any = {};
+//   for (const feature of features) {
+//     const color = feature.properties.color;
 
-    if (featuresByColor[color]) {
-      featuresByColor[color].push(feature);
-    } else {
-      featuresByColor[color] = [feature];
-    }
-  }
-  return featuresByColor;
-}
+//     if (featuresByColor[color]) {
+//       featuresByColor[color].push(feature);
+//     } else {
+//       featuresByColor[color] = [feature];
+//     }
+//   }
+//   return featuresByColor;
+// }
 
 export const useMap = () => {
   const { getLineColor } = useColors();
@@ -147,7 +147,7 @@ export const useMap = () => {
 
   function plotDoneSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-      .filter(feature => feature.properties.status === 'done')
+    .filter(feature => feature.properties.status.includes('Réalisé'))
       .sort((featureA, featureB) => {
         const lineA = featureA.properties.line;
         const lineB = featureB.properties.line;
@@ -178,15 +178,15 @@ export const useMap = () => {
       type: 'line',
       source: 'done-sections',
       paint: {
-        'line-width': 4,
-        'line-color': ['get', 'color']
+        'line-width': 6,
+        'line-color': ['get', 'color'],
       }
     });
   }
 
   function plotWipSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-      .filter(feature => feature.properties.status === 'wip')
+    .filter(feature => feature.properties.status.includes('travaux'))
       .sort((featureA, featureB) => {
         const lineA = featureA.properties.line;
         const lineB = featureB.properties.line;
@@ -246,7 +246,7 @@ export const useMap = () => {
 
   function plotPlannedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-      .filter(feature => feature.properties.status === 'planned')
+      .filter(feature => feature.properties.status.includes('A réaliser'))
       .sort((featureA, featureB) => {
         const lineA = featureA.properties.line;
         const lineB = featureB.properties.line;
@@ -274,309 +274,309 @@ export const useMap = () => {
       paint: {
         'line-width': 4,
         'line-color': ['get', 'color'],
-        'line-dasharray': [2, 2]
+        'line-dasharray': [1, 1],
       }
     });
   }
 
-  function plotVarianteSections({ map, features }: { map: any; features: LineStringFeature[] }) {
-    const sections = features
-      .filter(feature => feature.properties.status === 'variante')
-      .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
-        return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
-      })
-      .map(feature => ({
-        ...feature,
-        properties: {
-          color: getLineColor(feature.properties.line),
-          ...feature.properties
-        }
-      }));
-    if (sections.length === 0 && !map.getLayer('variante-sections')) {
-      return;
-    }
-    map.addSource('variante-sections', {
-      type: 'geojson',
-      data: { type: 'FeatureCollection', features: sections }
-    });
-    map.addLayer({
-      id: 'variante-sections',
-      type: 'line',
-      source: 'variante-sections',
-      paint: {
-        'line-width': 4,
-        'line-color': ['get', 'color'],
-        'line-dasharray': [2, 2],
-        'line-opacity': 0.5
-      }
-    });
-    map.addLayer({
-      id: 'variante-symbols',
-      type: 'symbol',
-      source: 'variante-sections',
-      paint: {
-        'text-halo-color': '#fff',
-        'text-halo-width': 4
-      },
-      layout: {
-        'symbol-placement': 'line',
-        'symbol-spacing': 120,
-        'text-font': ['Open Sans Regular'],
-        'text-field': ['coalesce', ['get', 'text'], 'variante'],
-        'text-size': 14
-      }
-    });
+  // function plotVarianteSections({ map, features }: { map: any; features: LineStringFeature[] }) {
+  //   const sections = features
+  //     .filter(feature => feature.properties.status === 'variante')
+  //     .sort((featureA, featureB) => {
+  //       const lineA = featureA.properties.line;
+  //       const lineB = featureB.properties.line;
+  //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
+  //     })
+  //     .map(feature => ({
+  //       ...feature,
+  //       properties: {
+  //         color: getLineColor(feature.properties.line),
+  //         ...feature.properties
+  //       }
+  //     }));
+  //   if (sections.length === 0 && !map.getLayer('variante-sections')) {
+  //     return;
+  //   }
+  //   map.addSource('variante-sections', {
+  //     type: 'geojson',
+  //     data: { type: 'FeatureCollection', features: sections }
+  //   });
+  //   map.addLayer({
+  //     id: 'variante-sections',
+  //     type: 'line',
+  //     source: 'variante-sections',
+  //     paint: {
+  //       'line-width': 4,
+  //       'line-color': ['get', 'color'],
+  //       'line-dasharray': [2, 2],
+  //       'line-opacity': 0.5
+  //     }
+  //   });
+  //   map.addLayer({
+  //     id: 'variante-symbols',
+  //     type: 'symbol',
+  //     source: 'variante-sections',
+  //     paint: {
+  //       'text-halo-color': '#fff',
+  //       'text-halo-width': 4
+  //     },
+  //     layout: {
+  //       'symbol-placement': 'line',
+  //       'symbol-spacing': 120,
+  //       'text-font': ['Open Sans Regular'],
+  //       'text-field': ['coalesce', ['get', 'text'], 'variante'],
+  //       'text-size': 14
+  //     }
+  //   });
 
-    map.on('mouseenter', 'variante-sections', () => (map.getCanvas().style.cursor = 'pointer'));
-    map.on('mouseleave', 'variante-sections', () => (map.getCanvas().style.cursor = ''));
-  }
+  //   map.on('mouseenter', 'variante-sections', () => (map.getCanvas().style.cursor = 'pointer'));
+  //   map.on('mouseleave', 'variante-sections', () => (map.getCanvas().style.cursor = ''));
+  // }
 
-  function plotVariantePostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
-    const sections = features
-      .filter(feature => feature.properties.status === 'variante-postponed')
-      .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
-        return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
-      })
-      .map(feature => ({
-        ...feature,
-        properties: {
-          color: getLineColor(feature.properties.line),
-          ...feature.properties
-        }
-      }));
-    if (sections.length === 0 && !map.getLayer('variante-postponed-sections')) {
-      return;
-    }
-    map.addSource('variante-postponed-sections', {
-      type: 'geojson',
-      data: { type: 'FeatureCollection', features: sections }
-    });
-    map.addLayer({
-      id: 'variante-postponed-sections',
-      type: 'line',
-      source: 'variante-postponed-sections',
-      paint: {
-        'line-width': 4,
-        'line-color': ['get', 'color'],
-        'line-dasharray': [2, 2],
-        'line-opacity': 0.5
-      }
-    });
-    map.addLayer({
-      id: 'variante-postponed-symbols',
-      type: 'symbol',
-      source: 'variante-postponed-sections',
-      paint: {
-        'text-halo-color': '#fff',
-        'text-halo-width': 4
-      },
-      layout: {
-        'symbol-placement': 'line',
-        'symbol-spacing': 120,
-        'text-font': ['Open Sans Regular'],
-        'text-field': ['coalesce', ['get', 'text'], 'variante reportée'],
-        'text-size': 14
-      }
-    });
+  // function plotVariantePostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
+  //   const sections = features
+  //     .filter(feature => feature.properties.status === 'variante-postponed')
+  //     .sort((featureA, featureB) => {
+  //       const lineA = featureA.properties.line;
+  //       const lineB = featureB.properties.line;
+  //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
+  //     })
+  //     .map(feature => ({
+  //       ...feature,
+  //       properties: {
+  //         color: getLineColor(feature.properties.line),
+  //         ...feature.properties
+  //       }
+  //     }));
+  //   if (sections.length === 0 && !map.getLayer('variante-postponed-sections')) {
+  //     return;
+  //   }
+  //   map.addSource('variante-postponed-sections', {
+  //     type: 'geojson',
+  //     data: { type: 'FeatureCollection', features: sections }
+  //   });
+  //   map.addLayer({
+  //     id: 'variante-postponed-sections',
+  //     type: 'line',
+  //     source: 'variante-postponed-sections',
+  //     paint: {
+  //       'line-width': 4,
+  //       'line-color': ['get', 'color'],
+  //       'line-dasharray': [2, 2],
+  //       'line-opacity': 0.5
+  //     }
+  //   });
+  //   map.addLayer({
+  //     id: 'variante-postponed-symbols',
+  //     type: 'symbol',
+  //     source: 'variante-postponed-sections',
+  //     paint: {
+  //       'text-halo-color': '#fff',
+  //       'text-halo-width': 4
+  //     },
+  //     layout: {
+  //       'symbol-placement': 'line',
+  //       'symbol-spacing': 120,
+  //       'text-font': ['Open Sans Regular'],
+  //       'text-field': ['coalesce', ['get', 'text'], 'variante reportée'],
+  //       'text-size': 14
+  //     }
+  //   });
 
-    map.on('mouseenter', 'variante-postponed-sections', () => (map.getCanvas().style.cursor = 'pointer'));
-    map.on('mouseleave', 'variante-postponed-sections', () => (map.getCanvas().style.cursor = ''));
-  }
+  //   map.on('mouseenter', 'variante-postponed-sections', () => (map.getCanvas().style.cursor = 'pointer'));
+  //   map.on('mouseleave', 'variante-postponed-sections', () => (map.getCanvas().style.cursor = ''));
+  // }
 
-  function plotUnknownSections({ map, features }: { map: any; features: LineStringFeature[] }) {
-    const sections = features
-      .filter(feature => feature.properties.status === 'unknown')
-      .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
-        return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
-      })
-      .map(feature => ({
-        ...feature,
-        properties: {
-          color: getLineColor(feature.properties.line),
-          ...feature.properties
-        }
-      }));
-    if (sections.length === 0 && !map.getLayer('unknown-sections')) {
-      return;
-    }
-    map.addSource('unknown-sections', {
-      type: 'geojson',
-      data: { type: 'FeatureCollection', features: sections }
-    });
-    map.addLayer({
-      id: 'unknown-sections',
-      type: 'line',
-      source: 'unknown-sections',
-      layout: {
-        'line-cap': 'round'
-      },
-      paint: {
-        'line-width': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          11,
-          4, // width 4 at low zoom
-          14,
-          25 // progressively reach width 25 at high zoom
-        ],
-        'line-color': ['get', 'color'],
-        'line-opacity': [
-          'interpolate',
-          ['linear'],
-          ['zoom'],
-          11,
-          0.5, // opacity 0.4 at low zoom
-          14,
-          0.35 // opacity 0.35 at high zoom
-        ]
-      }
-    });
-    map.addLayer({
-      id: 'unknown-symbols',
-      type: 'symbol',
-      source: 'unknown-sections',
-      paint: {
-        'text-halo-color': '#fff',
-        'text-halo-width': 3
-      },
-      layout: {
-        'symbol-placement': 'line',
-        'symbol-spacing': 120,
-        'text-font': ['Open Sans Regular'],
-        'text-field': 'tracé à définir',
-        'text-size': 14
-      }
-    });
+  // function plotUnknownSections({ map, features }: { map: any; features: LineStringFeature[] }) {
+  //   const sections = features
+  //     .filter(feature => feature.properties.status === 'unknown')
+  //     .sort((featureA, featureB) => {
+  //       const lineA = featureA.properties.line;
+  //       const lineB = featureB.properties.line;
+  //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
+  //     })
+  //     .map(feature => ({
+  //       ...feature,
+  //       properties: {
+  //         color: getLineColor(feature.properties.line),
+  //         ...feature.properties
+  //       }
+  //     }));
+  //   if (sections.length === 0 && !map.getLayer('unknown-sections')) {
+  //     return;
+  //   }
+  //   map.addSource('unknown-sections', {
+  //     type: 'geojson',
+  //     data: { type: 'FeatureCollection', features: sections }
+  //   });
+  //   map.addLayer({
+  //     id: 'unknown-sections',
+  //     type: 'line',
+  //     source: 'unknown-sections',
+  //     layout: {
+  //       'line-cap': 'round'
+  //     },
+  //     paint: {
+  //       'line-width': [
+  //         'interpolate',
+  //         ['linear'],
+  //         ['zoom'],
+  //         11,
+  //         4, // width 4 at low zoom
+  //         14,
+  //         25 // progressively reach width 25 at high zoom
+  //       ],
+  //       'line-color': ['get', 'color'],
+  //       'line-opacity': [
+  //         'interpolate',
+  //         ['linear'],
+  //         ['zoom'],
+  //         11,
+  //         0.5, // opacity 0.4 at low zoom
+  //         14,
+  //         0.35 // opacity 0.35 at high zoom
+  //       ]
+  //     }
+  //   });
+  //   map.addLayer({
+  //     id: 'unknown-symbols',
+  //     type: 'symbol',
+  //     source: 'unknown-sections',
+  //     paint: {
+  //       'text-halo-color': '#fff',
+  //       'text-halo-width': 3
+  //     },
+  //     layout: {
+  //       'symbol-placement': 'line',
+  //       'symbol-spacing': 120,
+  //       'text-font': ['Open Sans Regular'],
+  //       'text-field': 'tracé à définir',
+  //       'text-size': 14
+  //     }
+  //   });
 
-    map.on('mouseenter', 'unknown-sections', () => (map.getCanvas().style.cursor = 'pointer'));
-    map.on('mouseleave', 'unknown-sections', () => (map.getCanvas().style.cursor = ''));
-  }
+  //   map.on('mouseenter', 'unknown-sections', () => (map.getCanvas().style.cursor = 'pointer'));
+  //   map.on('mouseleave', 'unknown-sections', () => (map.getCanvas().style.cursor = ''));
+  // }
 
-  function plotPostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
-    const sections = features
-      .filter(feature => feature.properties.status === 'postponed')
-      .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
-        return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
-      })
-      .map(feature => ({
-        ...feature,
-        properties: {
-          color: getLineColor(feature.properties.line),
-          ...feature.properties
-        }
-      }));
-    if (sections.length === 0) {
-      return;
-    }
+  // function plotPostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
+  //   const sections = features
+  //     .filter(feature => feature.properties.status === 'postponed')
+  //     .sort((featureA, featureB) => {
+  //       const lineA = featureA.properties.line;
+  //       const lineB = featureB.properties.line;
+  //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
+  //     })
+  //     .map(feature => ({
+  //       ...feature,
+  //       properties: {
+  //         color: getLineColor(feature.properties.line),
+  //         ...feature.properties
+  //       }
+  //     }));
+  //   if (sections.length === 0) {
+  //     return;
+  //   }
 
-    const featuresByColor = groupFeaturesByColor(sections);
-    for (const [color, sameColorFeatures] of Object.entries(featuresByColor)) {
-      map.addSource(`postponed-sections-${color}`, {
-        type: 'geojson',
-        data: { type: 'FeatureCollection', features: sameColorFeatures }
-      });
+  //   const featuresByColor = groupFeaturesByColor(sections);
+  //   for (const [color, sameColorFeatures] of Object.entries(featuresByColor)) {
+  //     map.addSource(`postponed-sections-${color}`, {
+  //       type: 'geojson',
+  //       data: { type: 'FeatureCollection', features: sameColorFeatures }
+  //     });
 
-      const iconUrl = getCrossIconUrl(color);
-      map.loadImage(iconUrl, (error: Error, image: any) => {
-        if (error) {
-          throw error;
-        }
-        map.addImage(`cross-${color}`, image);
+  //     const iconUrl = getCrossIconUrl(color);
+  //     map.loadImage(iconUrl, (error: Error, image: any) => {
+  //       if (error) {
+  //         throw error;
+  //       }
+  //       map.addImage(`cross-${color}`, image);
 
-        map.addLayer({
-          id: `postponed-symbols-${color}`,
-          type: 'symbol',
-          source: `postponed-sections-${color}`,
-          layout: {
-            'symbol-placement': 'line',
-            'symbol-spacing': 1,
-            'icon-image': `cross-${color}`,
-            'icon-size': 1.2
-          }
-        });
-        map.addLayer({
-          id: `postponed-text-${color}`,
-          type: 'symbol',
-          source: `postponed-sections-${color}`,
-          paint: {
-            'text-halo-color': '#fff',
-            'text-halo-width': 3
-          },
-          layout: {
-            'symbol-placement': 'line',
-            'symbol-spacing': 150,
-            'text-font': ['Open Sans Regular'],
-            'text-field': 'reporté',
-            'text-size': 14
-          }
-        });
+  //       map.addLayer({
+  //         id: `postponed-symbols-${color}`,
+  //         type: 'symbol',
+  //         source: `postponed-sections-${color}`,
+  //         layout: {
+  //           'symbol-placement': 'line',
+  //           'symbol-spacing': 1,
+  //           'icon-image': `cross-${color}`,
+  //           'icon-size': 1.2
+  //         }
+  //       });
+  //       map.addLayer({
+  //         id: `postponed-text-${color}`,
+  //         type: 'symbol',
+  //         source: `postponed-sections-${color}`,
+  //         paint: {
+  //           'text-halo-color': '#fff',
+  //           'text-halo-width': 3
+  //         },
+  //         layout: {
+  //           'symbol-placement': 'line',
+  //           'symbol-spacing': 150,
+  //           'text-font': ['Open Sans Regular'],
+  //           'text-field': 'reporté',
+  //           'text-size': 14
+  //         }
+  //       });
 
-        map.on('mouseenter', `postponed-symbols-${color}`, () => (map.getCanvas().style.cursor = 'pointer'));
-        map.on('mouseleave', `postponed-symbols-${color}`, () => (map.getCanvas().style.cursor = ''));
-      });
-    }
-  }
+  //       map.on('mouseenter', `postponed-symbols-${color}`, () => (map.getCanvas().style.cursor = 'pointer'));
+  //       map.on('mouseleave', `postponed-symbols-${color}`, () => (map.getCanvas().style.cursor = ''));
+  //     });
+  //   }
+  // }
 
-  function plotPerspective({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
-    const perspectives = features
-      .filter((feature): feature is PointFeature => feature.geometry.type === 'Point')
-      .filter(feature => feature.properties.type === 'perspective')
-      .map(feature => ({
-        ...feature,
-        properties: {
-          color: getLineColor(feature.properties.line),
-          ...feature.properties
-        }
-      }));
-    if (perspectives.length === 0) {
-      return;
-    }
-    map.addSource('perspectives', {
-      type: 'geojson',
-      data: {
-        type: 'FeatureCollection',
-        features: perspectives
-      }
-    });
+  // function plotPerspective({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
+  //   const perspectives = features
+  //     .filter((feature): feature is PointFeature => feature.geometry.type === 'Point')
+  //     .filter(feature => feature.properties.type === 'perspective')
+  //     .map(feature => ({
+  //       ...feature,
+  //       properties: {
+  //         color: getLineColor(feature.properties.line),
+  //         ...feature.properties
+  //       }
+  //     }));
+  //   if (perspectives.length === 0) {
+  //     return;
+  //   }
+  //   map.addSource('perspectives', {
+  //     type: 'geojson',
+  //     data: {
+  //       type: 'FeatureCollection',
+  //       features: perspectives
+  //     }
+  //   });
 
-    map.loadImage('/icons/camera.png', (error: Error, image: any) => {
-      if (error) {
-        throw error;
-      }
-      map.addImage('camera-icon', image, { sdf: true });
-      map.addLayer({
-        id: 'perspectives',
-        source: 'perspectives',
-        type: 'symbol',
-        layout: {
-          'icon-image': 'camera-icon',
-          'icon-size': 0.5,
-          'icon-offset': [-25, -25]
-        },
-        paint: {
-          'icon-color': ['get', 'color']
-        }
-      });
-      map.setLayoutProperty('perspectives', 'visibility', 'none');
-      map.on('zoom', () => {
-        const zoomLevel = map.getZoom();
-        if (zoomLevel > 14) {
-          map.setLayoutProperty('perspectives', 'visibility', 'visible');
-        } else {
-          map.setLayoutProperty('perspectives', 'visibility', 'none');
-        }
-      });
-    });
-  }
+  //   map.loadImage('/icons/camera.png', (error: Error, image: any) => {
+  //     if (error) {
+  //       throw error;
+  //     }
+  //     map.addImage('camera-icon', image, { sdf: true });
+  //     map.addLayer({
+  //       id: 'perspectives',
+  //       source: 'perspectives',
+  //       type: 'symbol',
+  //       layout: {
+  //         'icon-image': 'camera-icon',
+  //         'icon-size': 0.5,
+  //         'icon-offset': [-25, -25]
+  //       },
+  //       paint: {
+  //         'icon-color': ['get', 'color']
+  //       }
+  //     });
+  //     map.setLayoutProperty('perspectives', 'visibility', 'none');
+  //     map.on('zoom', () => {
+  //       const zoomLevel = map.getZoom();
+  //       if (zoomLevel > 14) {
+  //         map.setLayoutProperty('perspectives', 'visibility', 'visible');
+  //       } else {
+  //         map.setLayoutProperty('perspectives', 'visibility', 'none');
+  //       }
+  //     });
+  //   });
+  // }
 
   function fitBounds({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
     const allLineStringsCoordinates = features
@@ -604,15 +604,15 @@ export const useMap = () => {
   }
 
   return {
-    plotUnderlinedSections,
+    plotPlannedSections,
     plotDoneSections,
     plotWipSections,
-    plotPlannedSections,
-    plotVarianteSections,
-    plotVariantePostponedSections,
-    plotUnknownSections,
-    plotPostponedSections,
-    plotPerspective,
+    plotUnderlinedSections,
+    // plotVarianteSections,
+    // plotVariantePostponedSections,
+    // plotUnknownSections,
+    // plotPostponedSections,
+    // plotPerspective,
     fitBounds
   };
 };

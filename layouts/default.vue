@@ -10,6 +10,10 @@
 </template>
 
 <script setup>
+definePageMeta({
+  pageTransition: true
+});
+
 // const isNewsBannerClosed = ref(true);
 
 // onMounted(() => {
