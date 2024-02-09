@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NewsBanner v-if="!isNewsBannerClosed" @close="closeNewsBanner" />
+    <!-- <NewsBanner v-if="!isNewsBannerClosed" @close="closeNewsBanner" /> -->
     <AppHeader class="sticky top-0" />
     <slot />
     <AppFooter />
