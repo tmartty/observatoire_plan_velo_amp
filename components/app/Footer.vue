@@ -10,28 +10,24 @@
       </nav>
       <div class="mt-4 border-t border-gray-200 pt-4 md:flex md:items-center md:justify-between">
         <div class="flex justify-center space-x-6 md:order-2">
-          <a v-for="item in socials.lvv" :key="item.name" :href="item.href" target="_blank" class="text-gray-500 hover:text-gray-500">
+          <a
+            v-for="item in socials"
+            :key="item.name"
+            :href="item.href"
+            target="_blank"
+            class="text-gray-500 hover:text-gray-500"
+          >
             <span class="sr-only">{{ item.name }}</span>
             <Icon :name="item.icon" class="h-6 w-6" aria-hidden="true" />
           </a>
         </div>
-        <div class="mt-8 md:mt-0 md:order-1">
-          <p class="text-center text-base text-gray-500">
-            La Ville à Vélo
-          </p>
-        </div>
-      </div>
-      <div class="mt-8 border-t border-gray-200 pt-4 md:flex md:items-center md:justify-between">
-        <div class="flex justify-center space-x-6 md:order-2">
-          <a v-for="item in socials.cyclopolis" :key="item.name" :href="item.href" target="_blank" class="text-gray-500 hover:text-gray-500">
-            <span class="sr-only">{{ item.name }}</span>
-            <Icon :name="item.icon" class="h-6 w-6" aria-hidden="true" />
-          </a>
-        </div>
-        <div class="mt-8 md:mt-0 md:order-1">
-          <p class="text-center text-base text-gray-500">
-            Cyclopolis
-          </p>
+        <div class="mt-8 md:mt-0 md:order-1 text-left flex gap-4">
+          <img class="size-16" src="/public/logos/collectif_velos_en_ville.png" alt="logo voies lyonnaises" />
+          <div>
+            <p class="text-base text-gray-500">Collectif Vélos en Ville</p>
+            <p class="text-base text-gray-400">24 rue Moustier 13001 Marseille</p>
+            <p class="text-base text-gray-400">09 54 58 88 77</p>
+          </div>
         </div>
       </div>
     </div>
@@ -39,61 +35,42 @@
 </template>
 
 <script setup>
-
 const links = [
-  { name: 'Mentions légales', path: '/mentions-legales' },
-  { name: 'Historique', path: '/historique' }
+  { name: 'Méthodologie', path: '/methodologie' },
+  { name: 'Mentions légales', path: '/mentions-legales' }
+  // { name: 'Historique', path: '/historique' }
 ];
 
-const socials = {
-  cyclopolis: [
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/benoit_demaegdt',
-      icon: 'mdi:twitter'
-    },
-    {
-      name: 'Github',
-      href: 'https://github.com/benoitdemaegdt/voieslyonnaises',
-      icon: 'mdi:github'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/benoitdemaegdt',
-      icon: 'mdi:linkedin'
-    }
-  ],
-  lvv: [
-    {
-      name: 'Twitter',
-      href: 'https://twitter.com/LaVilleaVelo',
-      icon: 'mdi:twitter'
-    },
-    {
-      name: 'Facebook',
-      href: 'https://www.facebook.com/lavilleavelolyon/',
-      icon: 'mdi:facebook'
-    },
-    {
-      name: 'LinkedIn',
-      href: 'https://www.linkedin.com/company/la-ville-%C3%A0-v%C3%A9lo',
-      icon: 'mdi:linkedin'
-    },
-    {
-      name: 'Instagram',
-      href: 'https://www.instagram.com/lavilleavelolyon',
-      icon: 'mdi:instagram'
-    },
-    {
-      name: 'Site web',
-      href: 'https://lavilleavelo.org/',
-      icon: 'mdi:link'
-    },
-    {
-      name: 'Email',
-      href: 'mailto:contact_at_lavilleavelo.org',
-      icon: 'mdi:email-outline'
-    }
-  ]
-};
+const socials = [
+  {
+    name: 'Twitter',
+    href: 'https://twitter.com/velosenville',
+    icon: 'mdi:twitter'
+  },
+  {
+    name: 'Facebook',
+    href: 'https://www.facebook.com/VelosEnVille',
+    icon: 'mdi:facebook'
+  },
+  {
+    name: 'LinkedIn',
+    href: 'https://www.linkedin.com/company/v%C3%A9los-en-ville',
+    icon: 'mdi:linkedin'
+  },
+  {
+    name: 'Instagram',
+    href: 'https://www.instagram.com/velosenville/',
+    icon: 'mdi:instagram'
+  },
+  {
+    name: 'Site web',
+    href: 'https://www.velosenville.org/',
+    icon: 'mdi:link'
+  },
+  {
+    name: 'Email',
+    href: 'mailto:collectif@velosenville.org',
+    icon: 'mdi:email-outline'
+  }
+];
 </script>
