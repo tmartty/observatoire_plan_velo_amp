@@ -48,14 +48,14 @@
           </p>
         </div>
       </div>
-      <ProgressBar :voies="voies" class="mt-8 md:mt-10" />
-      <Stats :voies="voies" class="mt-8" />
+      <ProgressBar :voies="lignes" class="mt-8 md:mt-10" />
+      <Stats :voies="lignes" class="mt-8" />
     </div>
   </div>
 </template>
 
 <script setup>
-const { data: voies } = await useAsyncData(() => {
+const { data: lignes } = await useAsyncData(() => {
   return queryContent('lignes').where({ _type: 'json' }).find();
 });
 </script>

@@ -19,10 +19,12 @@ const { voies } = defineProps({
 });
 
 const features = getAllUniqLineStrings(voies);
-const doneFeatures = features.filter(feature => feature.properties.status === 'done');
 
-const totalDistance = getDistance({ features });
-const doneDistance = getDistance({ features: doneFeatures });
+const doneFeatures = features.filter(feature => feature.properties.status.includes('Réalisé'));
+const missingFeatures = features.filter(feature => feature.properties.status.includes('A réaliser'));
 
-const percent = Math.round((doneDistance / totalDistance) * 100);
+const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
+const missingDistance = missingFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
+
+const percent = Math.round((doneDistance / (doneDistance + missingDistance)) * 100);
 </script>

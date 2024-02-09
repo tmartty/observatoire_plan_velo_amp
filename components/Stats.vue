@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-2 rounded-lg overflow-hidden shadow bg-gray-200 gap-px md:grid-cols-4">
+  <div class="grid grid-cols-2 rounded-lg overflow-hidden shadow bg-gray-200 gap-px md:grid-cols-3">
     <div v-for="item in stats" :key="item.name" class="px-4 py-5 sm:p-6 bg-white">
       <div class="flex justify-between">
         <div class="text-base font-normal text-gray-900">
@@ -19,44 +19,36 @@
 </template>
 
 <script setup>
-const { getAllUniqLineStrings, getDistance } = useStats();
+const { getAllUniqLineStrings } = useStats();
 
 const { voies } = defineProps({
   voies: { type: Array, required: true }
 });
 
 const features = getAllUniqLineStrings(voies);
-const doneFeatures = features.filter(feature => feature.properties.status === 'done');
-const wipFeatures = features.filter(feature => feature.properties.status === 'wip');
-const plannedFeatures = features.filter(feature =>
-  ['planned', 'unknown', 'variante'].includes(feature.properties.status)
-);
-const postponedFeatures = features.filter(feature =>
-  ['postponed', 'variante-postponed'].includes(feature.properties.status)
-);
 
-const totalDistance = getDistance({ features });
-const doneDistance = getDistance({ features: doneFeatures });
-const wipDistance = getDistance({ features: wipFeatures });
-const plannedDistance = getDistance({ features: plannedFeatures });
-const postponedDistance = getDistance({ features: postponedFeatures });
+const doneFeatures = features.filter(feature => feature.properties.status.includes('Réalisé'));
+const workInProgressFeatures = features.filter(feature => feature.properties.status.includes('travaux'));
+const missingFeatures = features.filter(feature => feature.properties.status.includes('A réaliser'));
+
+const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
+const workInProgressDistance = workInProgressFeatures.reduce(
+  (acc, feature) => acc + feature.properties.calculated_length,
+  0
+);
+const missingDistance = missingFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
 
 function getPercent(distance) {
-  return Math.round((distance / totalDistance) * 100);
-}
-
-function getDistanceInKm(distance) {
-  return Math.round(distance / 1000);
+  return Math.round((distance / (doneDistance + workInProgressDistance + missingDistance)) * 100);
 }
 
 const stats = [
-  { name: 'Réalisés', distance: `${getDistanceInKm(doneDistance)} km`, percent: `${getPercent(doneDistance)}%` },
-  { name: 'En travaux', distance: `${getDistanceInKm(wipDistance)} km`, percent: `${getPercent(wipDistance)}%` },
-  { name: 'Prévus', distance: `${getDistanceInKm(plannedDistance)} km`, percent: `${getPercent(plannedDistance)}%` },
+  { name: 'Réalisés', distance: `${Math.round(doneDistance / 1000)} km`, percent: `${getPercent(doneDistance)}%` },
   {
-    name: 'Reportés',
-    distance: `${getDistanceInKm(postponedDistance)} km`,
-    percent: `${getPercent(postponedDistance)}%`
-  }
+    name: 'En travaux',
+    distance: `${Math.round(workInProgressDistance / 1000)} km`,
+    percent: `${getPercent(workInProgressDistance)}%`
+  },
+  { name: 'Prévus', distance: `${Math.round(missingDistance / 1000)} km`, percent: `${getPercent(missingDistance)}%` }
 ];
 </script>
