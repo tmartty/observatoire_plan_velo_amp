@@ -2,7 +2,9 @@
   <div>
     <!-- <NewsBanner v-if="!isNewsBannerClosed" @close="closeNewsBanner" /> -->
     <AppHeader class="sticky top-0" />
-    <slot />
+    <div class="container mx-auto">
+      <slot />
+    </div>
     <AppFooter />
   </div>
 </template>
