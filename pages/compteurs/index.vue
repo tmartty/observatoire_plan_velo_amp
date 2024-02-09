@@ -45,7 +45,7 @@
           <div class="relative bg-cvv-blue-100">
             <div
               v-if="isLastRecordMax(counter)"
-              class="absolute top-2 right-2 bg-cvv-pink text-sm text-white font-semibold rounded-xl px-1.5"
+              class="absolute top-2 right-2 bg-cvv-red text-sm text-white font-semibold rounded-xl px-1.5"
             >
               record
             </div>

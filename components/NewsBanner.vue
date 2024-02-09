@@ -7,7 +7,7 @@
       aria-hidden="true"
     >
       <div
-        class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-cvv-pink to-[#9089fc] opacity-70"
+        class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-cvv-red to-[#9089fc] opacity-70"
         style="
           clip-path: polygon(
             74.8% 41.9%,
