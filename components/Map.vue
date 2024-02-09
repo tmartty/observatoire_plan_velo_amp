@@ -4,10 +4,8 @@
     <div id="map" class="rounded-lg h-full w-full" />
     <img
       v-if="options.logo"
-      class="my-0 absolute bottom-0 right-0 z-10"
-      src="https://cyclopolis.lavilleavelo.org/logo-cvv-carte.png"
-      width="75"
-      height="75"
+      class="my-0 absolute bottom-0 right-0 z-10 p-2 md:p-4 size-16 md:size-24"
+      src="/logos/collectif_velos_en_ville.png"
       alt="logo la ville à vélo"
     />
   </div>
@@ -57,11 +55,10 @@ const {
   plotUnknownSections,
   plotPostponedSections,
   plotPerspective,
-  plotCompteurs,
   fitBounds
 } = useMap();
 
-const { getTooltipHtml, getTooltipPerspective, getTooltipCompteur } = useTooltip();
+const { getTooltipHtml, getTooltipPerspective } = useTooltip();
 
 function plotFeatures({ map, features }) {
   plotUnderlinedSections({ map, features });
@@ -73,7 +70,6 @@ function plotFeatures({ map, features }) {
   plotUnknownSections({ map, features });
   plotPostponedSections({ map, features });
   plotPerspective({ map, features });
-  plotCompteurs({ map, features });
 }
 
 onMounted(() => {
@@ -81,7 +77,7 @@ onMounted(() => {
     container: 'map',
     style,
     // style: `https://api.maptiler.com/maps/dataviz/style.json?key=${maptilerKey}`,
-    center: [4.8312188, 45.757198],
+    center: [5.3737, 43.2979],
     zoom: 12,
     attributionControl: false
   });
@@ -145,19 +141,12 @@ onMounted(() => {
     }
 
     const isPerspectiveLayerClicked = features.some(({ layer }) => layer.id === 'perspectives');
-    const isCompteurLayerClicked = features.some(({ layer }) => layer.id === 'compteurs');
 
     if (isPerspectiveLayerClicked) {
       const feature = features.find(({ layer }) => layer.id === 'perspectives');
       new maplibregl.Popup({ closeButton: false, closeOnClick: true })
         .setLngLat(e.lngLat)
         .setHTML(getTooltipPerspective(feature.properties))
-        .addTo(map);
-    } else if (isCompteurLayerClicked) {
-      const feature = features.find(({ layer }) => layer.id === 'compteurs');
-      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
-        .setLngLat(e.lngLat)
-        .setHTML(getTooltipCompteur(feature.properties))
         .addTo(map);
     } else {
       const { line, name } = features[0].properties;

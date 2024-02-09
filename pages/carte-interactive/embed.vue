@@ -12,12 +12,13 @@ definePageMeta({
 });
 
 const { data: voies } = await useAsyncData(() => {
-  return queryContent('voies-lyonnaises').where({ _type: 'json' }).find();
+  return queryContent('lignes').where({ _type: 'json' }).find();
 });
 
 const features = voies.value.map(voie => voie.features).flat();
 
-const description = 'Découvrez la carte interactive des Voies Lyonnaises. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
+const description =
+  'Découvrez la carte interactive des Voies Lyonnaises. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
 const COVER_IMAGE_URL = 'https://cyclopolis.lavilleavelo.org/cyclopolis.png';
 useHead({
   title: 'Carte à jour des Voies Lyonnaises',

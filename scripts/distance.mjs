@@ -22,7 +22,7 @@ function checkDistance(sections) {
     const distance = section.properties.distance;
     const computedDistance = getLineStringDistance(section.geometry);
     if (Math.abs(distance - computedDistance) > 100) {
-      console.log({name: section.properties.name, line: section.properties.line, distance, computedDistance})
+      console.log({ name: section.properties.name, line: section.properties.line, distance, computedDistance })
     }
   }
 }
@@ -53,7 +53,7 @@ function checkHandleDuplicate(sections) {
 }
 
 function getVoies() {
-  const directoryPath = './content/voies-lyonnaises';
+  const directoryPath = './content/lignes';
   const files = fs.readdirSync(directoryPath)
     .filter(file => file.endsWith('.json'))
 

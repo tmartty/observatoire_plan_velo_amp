@@ -17,10 +17,6 @@
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
-          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-cvv-blue-600">
-            Compteurs
-          </NuxtLink> -->
-
           <NuxtLink
             to="/carte-interactive"
             class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
@@ -28,6 +24,13 @@
           >
             Carte interactive
           </NuxtLink>
+          <!-- <NuxtLink
+            to="/historique"
+            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
+            @click="close()"
+          >
+            Actualités
+          </NuxtLink> -->
           <NuxtLink
             to="/plan-officiel"
             class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
@@ -60,23 +63,23 @@
             >
               <PopoverPanel
                 v-slot="{ close }"
-                class="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0"
+                class="absolute right-0 z-10 mt-3 w-screen max-w-xs transform px-2 sm:px-0"
               >
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                  <div class="relative grid grid-cols-2 sm:grid-cols-4 gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <div class="relative flex flex-col gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <NuxtLink
                       v-for="voie in voies"
                       :key="voie.line"
-                      :to="getVoieLyonnaisePath(voie.line)"
-                      class="-m-3 flex items-start justify-center rounded-lg p-3 hover:bg-gray-50"
+                      :to="getLignePath(voie.line)"
+                      class="-m-2 flex items-start justify-start rounded-lg p-2 hover:bg-gray-50"
                       @click="close()"
                     >
                       <div class="flex-shrink-0">
                         <div
-                          class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold"
+                          class="rounded-full flex items-center justify-center text-white font-bold px-2"
                           :style="`background-color: ${voie.color}`"
                         >
-                          {{ voie.line }}
+                          {{ voie.name }}
                         </div>
                       </div>
                     </NuxtLink>
@@ -85,19 +88,7 @@
               </PopoverPanel>
             </transition>
           </Popover>
-
-          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-cvv-blue-600">
-            Compteurs
-          </NuxtLink> -->
         </PopoverGroup>
-        <!-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-          <NuxtLink
-            to="/blog"
-            class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-cvv-blue-600 hover:shadow-lg transition duration-300 transform hover:scale-105"
-          >
-            Blog
-          </NuxtLink>
-        </div> -->
       </div>
     </div>
 
@@ -118,7 +109,11 @@
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <NuxtLink to="/" @click="close()">
-                <img class="h-10 w-auto" src="/logos/collectif_velos_en_ville.png" alt="logo voies lyonnaises" />
+                <img
+                  class="h-10 w-auto"
+                  src="/logos/collectif_velos_en_ville.png"
+                  alt="logo collectif vélos en ville"
+                />
               </NuxtLink>
               <div class="-mr-2">
                 <PopoverButton
@@ -142,9 +137,6 @@
                     {{ navItem.name }}
                   </span>
                 </NuxtLink>
-                <!-- <NuxtLink to="/blog" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" @click="close()">
-                  <span class="ml-3 text-base font-medium text-gray-900"> Blog </span>
-                </NuxtLink> -->
               </nav>
             </div>
           </div>
@@ -154,7 +146,7 @@
               <NuxtLink
                 v-for="voie in voies"
                 :key="voie.line"
-                :to="getVoieLyonnaisePath(voie.line)"
+                :to="getLignePath(voie.line)"
                 class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                 @click="close()"
               >
@@ -181,15 +173,13 @@ import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/
 const navItems = [
   { name: 'Carte interactive', path: '/carte-interactive' },
   { name: 'Plan officiel', path: '/plan-officiel' }
-  // { name: 'Évolution du réseau', path: '/evolution' },
-  // { name: 'Compteurs', path: '/compteurs' }
 ];
 
 const { data: voies } = await useAsyncData(() => {
-  return queryContent('voies-lyonnaises').where({ _type: 'markdown' }).find();
+  return queryContent('lignes').where({ _type: 'markdown' }).find();
 });
 
-function getVoieLyonnaisePath(line) {
-  return `/voie-lyonnaise-${line}`;
+function getLignePath(line) {
+  return `/ligne-${line}`;
 }
 </script>

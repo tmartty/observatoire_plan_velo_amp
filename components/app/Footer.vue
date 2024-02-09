@@ -24,7 +24,7 @@
           </a>
         </div>
         <div class="mt-8 md:mt-0 md:order-1 text-left flex gap-4">
-          <img class="size-16" src="/logos/collectif_velos_en_ville.png" alt="logo voies lyonnaises" />
+          <img class="size-16" src="/logos/collectif_velos_en_ville.png" alt="logo collectif vélos en ville" />
           <div>
             <p class="text-base text-gray-500">Collectif Vélos en Ville</p>
             <p class="text-base text-gray-400">24 rue Moustier 13001 Marseille</p>

@@ -1,7 +1,7 @@
 export default defineNuxtRouteMiddleware(to => {
-  const voieLyonnaiseRegex = /voie-lyonnaise-(1[0-2]|[1-9])\b/;
-  const isVoieLyonnaiseValid = voieLyonnaiseRegex.test(to.fullPath);
-  if (!isVoieLyonnaiseValid) {
+  const ligneRegex = /ligne-(1[0-2]|[1-9])\b/;
+  const isLigneValid = ligneRegex.test(to.fullPath);
+  if (!isLigneValid) {
     return navigateTo('/404');
   }
 });

@@ -41,7 +41,7 @@ const years = ref([
 ]);
 
 const { data: voies } = await useAsyncData(() => {
-  return queryContent('voies-lyonnaises').where({ _type: 'json' }).find();
+  return queryContent('lignes').where({ _type: 'json' }).find();
 });
 
 const features = computed(() => {

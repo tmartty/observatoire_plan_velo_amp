@@ -7,14 +7,14 @@
 <script setup>
 const { path } = useRoute();
 
-const regex = /voie-lyonnaise-(1[0-2]|[1-9])\b/;
+const regex = /ligne-(1[0-2]|[1-9])\b/;
 const line = path.match(regex)[1];
 
 // https://github.com/nuxt/framework/issues/3587
 definePageMeta({
   pageTransition: false,
   layout: 'fullscreen',
-  middleware: 'voie-lyonnaise'
+  middleware: 'ligne'
 });
 
 const mapOptions = {
@@ -26,8 +26,8 @@ const mapOptions = {
 };
 
 const { data: voie } = await useAsyncData(() => {
-  return queryContent('voies-lyonnaises')
-    .where({ _type: 'json', _path: `/voies-lyonnaises/ligne-${line}` })
+  return queryContent('lignes')
+    .where({ _type: 'json', _path: `/lignes/ligne-${line}` })
     .findOne();
 });
 

@@ -1,0 +1,1877 @@
+{
+  "id": "ligne_1",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rue Saint Cassien/Bd des Bassins de Radoub",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 1854.236,
+        "Comentaire": null,
+        "layer": "Ligne 1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.358537, 43.326594],
+          [5.358549, 43.326577],
+          [5.362817, 43.321353],
+          [5.362707, 43.319216],
+          [5.362707, 43.318396],
+          [5.364524, 43.315936],
+          [5.365143, 43.314931],
+          [5.365433, 43.314111],
+          [5.366124, 43.312841],
+          [5.367069, 43.311757]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande",
+        "COMMENTAIRE": "2014 : Ligne + picto",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 216.905
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36288, 43.296941],
+          [5.363259, 43.298204],
+          [5.363449, 43.298848]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande + Voie bus",
+        "COMMENTAIRE": "2014 : Ligne + picto sens unique + voie bus",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 368.032
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36349, 43.298914],
+          [5.36353, 43.298976],
+          [5.363684, 43.299466],
+          [5.363882, 43.300024],
+          [5.363995, 43.300412],
+          [5.364289, 43.301416],
+          [5.364499, 43.302141]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant ",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande de traverse",
+        "COMMENTAIRE": "2011 : Traverse chaussée",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 14.86
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364376, 43.302167],
+          [5.364494, 43.302141],
+          [5.364553, 43.302134]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Av Vaudoyer/Bd Saadé",
+        "Réalisation": "Bande",
+        "COMMENTAIRE": "2019 : Picto sans ligne",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 18.589
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.362882, 43.296775],
+          [5.362922, 43.29686],
+          [5.362862, 43.296924]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "2014 : Ligne +  ",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 22.717
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364557, 43.302136],
+          [5.364611, 43.302336]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "2014 : Ligne + picto -",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 118.501
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364625, 43.302382],
+          [5.364797, 43.302991],
+          [5.36493, 43.303425]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "2014 : Ligne + picto - interruption brusque",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 140.414
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364944, 43.303474],
+          [5.36507, 43.303868],
+          [5.365294, 43.304633],
+          [5.365309, 43.304709]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Place de la Joliette",
+        "Réalisation": "Bande de traverse",
+        "COMMENTAIRE": "2019 : Traverse chaussée",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 1.659
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365568, 43.305241],
+          [5.365575, 43.305255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande de traverse",
+        "COMMENTAIRE": "2019 : Traverse chaussée",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 25.083
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365753, 43.306091],
+          [5.365449, 43.306129]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Place de la Joliette",
+        "Réalisation": "Bande de traverse",
+        "COMMENTAIRE": "2014 : Traverse chaussée",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 2.531
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365425, 43.304786],
+          [5.36543, 43.304809]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Place de la Joliette",
+        "Réalisation": "Pictogramme sur trottoir",
+        "COMMENTAIRE": "2014 : A demi effacés",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 48.53
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36544, 43.304816],
+          [5.365485, 43.304878],
+          [5.365566, 43.305134],
+          [5.365561, 43.305212],
+          [5.365568, 43.305237]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé/Joliette",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "2015 : Ligne + picto",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 81.236
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365547, 43.305375],
+          [5.365713, 43.305971],
+          [5.36575, 43.306091]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd Saadé/quai Lazaret",
+        "Réalisation": "Picto sur trottoir",
+        "COMMENTAIRE": "2019 : A demi effacés",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 122.237
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365452, 43.30612],
+          [5.365763, 43.307197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Saadé/quai du Lazaret",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "2015 : Ligne + picto",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 514.364
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365769, 43.307221],
+          [5.365808, 43.30746],
+          [5.36591, 43.307811],
+          [5.366223, 43.308894],
+          [5.366482, 43.309869],
+          [5.366592, 43.30988],
+          [5.366654, 43.309915],
+          [5.366693, 43.30998],
+          [5.367062, 43.311106],
+          [5.367011, 43.311668]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Quai du port",
+        "Réalisation": "Voie bus",
+        "COMMENTAIRE": "2019 : Picto au sol (dans un seul sens = dir. Canebière)",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 362.889
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.369666, 43.296035],
+          [5.369582, 43.296011],
+          [5.369197, 43.295998],
+          [5.36868, 43.295958],
+          [5.367999, 43.295886],
+          [5.367269, 43.295782],
+          [5.366516, 43.295636],
+          [5.365293, 43.295397]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Quai des belges/quai du port",
+        "Réalisation": "Voie bus",
+        "COMMENTAIRE": "2019 : Picto effacés (et ne concernant qu'un seul sens = dir. MUCEM)",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 323.907
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.374215, 43.295804],
+          [5.374211, 43.29582],
+          [5.374175, 43.295916],
+          [5.374079, 43.295991],
+          [5.373903, 43.296063],
+          [5.372905, 43.296343],
+          [5.372773, 43.296354],
+          [5.372527, 43.296338],
+          [5.371827, 43.296263],
+          [5.370506, 43.296127]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Quai du port/avenue Vaudoyer",
+        "Réalisation": "Bande",
+        "COMMENTAIRE": "2019 : Ligne + picto",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 313.685
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36486, 43.29541],
+          [5.36432, 43.295321],
+          [5.364028, 43.295261],
+          [5.36391, 43.295236],
+          [5.363592, 43.295204],
+          [5.363444, 43.295223],
+          [5.363187, 43.295309],
+          [5.363007, 43.295451],
+          [5.362876, 43.295613],
+          [5.362813, 43.295759],
+          [5.362751, 43.29596],
+          [5.362765, 43.296277],
+          [5.362786, 43.296444],
+          [5.362879, 43.296768]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "D568",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "Avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 562.329
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.306418, 43.361658],
+          [5.306867, 43.361625],
+          [5.307211, 43.361625],
+          [5.307675, 43.361702],
+          [5.308229, 43.361865],
+          [5.308917, 43.362039],
+          [5.309501, 43.362126],
+          [5.309905, 43.362126],
+          [5.310369, 43.362072],
+          [5.311088, 43.361887],
+          [5.311462, 43.361723],
+          [5.311971, 43.361408],
+          [5.312689, 43.360896]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "D568",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 1807.204
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.28656, 43.35689],
+          [5.287186, 43.357661],
+          [5.2876, 43.357941],
+          [5.288079, 43.358105],
+          [5.288533, 43.358119],
+          [5.289122, 43.358034],
+          [5.289383, 43.357987],
+          [5.289841, 43.358045],
+          [5.290452, 43.358182],
+          [5.292319, 43.358821],
+          [5.292755, 43.359043],
+          [5.293299, 43.359467],
+          [5.293655, 43.359805],
+          [5.29388, 43.359985],
+          [5.294295, 43.360196],
+          [5.294679, 43.360307],
+          [5.295929, 43.360381],
+          [5.296507, 43.360407],
+          [5.297328, 43.360365],
+          [5.298208, 43.360338],
+          [5.298535, 43.360333],
+          [5.298891, 43.360428],
+          [5.2994, 43.360613],
+          [5.300655, 43.3612],
+          [5.301505, 43.361565],
+          [5.301803, 43.361639],
+          [5.302486, 43.361691],
+          [5.302646, 43.361665],
+          [5.302763, 43.36175],
+          [5.302973, 43.361829],
+          [5.3033, 43.361861],
+          [5.303722, 43.361845],
+          [5.306084, 43.36166],
+          [5.306415, 43.361627]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Quai Rive Neuve",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 889.776
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.374219, 43.295781],
+          [5.374468, 43.294301],
+          [5.374263, 43.294135],
+          [5.371142, 43.293356],
+          [5.370345, 43.29314],
+          [5.365995, 43.292394]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 393.6
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.363752, 43.292244],
+          [5.360854, 43.29226],
+          [5.358918, 43.292078]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 57.073
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365276, 43.29232],
+          [5.365973, 43.292386]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 7.145
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364949, 43.29227],
+          [5.364919, 43.292269],
+          [5.364861, 43.292266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 6.808
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36449, 43.292252],
+          [5.364406, 43.29225]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "D568",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 2648.97
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.312684, 43.360852],
+          [5.312909, 43.360722],
+          [5.313627, 43.360537],
+          [5.314211, 43.360395],
+          [5.314929, 43.360047],
+          [5.315423, 43.359797],
+          [5.316232, 43.35972],
+          [5.316875, 43.359557],
+          [5.317429, 43.359296],
+          [5.317923, 43.35898],
+          [5.318312, 43.358774],
+          [5.318641, 43.358349],
+          [5.318806, 43.358077],
+          [5.319135, 43.357696],
+          [5.31951, 43.357533],
+          [5.320019, 43.357391],
+          [5.320483, 43.357435],
+          [5.320797, 43.3575],
+          [5.320977, 43.3575],
+          [5.321156, 43.357446],
+          [5.321336, 43.357522],
+          [5.321411, 43.357664],
+          [5.321605, 43.357936],
+          [5.322219, 43.358425],
+          [5.322893, 43.358774],
+          [5.323641, 43.358926],
+          [5.324285, 43.358969],
+          [5.324823, 43.358915],
+          [5.325362, 43.358774],
+          [5.325916, 43.358512],
+          [5.326335, 43.358186],
+          [5.32671, 43.357816],
+          [5.327069, 43.357174],
+          [5.327824, 43.354498],
+          [5.328048, 43.35403],
+          [5.328363, 43.35378],
+          [5.328827, 43.353616],
+          [5.329171, 43.353573],
+          [5.330144, 43.353616],
+          [5.331955, 43.353769],
+          [5.332283, 43.353932],
+          [5.333285, 43.354367],
+          [5.333675, 43.354531],
+          [5.334213, 43.354552],
+          [5.334752, 43.354476],
+          [5.335082, 43.354367],
+          [5.335606, 43.354161],
+          [5.336099, 43.353878],
+          [5.337028, 43.353312]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av Pointe-Rouge",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 223.172
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.374228, 43.247597],
+          [5.373984, 43.247305],
+          [5.373859, 43.24671],
+          [5.373741, 43.246452],
+          [5.373686, 43.246171],
+          [5.373379, 43.245714]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 1240.577
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.354453, 43.289161],
+          [5.352456, 43.288089],
+          [5.352223, 43.287888],
+          [5.352092, 43.287294],
+          [5.349906, 43.284779],
+          [5.349687, 43.284501],
+          [5.349687, 43.284341],
+          [5.349848, 43.284023],
+          [5.351232, 43.281551],
+          [5.351402, 43.281313],
+          [5.352203, 43.280798],
+          [5.352424, 43.280706],
+          [5.353398, 43.280369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 24.933
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.353901, 43.27888],
+          [5.354177, 43.278783]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Chemin du litoral",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 1353.201
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.358558, 43.326578],
+          [5.358387, 43.326826],
+          [5.358153, 43.327017],
+          [5.357863, 43.32713],
+          [5.357444, 43.327161],
+          [5.356976, 43.327038],
+          [5.356565, 43.326909],
+          [5.355891, 43.326929],
+          [5.355759, 43.327022],
+          [5.355628, 43.327115],
+          [5.355238, 43.327476],
+          [5.354926, 43.327977],
+          [5.35499, 43.328647],
+          [5.35521, 43.329308],
+          [5.355323, 43.329891],
+          [5.355264, 43.330446],
+          [5.355044, 43.3309],
+          [5.354895, 43.331277],
+          [5.354987, 43.331689],
+          [5.354874, 43.332133],
+          [5.354632, 43.332788],
+          [5.354541, 43.333044],
+          [5.354896, 43.333921],
+          [5.354555, 43.335556],
+          [5.354296, 43.335948],
+          [5.353813, 43.336232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Chemin du litoral",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 836.502
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.343954, 43.348025],
+          [5.342959, 43.348795],
+          [5.342303, 43.349688],
+          [5.341922, 43.350242],
+          [5.339868, 43.351474],
+          [5.339804, 43.351658],
+          [5.339614, 43.351751],
+          [5.339423, 43.351751],
+          [5.337666, 43.352875],
+          [5.337666, 43.353075],
+          [5.337433, 43.35329],
+          [5.337137, 43.353337]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans plan vélo 2024",
+        "Rue ou Axe": "Quai du port",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 34.873
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364866, 43.295412],
+          [5.365075, 43.295443],
+          [5.36528, 43.295391]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Quai du port",
+        "Réalisation": "",
+        "COMMENTAIRE": "Devant Mairie - pavé",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 66.874
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.369674, 43.296036],
+          [5.370491, 43.296118]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 3.527
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.363789, 43.29224],
+          [5.363746, 43.29224]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 50.15
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.363786, 43.292238],
+          [5.364404, 43.292247]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 28.985
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364491, 43.292256],
+          [5.364848, 43.292263]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 25.803
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365267, 43.292313],
+          [5.364954, 43.292274]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd. Charles Livon",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "Sur trottoir",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 605.182
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.358905, 43.292077],
+          [5.35616, 43.291795],
+          [5.356049, 43.291829],
+          [5.355767, 43.291797],
+          [5.355726, 43.291756],
+          [5.355761, 43.291499],
+          [5.355744, 43.291438],
+          [5.355955, 43.290199],
+          [5.355915, 43.2901],
+          [5.355617, 43.289892],
+          [5.354521, 43.289202],
+          [5.354484, 43.289166]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "Picto sur route",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 120.861
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.3534, 43.280358],
+          [5.353479, 43.280278],
+          [5.353589, 43.280124],
+          [5.353664, 43.279894],
+          [5.353628, 43.279728],
+          [5.353479, 43.279561],
+          [5.353338, 43.279376]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 78.911
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.353334, 43.279357],
+          [5.35333, 43.279299],
+          [5.353352, 43.279139],
+          [5.353479, 43.278992],
+          [5.353681, 43.278941],
+          [5.353888, 43.278883]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 161.808
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.354188, 43.278779],
+          [5.354361, 43.278667],
+          [5.354426, 43.278572],
+          [5.354421, 43.278522],
+          [5.354703, 43.278223],
+          [5.355176, 43.277849],
+          [5.355427, 43.277666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 13.62
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.355441, 43.277658],
+          [5.355581, 43.277591]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 112.012
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.35559, 43.277591],
+          [5.355744, 43.277576],
+          [5.355976, 43.277529],
+          [5.356355, 43.277366],
+          [5.35663, 43.277195],
+          [5.356761, 43.277103]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 10.796
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.356759, 43.277105],
+          [5.35686, 43.277042]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 194.001
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.356868, 43.277031],
+          [5.357252, 43.276766],
+          [5.357336, 43.276664],
+          [5.357451, 43.276615],
+          [5.357535, 43.276615],
+          [5.358149, 43.276378],
+          [5.358427, 43.276141],
+          [5.358654, 43.275937]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 7.813
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.358654, 43.275927],
+          [5.35871, 43.27587]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 263.377
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.358721, 43.275871],
+          [5.35912, 43.275532],
+          [5.359383, 43.275459],
+          [5.359638, 43.27543],
+          [5.359778, 43.275369],
+          [5.359924, 43.275291],
+          [5.359983, 43.275144],
+          [5.360112, 43.274773],
+          [5.360241, 43.274667],
+          [5.360432, 43.274573],
+          [5.361001, 43.274456]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 9.138
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.361009, 43.274458],
+          [5.361116, 43.274432]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 274.67
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.361128, 43.274431],
+          [5.361658, 43.274311],
+          [5.361843, 43.274219],
+          [5.362017, 43.274068],
+          [5.362754, 43.273229],
+          [5.362777, 43.273102],
+          [5.362764, 43.272937],
+          [5.36259, 43.272541]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 9.63
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.362584, 43.272539],
+          [5.362553, 43.272455]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 414.313
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.362548, 43.272445],
+          [5.36252, 43.272223],
+          [5.362523, 43.272116],
+          [5.362697, 43.27121],
+          [5.362883, 43.270877],
+          [5.363267, 43.270544],
+          [5.363415, 43.270434],
+          [5.363676, 43.27032],
+          [5.363914, 43.270254],
+          [5.365411, 43.269986]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 9.825
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36542, 43.269986],
+          [5.365538, 43.269965]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 78.74
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365521, 43.269967],
+          [5.365815, 43.269893],
+          [5.365975, 43.269822],
+          [5.366185, 43.269679],
+          [5.366309, 43.269579]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 70.375
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.366315, 43.26957],
+          [5.366643, 43.269382],
+          [5.367053, 43.269246]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 264.023
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.367084, 43.269242],
+          [5.367305, 43.269193],
+          [5.368446, 43.268792],
+          [5.369007, 43.268831],
+          [5.369416, 43.26885],
+          [5.369526, 43.268841],
+          [5.370008, 43.268707],
+          [5.370145, 43.268654]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste sur arret bus",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 12.252
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.370157, 43.268652],
+          [5.370297, 43.268611]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Corniche",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 163.146
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.3703, 43.268605],
+          [5.370619, 43.268503],
+          [5.370838, 43.268399],
+          [5.371264, 43.268113],
+          [5.371758, 43.26769],
+          [5.371774, 43.267647]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Prom. Georges Pompidou",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 892.171
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.371772, 43.267615],
+          [5.371783, 43.267568],
+          [5.372263, 43.267017],
+          [5.372336, 43.266893],
+          [5.372675, 43.266164],
+          [5.373137, 43.265082],
+          [5.373961, 43.26317],
+          [5.374014, 43.263051],
+          [5.374374, 43.262159],
+          [5.374587, 43.261641],
+          [5.374682, 43.261453],
+          [5.374906, 43.260831],
+          [5.375063, 43.260545],
+          [5.375225, 43.260183],
+          [5.375281, 43.260067],
+          [5.375326, 43.260079]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 644.187
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375495, 43.260124],
+          [5.375579, 43.26013],
+          [5.375859, 43.259433],
+          [5.376131, 43.258669],
+          [5.376544, 43.257558],
+          [5.376682, 43.257135],
+          [5.37676, 43.256692],
+          [5.376766, 43.256357],
+          [5.376776, 43.256071],
+          [5.376753, 43.255977],
+          [5.376641, 43.255436],
+          [5.37656, 43.255061],
+          [5.376579, 43.254807],
+          [5.376678, 43.254705],
+          [5.376722, 43.254666],
+          [5.376619, 43.254581]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Rond-Point Henri Frenay",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 13.003
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.376599, 43.254563],
+          [5.376582, 43.254447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 92.704
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.376576, 43.254436],
+          [5.376395, 43.254339],
+          [5.376304, 43.254273],
+          [5.376283, 43.254186],
+          [5.376259, 43.254053],
+          [5.376066, 43.254076],
+          [5.376035, 43.253994],
+          [5.375975, 43.253964],
+          [5.37592, 43.253903]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "Bande sur trottoir",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 78.263
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375918, 43.253905],
+          [5.375803, 43.253369],
+          [5.375629, 43.253268]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 709.207
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375527, 43.25325],
+          [5.375186, 43.251703],
+          [5.375335, 43.251546],
+          [5.375349, 43.251251],
+          [5.375115, 43.250136],
+          [5.374619, 43.250007],
+          [5.374343, 43.248748],
+          [5.374804, 43.248745],
+          [5.374478, 43.248027],
+          [5.374262, 43.247824],
+          [5.374276, 43.247633]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue de Montredon",
+        "Réalisation": "Bande sur trottoir sens unique",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 62.667
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.373372, 43.245701],
+          [5.373209, 43.245513],
+          [5.37317, 43.245474],
+          [5.372961, 43.245291],
+          [5.372929, 43.245242]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 7.011
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.372932, 43.245237],
+          [5.372883, 43.245185]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "Bande sur trottoir sens unique",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 167.493
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.372913, 43.245182],
+          [5.372677, 43.244901],
+          [5.372393, 43.244671],
+          [5.371953, 43.244471],
+          [5.371524, 43.244311],
+          [5.371486, 43.244294],
+          [5.371384, 43.244221]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Avenue d'Odessa",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 342.292
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.37139, 43.244169],
+          [5.371205, 43.244062],
+          [5.371035, 43.243965],
+          [5.370884, 43.243913],
+          [5.370692, 43.243836],
+          [5.370188, 43.24369],
+          [5.369776, 43.243593],
+          [5.369656, 43.243565],
+          [5.36934, 43.243456],
+          [5.36907, 43.243339],
+          [5.36879, 43.243164],
+          [5.368628, 43.243072],
+          [5.36826, 43.242797],
+          [5.367903, 43.242528]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue d'Odessa",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 43.408
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.367888, 43.242513],
+          [5.367515, 43.242232]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Prom.du grand large",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 940.582
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.367513, 43.242228],
+          [5.367479, 43.242198],
+          [5.36741, 43.242156],
+          [5.367316, 43.242093],
+          [5.367181, 43.242038],
+          [5.366958, 43.241982],
+          [5.364685, 43.241837],
+          [5.364604, 43.241826],
+          [5.364501, 43.241807],
+          [5.364375, 43.24177],
+          [5.364332, 43.241752],
+          [5.364106, 43.241643],
+          [5.363426, 43.241289],
+          [5.363217, 43.241173],
+          [5.363106, 43.241097],
+          [5.363078, 43.241075],
+          [5.362919, 43.240921],
+          [5.36281, 43.240654],
+          [5.362785, 43.240374],
+          [5.362797, 43.24004],
+          [5.362797, 43.23968],
+          [5.362726, 43.239232],
+          [5.362821, 43.239104],
+          [5.362981, 43.239116],
+          [5.363141, 43.23918],
+          [5.363875, 43.239593],
+          [5.364426, 43.239744],
+          [5.365072, 43.239901],
+          [5.365942, 43.240034],
+          [5.366206, 43.240052],
+          [5.366421, 43.240034]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Mendes Frances",
+        "Réalisation": "",
+        "COMMENTAIRE": "Interuption intersection",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 13.966
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375329, 43.26008],
+          [5.37549, 43.260124]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 5.203
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364615, 43.302335],
+          [5.364627, 43.302381]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd Saadé",
+        "Réalisation": "Bande cyclable",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 5.367
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364931, 43.303426],
+          [5.364944, 43.303474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Ch. du Littoral",
+        "Réalisation": "",
+        "COMMENTAIRE": "",
+        "Phase": "2019-2024",
+        "Typologie": "",
+        "calculated_length": 1661.718
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.353816, 43.33623],
+          [5.353498, 43.336392],
+          [5.353094, 43.336476],
+          [5.352715, 43.336487],
+          [5.352184, 43.336535],
+          [5.351504, 43.336612],
+          [5.351094, 43.336737],
+          [5.350345, 43.337131],
+          [5.349946, 43.337384],
+          [5.349592, 43.337667],
+          [5.349198, 43.338133],
+          [5.348958, 43.338536],
+          [5.348786, 43.339074],
+          [5.348706, 43.339889],
+          [5.348685, 43.340499],
+          [5.348625, 43.341161],
+          [5.348478, 43.341768],
+          [5.348195, 43.34237],
+          [5.347425, 43.343715],
+          [5.346983, 43.344487],
+          [5.346472, 43.345189],
+          [5.3462, 43.345558],
+          [5.345968, 43.346021],
+          [5.345741, 43.346433],
+          [5.345493, 43.346676],
+          [5.345205, 43.346845],
+          [5.344653, 43.347135],
+          [5.34439, 43.347377],
+          [5.344153, 43.347701],
+          [5.343956, 43.348028]
+        ]
+      }
+    }
+  ],
+  "_umap_options": {
+    "displayOnLoad": true,
+    "inCaption": true,
+    "browsable": true,
+    "editMode": "advanced",
+    "name": "Ligne 1 linéaire 2019-2030",
+    "remoteData": {},
+    "description": "Tracé de la ligne 5 du plan vélo métropolitain 2019-2030",
+    "color": "Silver",
+    "opacity": "1",
+    "permissions": { "edit_status": 0 },
+    "id": 2975630
+  }
+}

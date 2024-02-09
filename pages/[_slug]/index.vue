@@ -1,8 +1,5 @@
 <template>
-  <ContentFrame
-    :description="voie.description"
-    :image-url="voie.cover"
-  >
+  <ContentFrame :description="voie.description" :image-url="voie.cover">
     <template #header>
       <h1 class="text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Voie Lyonnaise
@@ -25,17 +22,19 @@
 <script setup>
 const { path } = useRoute();
 
-const regex = /voie-lyonnaise-(1[0-2]|[1-9])\b/;
+const regex = /ligne-(1[0-2]|[1-9])\b/;
 const line = path.match(regex)[1];
 
 // https://github.com/nuxt/framework/issues/3587
 definePageMeta({
   pageTransition: false,
-  middleware: 'voie-lyonnaise'
+  middleware: 'ligne'
 });
 
 const { data: voie } = await useAsyncData(`${path}`, () => {
-  return queryContent('voies-lyonnaises').where({ _type: 'markdown', line: Number(line) }).findOne();
+  return queryContent('lignes')
+    .where({ _type: 'markdown', line: Number(line) })
+    .findOne();
 });
 
 const description = `Tout savoir sur la Voie Lyonnaise ${voie.value.line}. Avancement, carte interactive, détail rue par rue, calendrier des travaux et photos du projet.`;

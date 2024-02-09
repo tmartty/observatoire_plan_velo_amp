@@ -17,7 +17,7 @@ type LineStringFeature = {
 type PointFeature = {
   type: 'Feature';
   properties: {
-    type: 'perspective' | 'compteur';
+    type: 'perspective';
     line: number;
     name: string;
   };
@@ -25,19 +25,6 @@ type PointFeature = {
     type: 'Point';
     coordinates: [number, number];
   };
-};
-
-type Compteur = {
-  name: string;
-  _path: string;
-  description: string;
-  idPdc: number;
-  coordinates: [number, number];
-  lines: number[];
-  counts: Array<{
-    month: string;
-    count: number;
-  }>;
 };
 
 // features plotted last are on top
@@ -591,63 +578,6 @@ export const useMap = () => {
     });
   }
 
-  function plotCompteurs({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
-    const compteurs = features
-      .filter((feature): feature is PointFeature => feature.geometry.type === 'Point')
-      .filter(feature => feature.properties.type === 'compteur');
-    if (compteurs.length === 0) {
-      return;
-    }
-    map.addSource('compteurs', {
-      type: 'geojson',
-      data: {
-        type: 'FeatureCollection',
-        features: compteurs
-      }
-    });
-    map.addLayer({
-      id: 'compteurs',
-      source: 'compteurs',
-      type: 'circle',
-      paint: {
-        'circle-radius': 7,
-        'circle-color': '#152B68'
-      }
-    });
-    map.on('mouseenter', 'compteurs', () => (map.getCanvas().style.cursor = 'pointer'));
-    map.on('mouseleave', 'compteurs', () => (map.getCanvas().style.cursor = ''));
-  }
-
-  function getCompteursFeatures({ counters }: { counters: Compteur[] }) {
-    if (counters.length === 0) {
-      return;
-    }
-    return counters.map(counter => {
-      const lastRecord = counter.counts.at(-1)!;
-      const date = new Date(lastRecord.month);
-      const daysInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-      const averageDailyTraffic = Math.round(lastRecord.count / daysInMonth);
-
-      return {
-        type: 'Feature',
-        properties: {
-          type: 'compteur',
-          name: counter.name,
-          link: counter._path,
-          lastRecordDate: new Date(lastRecord.month).toLocaleString('fr-Fr', {
-            month: 'long',
-            year: 'numeric'
-          }),
-          lastRecordValue: `${averageDailyTraffic} passages par jour`
-        },
-        geometry: {
-          type: 'Point',
-          coordinates: counter.coordinates
-        }
-      };
-    });
-  }
-
   function fitBounds({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
     const allLineStringsCoordinates = features
       .filter((feature): feature is LineStringFeature => feature.geometry.type === 'LineString')
@@ -683,8 +613,6 @@ export const useMap = () => {
     plotUnknownSections,
     plotPostponedSections,
     plotPerspective,
-    plotCompteurs,
-    getCompteursFeatures,
     fitBounds
   };
 };

@@ -10,14 +10,14 @@ export default defineEventHandler(async (event) => {
   const sitemap = new SitemapStream({ hostname: BASE_URL })
 
   const docs = await serverQueryContent(event).find()
-  const docsExceptVoiesLyonnaises = docs.filter(doc => doc._dir !== 'voies-lyonnaises')
-  for (const doc of docsExceptVoiesLyonnaises) {
+  const docsExceptLignes = docs.filter(doc => doc._dir !== 'lignes')
+  for (const doc of docsExceptLignes) {
     sitemap.write({ url: doc._path, changefreq: 'monthly' })
   }
 
-  const docsOnlyVoiesLyonnaises = docs.filter(doc => doc._dir === 'voies-lyonnaises' && doc._type === 'markdown')
-  for (const doc of docsOnlyVoiesLyonnaises) {
-    sitemap.write({ url: `/voie-lyonnaise-${doc.line}`, changefreq: 'monthly' })
+  const docsOnlyLignes = docs.filter(doc => doc._dir === 'lignes' && doc._type === 'markdown')
+  for (const doc of docsOnlyLignes) {
+    sitemap.write({ url: `/ligne-${doc.line}`, changefreq: 'monthly' })
   }
 
   const staticEndpoints = getStaticEndpoints()

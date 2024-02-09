@@ -7,7 +7,7 @@
           Choisissez une Ligne pour connaitre le détail du projet et voir son niveau d'avancement.
         </p>
       </div>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:sm:grid-cols-3">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:sm:grid-cols-2">
         <div
           v-for="voie in voies"
           :key="voie.line"
@@ -15,16 +15,16 @@
         >
           <div class="flex-shrink-0">
             <div
-              class="h-10 w-10 rounded-full flex items-center justify-center text-white font-bold"
+              class="h-14 w-14 rounded-full flex items-center justify-center text-white font-bold text-2xl"
               :style="`background-color: ${voie.color}`"
             >
               {{ voie.line }}
             </div>
           </div>
           <div class="flex-1 min-w-0">
-            <NuxtLink :to="getVoieLyonnaisePath(voie.line)" class="focus:outline-none">
+            <NuxtLink :to="getLignePath(voie.line)" class="focus:outline-none">
               <span class="absolute inset-0" aria-hidden="true" />
-              <p class="text-sm font-medium text-gray-900">Ligne {{ voie.line }}</p>
+              <p class="text-xl font-medium text-gray-900">{{ voie.name }}</p>
               <p class="text-sm text-gray-500 truncate">{{ voie.from }} → {{ voie.to }}</p>
             </NuxtLink>
           </div>
@@ -36,10 +36,10 @@
 
 <script setup>
 const { data: voies } = await useAsyncData(() => {
-  return queryContent('voies-lyonnaises').where({ _type: 'markdown' }).find();
+  return queryContent('lignes').where({ _type: 'markdown' }).find();
 });
 
-function getVoieLyonnaisePath(line) {
-  return `/voie-lyonnaise-${line}`;
+function getLignePath(line) {
+  return `/ligne-${line}`;
 }
 </script>

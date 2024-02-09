@@ -1,0 +1,691 @@
+{
+  "id": "ligne_6",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "Piste cyclable",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "Commentaires": "",
+        "calculated_length": 275.706
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.374477, 43.295357],
+          [5.377582, 43.296364]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "Piste cyclable",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "Commentaires": "",
+        "calculated_length": 356.323
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.381175, 43.297649],
+          [5.385155, 43.299003]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "Piste cyclable",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "Commentaires": "",
+        "calculated_length": 68.663
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.380231, 43.297292],
+          [5.380989, 43.297567]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd de la Blancarde",
+        "Réalisation": "Bande cyclable 1 seule coté",
+        "Phase": "2024-2030",
+        "Typologie": "",
+        "Commentaires": "",
+        "calculated_length": 243.355
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.404347, 43.303367],
+          [5.40488, 43.303438],
+          [5.405413, 43.303509],
+          [5.406612, 43.303719],
+          [5.407114, 43.303807],
+          [5.407232, 43.303893]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "Bande cyclable",
+        "Phase": "2024-2030",
+        "Typologie": "Bande cyclable",
+        "Commentaires": "",
+        "calculated_length": 40.41
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.425218, 43.303897],
+          [5.425693, 43.303787]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "Bande cyclable",
+        "Phase": "2024-2030",
+        "Typologie": "Bande cyclable",
+        "Commentaires": "",
+        "calculated_length": 14.227
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.425902, 43.303754],
+          [5.426077, 43.303752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Longchamp",
+        "Réalisation": "Bande cyclable sur trottoir",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "Commentaires": null,
+        "calculated_length": 90.504
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386936, 43.300701],
+          [5.387886, 43.301128]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Longchamp",
+        "Réalisation": "Bande cyclable sur trottoir",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "Commentaires": null,
+        "calculated_length": 494.157
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.387964, 43.30117],
+          [5.393088, 43.303574]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Bd Philippon",
+        "Réalisation": "Bande cyclable sur trottoir",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "Commentaires": "",
+        "calculated_length": 279.474
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.3932, 43.303581],
+          [5.396477, 43.302805]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Cours Joseph Thierry",
+        "Réalisation": "Zone de rencontre 20km/h",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 166.025
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.384717, 43.299805],
+          [5.386461, 43.300588]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 50.76
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.377673, 43.29639],
+          [5.378253, 43.296562]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 15.183
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.381006, 43.297569],
+          [5.381168, 43.297638]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "SQ Stalingrad",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 113.941
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.385169, 43.299018],
+          [5.385317, 43.299072],
+          [5.384657, 43.299773],
+          [5.384718, 43.299803]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Joseph Thierry",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 33.28
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386525, 43.300561],
+          [5.386882, 43.300708]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Marechal Foch",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 30.642
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.396494, 43.302797],
+          [5.396817, 43.302655]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 7.599
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.377583, 43.296365],
+          [5.37767, 43.29639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Canebière",
+        "Réalisation": "Piste cyclable",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "Commentaires": "",
+        "calculated_length": 179.996
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378252, 43.296566],
+          [5.380239, 43.297286]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd de la Blancarde",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 299.153
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.400706, 43.302929],
+          [5.401501, 43.302987],
+          [5.402241, 43.303084],
+          [5.402306, 43.303112],
+          [5.40258, 43.303146],
+          [5.403121, 43.303206],
+          [5.403508, 43.303254],
+          [5.403837, 43.303311],
+          [5.404336, 43.303369]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av de saint Barnadé",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 631.291
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.407236, 43.303923],
+          [5.407333, 43.304115],
+          [5.407398, 43.304314],
+          [5.407564, 43.304469],
+          [5.40782, 43.304561],
+          [5.408177, 43.304621],
+          [5.408447, 43.304595],
+          [5.408757, 43.304532],
+          [5.40946, 43.304099],
+          [5.409647, 43.304052],
+          [5.409878, 43.304004],
+          [5.414196, 43.304372]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue Montaigne",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 377.348
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.414206, 43.304369],
+          [5.414251, 43.304308],
+          [5.41549, 43.304105],
+          [5.416608, 43.303914],
+          [5.417324, 43.303819],
+          [5.418725, 43.303936]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd Gassendi",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 321.149
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.41872, 43.303938],
+          [5.418843, 43.30377],
+          [5.419029, 43.303718],
+          [5.420327, 43.303835],
+          [5.4225, 43.304032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 223.406
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.422495, 43.304026],
+          [5.423507, 43.304104],
+          [5.424341, 43.304083],
+          [5.425208, 43.303904]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 143.436
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.426084, 43.303756],
+          [5.427842, 43.303891]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 2101.027
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.42786, 43.303906],
+          [5.430096, 43.303496],
+          [5.430591, 43.303484],
+          [5.43182, 43.303589],
+          [5.432802, 43.303745],
+          [5.433869, 43.304155],
+          [5.434663, 43.304235],
+          [5.435619, 43.30385],
+          [5.436131, 43.303807],
+          [5.43695, 43.303826],
+          [5.437821, 43.30331],
+          [5.438335, 43.303192],
+          [5.438848, 43.303148],
+          [5.4393, 43.303298],
+          [5.440222, 43.30385],
+          [5.440819, 43.303956],
+          [5.441161, 43.303968],
+          [5.441673, 43.303484],
+          [5.442569, 43.303211],
+          [5.443568, 43.302447],
+          [5.444268, 43.30213],
+          [5.44465, 43.302123],
+          [5.44535, 43.302372],
+          [5.446281, 43.302819],
+          [5.44698, 43.303006],
+          [5.449677, 43.303229],
+          [5.451451, 43.303359]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Grand Rue",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 57.208
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.451449, 43.303359],
+          [5.451699, 43.302987],
+          [5.451796, 43.302965],
+          [5.45183, 43.302973]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd des libérateurs/traverse des Caillols",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 1296.657
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.451844, 43.302978],
+          [5.452091, 43.303048],
+          [5.452398, 43.303175],
+          [5.452632, 43.303235],
+          [5.4537, 43.303332],
+          [5.454919, 43.303225],
+          [5.455402, 43.303117],
+          [5.456137, 43.303008],
+          [5.456134, 43.303217],
+          [5.456458, 43.303604],
+          [5.456856, 43.303887],
+          [5.457205, 43.304279],
+          [5.457413, 43.304436],
+          [5.458618, 43.304886],
+          [5.459298, 43.304928],
+          [5.459854, 43.30495],
+          [5.460015, 43.305477],
+          [5.460388, 43.306062],
+          [5.460388, 43.306146],
+          [5.460602, 43.306614],
+          [5.461055, 43.307061],
+          [5.461055, 43.307114],
+          [5.46137, 43.30763],
+          [5.461409, 43.308032],
+          [5.461604, 43.308312],
+          [5.461922, 43.308479],
+          [5.462592, 43.308759],
+          [5.462697, 43.309036]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av des trois Lucs",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 349.167
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.462697, 43.309039],
+          [5.462769, 43.309091],
+          [5.463223, 43.309953],
+          [5.464019, 43.31059],
+          [5.464725, 43.311765]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av des Caillols",
+        "Réalisation": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 17.105
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.425696, 43.303789],
+          [5.425821, 43.303759],
+          [5.4259, 43.303755]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd de la Blancarde",
+        "Réalisation": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "Commentaires": null,
+        "calculated_length": 314.75
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.396827, 43.302659],
+          [5.398259, 43.302734],
+          [5.399514, 43.302841],
+          [5.400617, 43.302902],
+          [5.400683, 43.302925]
+        ]
+      }
+    }
+  ],
+  "_umap_options": {
+    "displayOnLoad": true,
+    "inCaption": true,
+    "browsable": true,
+    "editMode": "advanced",
+    "name": "Ligne 6 linéaire 2019-2030",
+    "remoteData": {},
+    "description": "Tracé de la ligne 6 du plan vélo métropolitain 2019-2030",
+    "color": "Silver",
+    "opacity": "1",
+    "id": 2975625,
+    "permissions": { "edit_status": 0 }
+  }
+}

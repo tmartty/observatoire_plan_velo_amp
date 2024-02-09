@@ -1,0 +1,831 @@
+{
+  "id": "ligne_4",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pierre Dramard",
+        "Réalisation": "Bande cyclable",
+        "Commentaire": "Uniquement en montée",
+        "Phase": "2024-2030",
+        "Typologie": "",
+        "calculated_length": 60.161
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.363536, 43.377002],
+          [5.363679, 43.376949],
+          [5.363791, 43.37691],
+          [5.363894, 43.376858],
+          [5.363999, 43.376819],
+          [5.36411, 43.37679],
+          [5.364205, 43.376779]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pierre Dramard",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "Uniquement en montée",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 134.902
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364405, 43.376672],
+          [5.364462, 43.376543],
+          [5.364516, 43.376389],
+          [5.365069, 43.375722],
+          [5.365142, 43.375655],
+          [5.365183, 43.375609]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pierre Dramard",
+        "Réalisation": "",
+        "Commentaire": "Interuption intersection",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 23.283
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364211, 43.376774],
+          [5.364272, 43.376788],
+          [5.364333, 43.376783],
+          [5.364386, 43.376746],
+          [5.364397, 43.376711],
+          [5.364397, 43.376682]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pierre Dramard",
+        "Réalisation": "",
+        "Commentaire": "Interuption intersection",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 90.038
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36517, 43.375572],
+          [5.365598, 43.37505],
+          [5.365714, 43.374985],
+          [5.365746, 43.374892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd du Bosphore",
+        "Réalisation": "Bande cyclable",
+        "Commentaire": "Double sens",
+        "Phase": "2024-2030",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 432.254
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.36578, 43.374845],
+          [5.365987, 43.374508],
+          [5.366085, 43.37401],
+          [5.365975, 43.373618],
+          [5.364544, 43.371218]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd du Bosphore",
+        "Réalisation": "",
+        "Commentaire": "Interuption intersection",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 47.394
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.364501, 43.371213],
+          [5.364526, 43.371116],
+          [5.36444, 43.371036],
+          [5.364256, 43.371036],
+          [5.364146, 43.370991]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd du Bosphore",
+        "Réalisation": "Bande cyclable",
+        "Commentaire": "Uniquement en montée",
+        "Phase": "2024-2030",
+        "Typologie": "",
+        "calculated_length": 259.117
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.362874, 43.368915],
+          [5.362908, 43.36916],
+          [5.362903, 43.369443],
+          [5.362981, 43.369727],
+          [5.363152, 43.370024],
+          [5.364151, 43.370967]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Chemin de St Antoine à St Joseph",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 1337.658
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365527, 43.358358],
+          [5.365482, 43.358458],
+          [5.364997, 43.359077],
+          [5.364751, 43.359609],
+          [5.364584, 43.359829],
+          [5.364207, 43.360037],
+          [5.363851, 43.360499],
+          [5.363601, 43.360764],
+          [5.363286, 43.361178],
+          [5.363045, 43.361369],
+          [5.362694, 43.361618],
+          [5.362438, 43.361782],
+          [5.362192, 43.361973],
+          [5.361631, 43.362736],
+          [5.361299, 43.363468],
+          [5.361172, 43.363746],
+          [5.361084, 43.364317],
+          [5.361115, 43.364435],
+          [5.361211, 43.364563],
+          [5.361361, 43.364693],
+          [5.36164, 43.364853],
+          [5.361921, 43.365166],
+          [5.361969, 43.365335],
+          [5.362026, 43.365641],
+          [5.362087, 43.365848],
+          [5.362272, 43.365951],
+          [5.362697, 43.366222],
+          [5.362954, 43.366474],
+          [5.363002, 43.366588],
+          [5.363002, 43.366911],
+          [5.363095, 43.367482],
+          [5.363099, 43.36767],
+          [5.36297, 43.368359],
+          [5.362856, 43.368901]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd de la gare",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 273.728
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.365534, 43.358325],
+          [5.365754, 43.358022],
+          [5.365916, 43.357779],
+          [5.366675, 43.35731],
+          [5.367136, 43.357186],
+          [5.367825, 43.35717],
+          [5.368158, 43.357068]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Chemin de St Antoine à St Joseph",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 1101.91
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.368186, 43.357052],
+          [5.369108, 43.356621],
+          [5.369362, 43.356497],
+          [5.369678, 43.356226],
+          [5.369941, 43.355808],
+          [5.370286, 43.355322],
+          [5.370795, 43.354732],
+          [5.375677, 43.349122],
+          [5.375823, 43.348964]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 642.975
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398501, 43.335761],
+          [5.398271, 43.335259],
+          [5.398468, 43.334602],
+          [5.39878, 43.333503],
+          [5.398961, 43.332739],
+          [5.398731, 43.332165],
+          [5.39832, 43.331353],
+          [5.398189, 43.331222],
+          [5.398205, 43.331066],
+          [5.398025, 43.33017]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd Anatole de la Forge",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 2423.091
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.3758, 43.348948],
+          [5.377055, 43.348007],
+          [5.379869, 43.346431],
+          [5.381922, 43.345878],
+          [5.382569, 43.345325],
+          [5.383291, 43.344634],
+          [5.385459, 43.343444],
+          [5.386448, 43.342283],
+          [5.386638, 43.340762],
+          [5.386942, 43.340125],
+          [5.387969, 43.339932],
+          [5.388919, 43.340043],
+          [5.392266, 43.339019],
+          [5.394015, 43.337692],
+          [5.396373, 43.337083],
+          [5.397248, 43.336723],
+          [5.397362, 43.336087]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Av. Alexandre Ansaldi",
+        "Réalisation": "Bande cyclable",
+        "Commentaire": "2019",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 98.739
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.397391, 43.336111],
+          [5.397758, 43.336],
+          [5.398531, 43.3358]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "",
+        "Réalisation": "",
+        "Commentaire": "Interuption intersection",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 10.018
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398531, 43.3358],
+          [5.398646, 43.335766]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Av. Alexandre Ansaldi",
+        "Réalisation": "Bande cyclable",
+        "Commentaire": "2018",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable",
+        "calculated_length": 760.934
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398696, 43.335743],
+          [5.399684, 43.335507],
+          [5.400282, 43.335186],
+          [5.401841, 43.334061],
+          [5.403595, 43.332918],
+          [5.403933, 43.332539],
+          [5.404141, 43.331991],
+          [5.404076, 43.331443],
+          [5.404141, 43.331056],
+          [5.404297, 43.33081]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 471.423
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.404361, 43.330743],
+          [5.404955, 43.330743],
+          [5.405697, 43.33077],
+          [5.406179, 43.33104],
+          [5.407813, 43.330797],
+          [5.408815, 43.330689],
+          [5.410002, 43.330662]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue Jean Queillau",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 371.638
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386842, 43.34031],
+          [5.386774, 43.340211],
+          [5.386323, 43.338778],
+          [5.385808, 43.337624],
+          [5.385663, 43.337083]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rond-Point Victor Schoecher",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 44.146
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.385652, 43.337056],
+          [5.385525, 43.336975],
+          [5.385512, 43.336833],
+          [5.385626, 43.336731]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue Jean Queillau",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 735.771
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.385607, 43.336726],
+          [5.385656, 43.336448],
+          [5.385533, 43.335548],
+          [5.385225, 43.334432],
+          [5.385254, 43.3342],
+          [5.386068, 43.332642],
+          [5.387248, 43.331461],
+          [5.388033, 43.33072]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rond-Point Pierre Paraf",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 149.623
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.388072, 43.330682],
+          [5.387842, 43.330401],
+          [5.387809, 43.33015],
+          [5.387838, 43.329931],
+          [5.387986, 43.329758],
+          [5.388092, 43.329692],
+          [5.388134, 43.329453]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Ch. de Sainte-Marthe",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 1388.331
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.388126, 43.32946],
+          [5.387914, 43.329066],
+          [5.387846, 43.328907],
+          [5.387797, 43.32862],
+          [5.387663, 43.327173],
+          [5.387683, 43.326884],
+          [5.388237, 43.325165],
+          [5.388645, 43.324042],
+          [5.389049, 43.3236],
+          [5.389199, 43.323351],
+          [5.389336, 43.322919],
+          [5.389424, 43.322358],
+          [5.389359, 43.322085],
+          [5.389379, 43.321732],
+          [5.389744, 43.321283],
+          [5.390014, 43.320987],
+          [5.390082, 43.320778],
+          [5.389968, 43.319813],
+          [5.390004, 43.319583],
+          [5.390249, 43.319021],
+          [5.390324, 43.31819],
+          [5.390281, 43.318082],
+          [5.389958, 43.31747],
+          [5.389948, 43.317447]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd. Burel",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 410.776
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.389947, 43.317446],
+          [5.388347, 43.315465],
+          [5.387434, 43.314382],
+          [5.387404, 43.314258]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue du Dr Leon Perrin",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 152.476
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.387395, 43.314255],
+          [5.386411, 43.313547],
+          [5.386272, 43.313197]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue Loubon",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 38.662
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386272, 43.313198],
+          [5.385818, 43.313093]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue de la belle de mai",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 297.458
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.385817, 43.313093],
+          [5.385665, 43.31286],
+          [5.385044, 43.31249],
+          [5.384589, 43.311903],
+          [5.384244, 43.311406],
+          [5.383812, 43.310892]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue de la belle de mai",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 386.676
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.383804, 43.310892],
+          [5.382828, 43.309805],
+          [5.382206, 43.309248],
+          [5.381849, 43.308719],
+          [5.381791, 43.308499],
+          [5.381831, 43.30822],
+          [5.381851, 43.308078],
+          [5.381796, 43.307967],
+          [5.381726, 43.307873]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue du 141e régiment d'infenterie alpine",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 123.596
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.381727, 43.307871],
+          [5.38136, 43.307513],
+          [5.380824, 43.307006],
+          [5.380814, 43.306982]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue du 141e régiment d'infenterie alpine",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 95.772
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.380816, 43.306981],
+          [5.38076, 43.306918],
+          [5.380388, 43.306594],
+          [5.380155, 43.306456],
+          [5.380127, 43.306408],
+          [5.38015, 43.306334],
+          [5.380154, 43.306317]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Rue Leon Gozlan",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 133.848
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.380154, 43.306317],
+          [5.380573, 43.305275],
+          [5.380588, 43.305157]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Bd. Gustabe Desplace",
+        "Réalisation": "",
+        "Commentaire": "Bande cyclable dans un seul sens",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 170.923
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.380592, 43.305159],
+          [5.380292, 43.305071],
+          [5.380233, 43.305032],
+          [5.378797, 43.304574],
+          [5.37869, 43.304512]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pl. Victor Hugo",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 72.562
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378686, 43.304508],
+          [5.37853, 43.304436],
+          [5.378386, 43.304402],
+          [5.377932, 43.304164]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Pierre Dramard",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 74.312
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.363534, 43.377002],
+          [5.362979, 43.377329],
+          [5.362805, 43.377407]
+        ]
+      }
+    }
+  ],
+  "_umap_options": {
+    "displayOnLoad": true,
+    "inCaption": true,
+    "browsable": true,
+    "editMode": "advanced",
+    "name": "Ligne 4 linéaire 2019-2030",
+    "remoteData": {},
+    "description": "Tracé de la ligne 4 du plan vélo métropolitain 2019-2030",
+    "opacity": "1",
+    "color": "Silver",
+    "id": 2975627,
+    "permissions": { "edit_status": 0 }
+  }
+}

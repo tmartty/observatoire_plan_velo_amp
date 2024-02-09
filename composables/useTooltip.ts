@@ -22,14 +22,6 @@ type PerspectiveProperties = {
   imgUrl: string;
 };
 
-type CompteurProperties = {
-  type: 'compteur';
-  name: string;
-  link: string;
-  lastRecordDate: string;
-  lastRecordValue: string;
-};
-
 function getStatusText(status: Status, doneAt?: string): string {
   const statusText = {
     done: () => `Terminé (${getDoneAtText(doneAt!)})`,
@@ -62,7 +54,7 @@ export const useTooltip = () => {
       <div class="not-prose text-black">
         <div class="h-10 flex items-center" style="background-color: ${color}">
           <div class="p-2">
-            <a class='text-white font-bold text-lg hover:underline' href='/voie-lyonnaise-${feature.properties.line}'>
+            <a class='text-white font-bold text-lg hover:underline' href='/ligne-${feature.properties.line}'>
               Voie Lyonnaise ${feature.properties.line}
             </a>
           </div>
@@ -90,7 +82,7 @@ export const useTooltip = () => {
     return `
       <div class="h-10 flex items-center not-prose text-black" style="background-color: ${color}">
         <div class="p-2">
-          <a class='text-white font-bold text-lg hover:underline' href='/voie-lyonnaise-${properties.line}'>
+          <a class='text-white font-bold text-lg hover:underline' href='/ligne-${properties.line}'>
             Voie Lyonnaise ${properties.line}
           </a>
         </div>
@@ -99,23 +91,5 @@ export const useTooltip = () => {
     `;
   }
 
-  function getTooltipCompteur(properties: CompteurProperties) {
-    return `
-      <div class="flex items-center bg-cvv-blue-600 not-prose text-black rounded-t">
-        <div class="p-2">
-          <a class='text-white font-bold text-lg hover:underline' href='${properties.link}'>
-            ${properties.name}
-          </a>
-        </div>
-      </div>
-      <div class='px-2 py-1 divide-y text-gray-800'>
-         <div>
-           <div class='text-left text-base font-bold'>${properties.lastRecordDate}</div>
-           <div class="text-left text-base">${properties.lastRecordValue}</div>
-         </div>
-      </div>
-    `;
-  }
-
-  return { getTooltipHtml, getTooltipPerspective, getTooltipCompteur };
+  return { getTooltipHtml, getTooltipPerspective };
 };

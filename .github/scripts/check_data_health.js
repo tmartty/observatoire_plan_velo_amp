@@ -4,7 +4,6 @@ const path = require('path');
 (function checkDataHealth() {
   checkJsonFilesAreValid();
   checkGeoJsonDataHealth();
-  checkCompteursDataHealth();
 })();
 
 function checkJsonFilesAreValid(directory = 'content') {
@@ -26,9 +25,9 @@ function checkJsonFilesAreValid(directory = 'content') {
 
 function checkGeoJsonDataHealth() {
   const allLineStrings = [];
-  fs.readdirSync('content/voies-lyonnaises').forEach(file => {
+  fs.readdirSync('content/lignes').forEach(file => {
     if (file.endsWith('.json')) {
-      const filePath = path.join('content/voies-lyonnaises', file);
+      const filePath = path.join('content/lignes', file);
       const content = fs.readFileSync(filePath, 'utf8');
       try {
         const geojson = JSON.parse(content);
@@ -123,22 +122,4 @@ function checkGeoJsonDataHealth() {
       process.exit(1);
     }
   }
-}
-
-function checkCompteursDataHealth() {
-  fs.readdirSync('content/compteurs').forEach(file => {
-    if (file.endsWith('.json')) {
-      const filePath = path.join('content/compteurs', file);
-      const content = fs.readFileSync(filePath, 'utf8');
-
-      const compteur = JSON.parse(content);
-      const requiredKeys = ['name', 'description', 'arrondissement', 'idPdc', 'coordinates', 'counts'];
-      for (const key of requiredKeys) {
-        if (!compteur.hasOwnProperty(key)) {
-          console.error(`Missing key '${key}' in Compteur properties of file: ${filePath}`);
-          process.exit(1);
-        }
-      }
-    }
-  });
 }

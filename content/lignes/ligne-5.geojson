@@ -1,0 +1,1128 @@
+{
+  "id": "ligne_5",
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 133.231
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375812, 43.262716],
+          [5.375043, 43.262213],
+          [5.374653, 43.262233],
+          [5.374559, 43.262282],
+          [5.374458, 43.262266]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 3.992
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378553, 43.264445],
+          [5.378586, 43.264471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 4.651
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.382114, 43.266719],
+          [5.38215, 43.266752]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Boulevard Jean Moulin",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 860.708
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398821, 43.285367],
+          [5.398849, 43.285742],
+          [5.398887, 43.285897],
+          [5.398934, 43.286011],
+          [5.399067, 43.286176],
+          [5.399782, 43.28673],
+          [5.400257, 43.287065],
+          [5.400352, 43.287214],
+          [5.400447, 43.287434],
+          [5.400479, 43.287664],
+          [5.400463, 43.287918],
+          [5.400322, 43.288402],
+          [5.400199, 43.288911],
+          [5.399971, 43.289937],
+          [5.39998, 43.29024],
+          [5.400009, 43.290853],
+          [5.400084, 43.291211],
+          [5.400226, 43.291507],
+          [5.400472, 43.291768],
+          [5.401218, 43.29238]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Boulevard Sakakini",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 871.864
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.401228, 43.292389],
+          [5.401331, 43.292671],
+          [5.401502, 43.293152],
+          [5.401643, 43.29351],
+          [5.401681, 43.293744],
+          [5.401624, 43.293998],
+          [5.401445, 43.294371],
+          [5.400831, 43.295113],
+          [5.400434, 43.295584],
+          [5.400255, 43.296113],
+          [5.400226, 43.29645],
+          [5.400283, 43.296721],
+          [5.400434, 43.296982],
+          [5.40068, 43.297271],
+          [5.400869, 43.297546],
+          [5.400869, 43.298036],
+          [5.400898, 43.298627],
+          [5.400833, 43.299834]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Boulevard Françoise Duparc",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 1108.853
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.400828, 43.299849],
+          [5.400787, 43.30044],
+          [5.400731, 43.300942],
+          [5.400641, 43.301646],
+          [5.400648, 43.30226],
+          [5.400673, 43.30275],
+          [5.400763, 43.303384],
+          [5.400853, 43.303903],
+          [5.40091, 43.304374],
+          [5.400869, 43.304982],
+          [5.400828, 43.305577],
+          [5.400811, 43.306269],
+          [5.400838, 43.306422],
+          [5.401384, 43.307077],
+          [5.401589, 43.307348],
+          [5.402689, 43.308625],
+          [5.402787, 43.308771],
+          [5.403028, 43.309389]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Boulevard du Maréchal Juin",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 541.264
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.403019, 43.309392],
+          [5.403224, 43.309961],
+          [5.403368, 43.31036],
+          [5.403553, 43.310831],
+          [5.403619, 43.311067],
+          [5.403691, 43.311382],
+          [5.403729, 43.311554],
+          [5.403861, 43.311812],
+          [5.404144, 43.312025],
+          [5.405306, 43.313081],
+          [5.405557, 43.313325],
+          [5.405879, 43.313666]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rue Albert Einstein",
+        "Réalisation": "Voie bus",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 423.342
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.433217, 43.335249],
+          [5.433413, 43.335351],
+          [5.433485, 43.335414],
+          [5.433594, 43.335565],
+          [5.433762, 43.33573],
+          [5.434419, 43.336348],
+          [5.435071, 43.336989],
+          [5.435271, 43.33718],
+          [5.435344, 43.337276],
+          [5.435394, 43.337366],
+          [5.435467, 43.337455],
+          [5.435635, 43.337587],
+          [5.435934, 43.337814],
+          [5.436465, 43.338204]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Rue Frédéric Joliot-Curie",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 416.836
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.438164, 43.339141],
+          [5.438048, 43.339271],
+          [5.437728, 43.339382],
+          [5.437433, 43.339764],
+          [5.437197, 43.34002],
+          [5.437024, 43.340286],
+          [5.436829, 43.340745],
+          [5.436776, 43.341059],
+          [5.436787, 43.341585],
+          [5.436692, 43.34201],
+          [5.436573, 43.342396],
+          [5.436489, 43.34253]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Rue Albert Einstein",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 179.513
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.436602, 43.33818],
+          [5.437017, 43.338489],
+          [5.437522, 43.338665],
+          [5.437779, 43.338791],
+          [5.438216, 43.338944],
+          [5.438169, 43.339135]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 238.017
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378095, 43.264147],
+          [5.375856, 43.262764]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 45.105
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378546, 43.264442],
+          [5.378129, 43.264174]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 3.946
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386115, 43.269299],
+          [5.386159, 43.269313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 5.329
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.38237, 43.266882],
+          [5.382423, 43.26691]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Boulevard du Maréchal Juin",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 18.636
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.405888, 43.313666],
+          [5.406022, 43.313802]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Avenue Alexandre Fleming",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 24.078
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.406023, 43.313802],
+          [5.406103, 43.313801],
+          [5.406185, 43.313795],
+          [5.406303, 43.313748]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Boulevard Barry",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 266.021
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.406548, 43.313848],
+          [5.406618, 43.313922],
+          [5.406772, 43.314035],
+          [5.406963, 43.314176],
+          [5.407069, 43.314254],
+          [5.407212, 43.31437],
+          [5.40724, 43.31442],
+          [5.407273, 43.314527],
+          [5.407295, 43.314706],
+          [5.40733, 43.314883],
+          [5.407357, 43.315081],
+          [5.407396, 43.315299],
+          [5.407466, 43.315691],
+          [5.407544, 43.31603]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Boulevard Barry",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 734.004
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.407695, 43.316437],
+          [5.40792, 43.31661],
+          [5.408025, 43.316689],
+          [5.408556, 43.317073],
+          [5.409268, 43.31759],
+          [5.410125, 43.318224],
+          [5.41088, 43.31879],
+          [5.411221, 43.319042],
+          [5.411468, 43.319222],
+          [5.411821, 43.319478],
+          [5.411863, 43.319497],
+          [5.412013, 43.319552],
+          [5.412177, 43.319609],
+          [5.412508, 43.319711],
+          [5.41289, 43.319823],
+          [5.413062, 43.319868],
+          [5.413371, 43.319945],
+          [5.413473, 43.319965],
+          [5.41358, 43.319982],
+          [5.413904, 43.320024],
+          [5.414441, 43.320093],
+          [5.414852, 43.320145]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Malpassé",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 77.713
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.414853, 43.320146],
+          [5.414981, 43.320175],
+          [5.415221, 43.320352],
+          [5.415426, 43.320503],
+          [5.415519, 43.320573],
+          [5.415543, 43.320612]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rue du docteur Grenier",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 17.97
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.415544, 43.320612],
+          [5.415523, 43.320647],
+          [5.415413, 43.320741]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Boulevard Lagnel",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 676.424
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.415414, 43.32074],
+          [5.415657, 43.320887],
+          [5.41588, 43.321024],
+          [5.416054, 43.321129],
+          [5.416184, 43.321229],
+          [5.416322, 43.321335],
+          [5.41659, 43.321547],
+          [5.416843, 43.321754],
+          [5.417175, 43.322024],
+          [5.417451, 43.322251],
+          [5.417625, 43.322374],
+          [5.417868, 43.322548],
+          [5.418315, 43.322868],
+          [5.418618, 43.323089],
+          [5.418788, 43.323221],
+          [5.419021, 43.32338],
+          [5.419527, 43.323734],
+          [5.419715, 43.323863],
+          [5.419971, 43.324054],
+          [5.420162, 43.324196],
+          [5.420756, 43.3246],
+          [5.421191, 43.324884],
+          [5.421365, 43.324998]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 4.468
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.378098, 43.264144],
+          [5.378137, 43.264172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 3.842
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.38327, 43.267467],
+          [5.383301, 43.267494]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 25.095
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386861, 43.269757],
+          [5.38709, 43.269909]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 5.782
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.389251, 43.2713],
+          [5.389307, 43.271332]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 5.106
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.387644, 43.270288],
+          [5.387689, 43.27032]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Boulevard Jean Moulin",
+        "Réalisation": "Bande sur trottoir",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 76.446
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398667, 43.285353],
+          [5.398617, 43.284865],
+          [5.398634, 43.284667]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Bd Rabatau",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 1147.514
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.398574, 43.284624],
+          [5.398632, 43.283202],
+          [5.3989, 43.282561],
+          [5.399494, 43.281083],
+          [5.399111, 43.277695],
+          [5.398919, 43.277319],
+          [5.39587, 43.275471]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Bd Rabatau",
+        "Réalisation": "Bande sur trottoir",
+        "Commentaire": "2014",
+        "Phase": "2019-2024",
+        "Typologie": "Bande cyclable sur trottoir",
+        "calculated_length": 463.912
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.39593, 43.275408],
+          [5.391653, 43.272639]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 61.643
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.387637, 43.270282],
+          [5.38708, 43.269905]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 303.189
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386106, 43.269301],
+          [5.383304, 43.267496]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 22.852
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.382374, 43.266888],
+          [5.382151, 43.266762]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rond Point du Prado",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 99.606
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.39164, 43.27262],
+          [5.391573, 43.272569],
+          [5.391601, 43.272465],
+          [5.391554, 43.272388],
+          [5.39147, 43.272315],
+          [5.391323, 43.272301],
+          [5.3912, 43.272309],
+          [5.391147, 43.272334],
+          [5.39095, 43.272334],
+          [5.390771, 43.272255]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 4.855
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.375837, 43.26272],
+          [5.375859, 43.262761]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 154.965
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.390757, 43.272261],
+          [5.389314, 43.271347]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 165.369
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.389236, 43.271304],
+          [5.387704, 43.270323]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 75.902
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.386869, 43.269755],
+          [5.386156, 43.269313]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 93.016
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.383265, 43.267468],
+          [5.382413, 43.266908]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 235.077
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.382117, 43.266728],
+          [5.379945, 43.265329]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Av du Prado 2",
+        "Réalisation": "Fausse voie partagée trop petite sur trottoir",
+        "Commentaire": "avant 2008",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 142.612
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.379917, 43.265321],
+          [5.378597, 43.264474]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rond-point Marie-Madeleine Fourcade",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 52.491
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.407704, 43.316436],
+          [5.407756, 43.316359],
+          [5.407765, 43.316259],
+          [5.407724, 43.316162],
+          [5.407659, 43.316094],
+          [5.407546, 43.316035]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rond-point Claudie d'Arcy",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 26.255
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.406304, 43.313752],
+          [5.406326, 43.313796],
+          [5.406365, 43.313837],
+          [5.406441, 43.31386],
+          [5.406494, 43.31386],
+          [5.406548, 43.31385]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé avant le plan vélo",
+        "Rue ou Axe": "Rue Frédéric Joliot-Curie",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 200.63
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.436471, 43.342538],
+          [5.435853, 43.34333],
+          [5.435604, 43.344206]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2024",
+        "Rue ou Axe": "Rue Albert Einstein",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": null,
+        "calculated_length": 23.287
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.433067, 43.335066],
+          [5.433214, 43.335245]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "A réaliser 2030",
+        "Rue ou Axe": "Av. Jean Paul Sartre-Bd Neuf",
+        "Réalisation": "",
+        "Commentaire": "",
+        "Phase": "2024-2030",
+        "Typologie": null,
+        "calculated_length": 1797.9
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.421377, 43.32502],
+          [5.423688, 43.32595],
+          [5.425865, 43.326959],
+          [5.427898, 43.328076],
+          [5.431094, 43.328929],
+          [5.432464, 43.329503],
+          [5.434468, 43.331275],
+          [5.434478, 43.331446],
+          [5.434366, 43.331889],
+          [5.434269, 43.331977],
+          [5.433823, 43.331703],
+          [5.433188, 43.331475],
+          [5.432354, 43.332466],
+          [5.432601, 43.332705],
+          [5.432601, 43.332804],
+          [5.432214, 43.333157],
+          [5.431293, 43.333743]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Réseau": "Structurant",
+        "Statut": "Réalisé dans le plan vélo 2024",
+        "Rue ou Axe": "Rue Albert Einstein",
+        "Réalisation": "Piste cyclable",
+        "Commentaire": "",
+        "Phase": "2019-2024",
+        "Typologie": "Piste cyclable",
+        "calculated_length": 205.631
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [5.431304, 43.333743],
+          [5.432813, 43.334884],
+          [5.432954, 43.334957],
+          [5.433077, 43.335063]
+        ]
+      }
+    }
+  ],
+  "_umap_options": {
+    "displayOnLoad": true,
+    "inCaption": true,
+    "browsable": true,
+    "editMode": "advanced",
+    "name": "Ligne 5 linéaire 2019-2030",
+    "remoteData": {},
+    "description": "Tracé de la ligne 5 du plan vélo métropolitain 2019-2030",
+    "opacity": "1",
+    "color": "Silver",
+    "id": 2975626,
+    "permissions": { "edit_status": 0 }
+  }
+}
