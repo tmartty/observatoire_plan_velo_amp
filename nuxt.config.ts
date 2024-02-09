@@ -1,8 +1,8 @@
-const TITLE = 'Cyclopolis - Suivi des Voies Lyonnaises par La Ville à Vélo';
+const TITLE = 'Suivi du Plan Vélo de AMP par Vélos en Ville';
 const DESCRIPTION =
-  "Plateforme citoyenne et associative, par La Ville à Vélo. Etat d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du réseau cyclable sécurisé lyonnais";
-const BASE_URL = 'https://cyclopolis.fr';
-const COVER_IMAGE_URL = 'https://cyclopolis.lavilleavelo.org/cyclopolis.png';
+  "Plateforme citoyenne et associative, par Vélos en Ville. Etat d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du réseau cyclable marseillais";
+const BASE_URL = 'https://observatoire-plan-velo-amp.vercel.app/';
+const COVER_IMAGE_URL = '';
 
 export default defineNuxtConfig({
   app: {
