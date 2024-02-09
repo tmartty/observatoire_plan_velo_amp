@@ -36,11 +36,6 @@ export default defineNuxtConfig({
         { hid: 'twitter:image', name: 'twitter:image', content: COVER_IMAGE_URL }
       ],
       script: [
-        {
-          src: 'https://beamanalytics.b-cdn.net/beam.min.js',
-          'data-token': 'a2aab44b-048b-4696-9171-c8b470bc8ba5',
-          async: true
-        }
       ]
     }
   },
