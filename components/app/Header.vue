@@ -5,36 +5,32 @@
         <div class="flex justify-start items-center lg:w-0 lg:flex-1">
           <NuxtLink to="/" class="flex space-x-2">
             <span class="sr-only">Collectif Vélos en Ville</span>
-            <img
-              class="h-8 w-auto sm:h-10"
-              src="/public/logos/collectif_velos_en_ville_complet.png"
-              alt="picto cyclopolis"
-            />
+            <img class="h-8 w-auto sm:h-10" src="/logos/collectif_velos_en_ville_complet.png" alt="picto cyclopolis" />
           </NuxtLink>
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lvv-blue-600"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cvv-blue-600"
           >
             <span class="sr-only">Ouvrir menu</span>
             <Icon name="mdi:menu" class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
-          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-lvv-blue-600">
+          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-cvv-blue-600">
             Compteurs
           </NuxtLink> -->
 
           <NuxtLink
             to="/carte-interactive"
-            class="text-base font-medium text-gray-500 hover:text-lvv-blue-600"
+            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
             @click="close()"
           >
             Carte interactive
           </NuxtLink>
           <NuxtLink
             to="/plan-officiel"
-            class="text-base font-medium text-gray-500 hover:text-lvv-blue-600"
+            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
             @click="close()"
           >
             Plan officiel
@@ -44,7 +40,7 @@
             <PopoverButton
               :class="[
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-lvv-blue-600 focus:outline-none focus:ring-2 focus:ring-lvv-blue-600 focus:ring-offset-2'
+                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-cvv-blue-600 focus:outline-none focus:ring-2 focus:ring-cvv-blue-600 focus:ring-offset-2'
               ]"
             >
               <span>Lignes</span>
@@ -90,14 +86,14 @@
             </transition>
           </Popover>
 
-          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-lvv-blue-600">
+          <!-- <NuxtLink to="/compteurs" class="text-base font-medium text-gray-500 hover:text-cvv-blue-600">
             Compteurs
           </NuxtLink> -->
         </PopoverGroup>
         <!-- <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <NuxtLink
             to="/blog"
-            class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-lvv-blue-600 hover:shadow-lg transition duration-300 transform hover:scale-105"
+            class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-cvv-blue-600 hover:shadow-lg transition duration-300 transform hover:scale-105"
           >
             Blog
           </NuxtLink>
@@ -122,11 +118,11 @@
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <NuxtLink to="/" @click="close()">
-                <img class="h-10 w-auto" src="/public/logos/collectif_velos_en_ville.png" alt="logo voies lyonnaises" />
+                <img class="h-10 w-auto" src="/logos/collectif_velos_en_ville.png" alt="logo voies lyonnaises" />
               </NuxtLink>
               <div class="-mr-2">
                 <PopoverButton
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-lvv-blue-600"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cvv-blue-600"
                 >
                   <span class="sr-only">Fermer menu</span>
                   <Icon name="mdi:close" class="h-6 w-6" aria-hidden="true" />
