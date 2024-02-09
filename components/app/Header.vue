@@ -5,7 +5,11 @@
         <div class="flex justify-start items-center lg:w-0 lg:flex-1">
           <NuxtLink to="/" class="flex space-x-2">
             <span class="sr-only">Collectif Vélos en Ville</span>
-            <img class="h-8 w-auto sm:h-10" src="/logos/collectif_velos_en_ville_complet.png" alt="picto cyclopolis" />
+            <img
+              class="h-8 w-auto sm:h-10"
+              src="/logos/collectif_velos_en_ville_complet.png"
+              alt="picto collectif vélos en ville"
+            />
           </NuxtLink>
         </div>
         <div class="-mr-2 -my-2 md:hidden">

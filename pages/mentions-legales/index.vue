@@ -80,7 +80,7 @@
         <h2>Hébergement</h2>
         <p>
           Ce site web est hébergé par
-          <a href="https://www.netlify.com/" target="_blank" rel="noopener noreferrer">Netlify</a>
+          <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>
         </p>
         <h2>Protection des données à caractère personnel</h2>
         <p>Le présent site web respecte les règles suivantes :</p>
@@ -93,8 +93,8 @@
         <h2>Réutilisation du contenu du site</h2>
         <p>
           Toute réutilisation brute des cartographies interactives du site, des chiffres du tableau de bord et des
-          détails écrits des tronçons de chaque ligne doivent faire systématiquement mention du nom de la plateforme «
-          Cyclopolis » et du nom de l’association contributrice « La Ville à Vélo ».
+          détails écrits des tronçons de chaque ligne doivent faire systématiquement mention du nom de l’association
+          contributrice « Collectif Vélos en Ville ».
         </p>
 
         <h2>Limitation de responsabilité</h2>
@@ -103,9 +103,9 @@
           site et toute information, textes, noms, images, photos, logos, liens, etc. sont fournis « en l’état » et sans
           garantie expresse ou implicite. En particulier, nous ne garantissons pas l'exactitude ou l'état complet des
           informations présentées sur ce site web ni ne garantissons que l'accès à ce site web sera ininterrompue et
-          sans erreur. En aucun cas CYCLOPOLIS ne pourra être tenu responsable pour tout dommage ou perte résultant de
-          l'utilisation de toute information contenue sur le site web, y compris, sans limitation, les dommages
-          indirects ou tout autre dommage suite ou en rapport avec l'utilisation du site web.
+          sans erreur. En aucun cas le Collectif Vélos en Ville ne pourra être tenu responsable pour tout dommage ou
+          perte résultant de l'utilisation de toute information contenue sur le site web, y compris, sans limitation,
+          les dommages indirects ou tout autre dommage suite ou en rapport avec l'utilisation du site web.
         </p>
       </div>
     </div>

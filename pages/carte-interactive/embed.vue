@@ -18,10 +18,10 @@ const { data: voies } = await useAsyncData(() => {
 const features = voies.value.map(voie => voie.features).flat();
 
 const description =
-  'Découvrez la carte interactive des Voies Lyonnaises. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
-const COVER_IMAGE_URL = 'https://cyclopolis.lavilleavelo.org/cyclopolis.png';
+  'Découvrez la carte interactive du Plan Vélo Marseillais. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
+const COVER_IMAGE_URL = '';
 useHead({
-  title: 'Carte à jour des Voies Lyonnaises',
+  title: 'Carte à jour du Plan Vélo Marseillais',
   meta: [
     // description
     { hid: 'description', name: 'description', content: description },

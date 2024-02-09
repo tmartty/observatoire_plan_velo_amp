@@ -5,7 +5,7 @@
     </ClientOnly>
     <div>
       <div class="py-2 px-5 md:px-8 text-white bg-cvv-blue-600 font-semibold text-base">
-        {{ doneDistance }} km de Voies Lyonnaises réalisés
+        {{ doneDistance }} km de pistes cyclables réalisés
       </div>
       <div class="py-5 px-5 md:px-8 grid grid-cols-3 gap-3 sm:grid-cols-6">
         <div v-for="year in years" :key="year.label" @click="year.isChecked = !year.isChecked">

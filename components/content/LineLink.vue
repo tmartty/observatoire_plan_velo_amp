@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="`/ligne-${line}`" :style="`color: ${color}; text-decoration-color: ${color};`">
-    Voie Lyonnaise
+    Ligne
     <span
       class="h-6 w-6 rounded-full inline-flex items-center justify-center text-white"
       :style="`background-color: ${color};`"
