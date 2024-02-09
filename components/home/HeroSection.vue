@@ -26,7 +26,7 @@
     </div>
 
     <div class="relative pt-6 pb-16 sm:pb-24 lg:pb-32">
-      <div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
+      <div class="mt-8 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6 lg:mt-32">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
           <div class="sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left">
             <h1>
@@ -65,11 +65,15 @@
             </div>
           </div>
           <div
-            class="mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
+            class="mt-12 relative sm:max-w-lg sm:mx-auto lg:-mt-24 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
           >
-            <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
+            <div class="relative mx-auto w-full rounded-lg shadow-lg">
               <div class="relative block w-full bg-white rounded-lg overflow-hidden">
-                <img class="w-full" src="/images/marseille-a-velo.jpeg" alt="illustration voies lyonnaises" />
+                <img
+                  class="w-full opacity-90"
+                  src="/images/marseille-a-velo-2.png"
+                  alt="Piste cyclable de la Canebière"
+                />
               </div>
             </div>
           </div>
