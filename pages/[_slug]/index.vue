@@ -1,22 +1,19 @@
 <template>
-  <ContentFrame :description="voie.description" :image-url="voie.cover">
+  <ContentFrame>
     <template #header>
-      <h1 class="text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        Voie Lyonnaise
-        <div
-          class="mt-2 h-12 w-12 rounded-full flex items-center justify-center text-white font-bold mx-auto"
-          :style="`background-color: ${voie.color}`"
-        >
-          {{ voie.line }}
-        </div>
+      <h1
+        class="text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl text-white rounded-md px-4 py-2"
+        :style="`background-color: ${voie.color}`"
+      >
+        {{ voie.name }}
       </h1>
     </template>
-    <h2>Aperçu</h2>
+    <!-- <h2>Aperçu</h2> -->
     <Overview :voie="voie" />
     <ContentRenderer :value="voie" />
   </ContentFrame>
 
-  <LvvCta class="pb-10" />
+  <AdherezAuCollectif class="pb-10" />
 </template>
 
 <script setup>
@@ -37,10 +34,10 @@ const { data: voie } = await useAsyncData(`${path}`, () => {
     .findOne();
 });
 
-const description = `Tout savoir sur la Voie Lyonnaise ${voie.value.line}. Avancement, carte interactive, détail rue par rue, calendrier des travaux et photos du projet.`;
+const description = `Tout savoir sur la  ${voie.value.name}. Avancement, carte interactive, détail rue par rue, calendrier des travaux et photos du projet.`;
 const coverImage = voie.value.cover;
 useHead({
-  title: `Voie Lyonnaise ${voie.value.line}`,
+  title: `${voie.value.name}`,
   meta: [
     // description
     { hid: 'description', name: 'description', content: description },

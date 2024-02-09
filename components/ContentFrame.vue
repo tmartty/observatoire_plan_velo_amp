@@ -69,24 +69,24 @@
     </div>
     <div class="relative px-4 sm:px-6 lg:px-8">
       <div class="text-lg max-w-prose mx-auto">
-        <span
+        <!-- <span
           v-if="header"
           class="block text-base text-center text-cvv-blue-600 font-semibold tracking-wide uppercase"
           >{{ header }}</span
-        >
-        <h1
+        > -->
+        <!-- <h1
           v-if="title"
           class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
         >
           {{ title }}
-        </h1>
+        </h1> -->
         <slot name="header" />
-        <p class="mt-8 text-xl text-gray-500 leading-8 text-justify">
+        <!-- <p v-if="description" class="mt-8 text-xl text-gray-500 leading-8 text-justify">
           {{ description }}
-        </p>
+        </p> -->
       </div>
       <div class="mt-6 prose prose-lg text-gray-500 mx-auto">
-        <img v-if="imageUrl" class="w-full rounded-lg" :src="imageUrl" width="1310" height="873" />
+        <!-- <img v-if="imageUrl" class="w-full rounded-lg" :src="imageUrl" width="1310" height="873" /> -->
         <slot />
       </div>
     </div>
@@ -95,9 +95,9 @@
 
 <script setup>
 defineProps({
-  header: { type: String, required: false, default: undefined },
-  title: { type: String, required: false, default: undefined },
-  description: { type: String, required: true },
-  imageUrl: { type: String, required: false }
+  // header: { type: String, required: false, default: false }
+  // title: { type: String, required: false, default: false },
+  // description: { type: String, required: false, default: false },
+  // imageUrl: { type: String, required: false, default: false }
 });
 </script>
