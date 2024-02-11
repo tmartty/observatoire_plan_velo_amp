@@ -603,7 +603,26 @@ export const useMap = () => {
     }
   }
 
+  // plot base bike infrastructure from marseille_all_bike_lanes.geojson file
+  function plotBaseBikeInfrastructure({ map }: { map: any; }) {
+    map.addSource('base-infrastructure', {
+      type: 'geojson',
+      data: '/data/marseille_all_bike_lanes.geojson'
+    });
+    map.addLayer({
+      id: 'base-infrastructure',
+      type: 'line',
+      source: 'base-infrastructure',
+      paint: {
+        'line-width': 1,
+        'line-color': '#000000',
+      }
+      // push layer to the background
+    }, 'highlight');
+  }
+
   return {
+    plotBaseBikeInfrastructure,
     plotPlannedSections,
     plotDoneSections,
     plotWipSections,
