@@ -139,6 +139,12 @@ onMounted(() => {
 
   map.on('load', () => {
     plotFeatures({ map, features: props.features });
+
+    // make sure the "place-other" layer remains on top for better visibility
+    map.on('dataloading', () => {
+      if (map.getLayer('place-other')) map.moveLayer('place-other', null);
+    });
+
     const tailwindMdBreakpoint = 768;
     if (window.innerWidth > tailwindMdBreakpoint) {
       fitBounds({ map, features: props.features });
