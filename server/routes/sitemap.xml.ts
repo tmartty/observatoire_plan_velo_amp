@@ -4,7 +4,7 @@ import fs from 'fs'
 import { SitemapStream, streamToPromise } from 'sitemap'
 import { serverQueryContent } from '#content/server'
 
-const BASE_URL = ''
+const BASE_URL = 'https://observatoire-plan-velo-amp.vercel.app/'
 
 export default defineEventHandler(async (event) => {
   const sitemap = new SitemapStream({ hostname: BASE_URL })
