@@ -604,10 +604,13 @@ export const useMap = () => {
   }
 
   // plot base bike infrastructure from marseille_all_bike_lanes.geojson file
-  function plotBaseBikeInfrastructure({ map }: { map: any; }) {
+  async function plotBaseBikeInfrastructure({ map }: { map: any; }) {
+    const apiUrl = "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%3Barea%5B%22name%22%3D%22Marseille%22%5D%2D%3E%2EsearchArea%3B%28way%5B%22highway%22%7E%22cycleway%7Ccycleway%5Flane%7Ccycleway%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22bicycle%22%7E%22designated%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22lane%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22lane%22%5D%28area%2EsearchArea%29%3B%29%3Bout%20ids%20geom%3B%3E%3Bout%20skel%20qt%3B%0A";
+    const data = await fetchBikeLanesGeojsonData(apiUrl);
+
     map.addSource('base-infrastructure', {
       type: 'geojson',
-      data: '/data/marseille_all_bike_lanes.geojson'
+      data: data
     });
     map.addLayer({
       id: 'base-infrastructure',
@@ -620,6 +623,36 @@ export const useMap = () => {
       // push layer to the background
     }, 'highlight');
   }
+
+  async function fetchBikeLanesGeojsonData(apiUrl: string): Promise<any> {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    const geojson = {
+        type: "FeatureCollection",
+        features: data.elements.map((element: any) => {
+            if (!element.geometry) return [];
+            const feature = {
+                type: "Feature",
+                properties: {
+                    id: element.id,
+                    tags: element.tags,
+                },
+                geometry: {
+                    type: "LineString",
+                    coordinates: element.geometry.map((geometry: any) => {
+                        return [geometry.lon, geometry.lat];
+                    })
+                },
+            };
+            return feature;
+        }),
+    };
+
+    geojson.features = geojson.features.filter((feature: any) => feature.type);
+
+    return geojson;
+}
 
   return {
     plotBaseBikeInfrastructure,

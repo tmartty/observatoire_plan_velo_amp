@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
     <LegendModal ref="legendModalComponent" />
-    <div id="map" class="rounded-lg h-full w-full" />
+    <div id="map" class="relative rounded-lg h-full w-full" />
     <img
       v-if="options.logo"
       class="my-0 absolute bottom-0 right-0 z-10 p-2 md:p-4 size-16 md:size-24"
@@ -121,7 +121,7 @@ onMounted(() => {
     const allBikeInfrastructureControl = new AllBikeInfrastructureControl({
       // if it doesn't exist, create the base layer that shows all bike infrastructure based on OSM
       // otherwise, toggle it's visibility
-      onClick: () => {
+      onClick: async () => {
         if (map.getLayer('base-infrastructure')) {
           const visibility = map.getLayoutProperty('base-infrastructure', 'visibility');
           map.setLayoutProperty(
@@ -130,7 +130,19 @@ onMounted(() => {
             visibility === 'visible' || !visibility ? 'none' : 'visible'
           );
         } else {
-          plotBaseBikeInfrastructure({ map });
+          // create an overlay on the map while the data is loading
+          map.addLayer({
+            id: 'loading-overlay',
+            type: 'background',
+            paint: {
+              'background-color': 'rgba(0, 0, 0, 0.25)'
+            }
+          });
+
+          await plotBaseBikeInfrastructure({ map });
+
+          // remove the loading spinner and overlay
+          map.removeLayer('loading-overlay');
         }
       }
     });
