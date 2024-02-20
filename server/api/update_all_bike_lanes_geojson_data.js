@@ -42,7 +42,7 @@ export default async function updateAllBikeLanesGeojsonData(req) {
     geojson.features = geojson.features.filter((feature) => feature.type)
 
     // save geojson to marseille_all_bike_lanes.geojson
-    const filePath = "./public/data/marseille_all_bike_lanes.geojson"
+    const filePath = `${process.cwd()}/public/data/marseille_all_bike_lanes.geojson`
     fs.writeFileSync(filePath, JSON.stringify(geojson))
 
     // return response
