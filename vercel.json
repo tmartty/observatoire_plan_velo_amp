@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/update_all_bike_lanes_geojson_data.js",
+      "schedule": "0 4 * * *"
+    }
+  ]
+}
