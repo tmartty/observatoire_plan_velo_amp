@@ -32,6 +32,7 @@
         </dl>
       </div>
     </div>
+    <ProgressBar :voies="voies" :alternativeColor="voie.color" class="mt-8 md:mt-10" />
     <section aria-labelledby="shipping-heading" class="mt-10">
       <ClientOnly>
         <Map :features="features" :options="mapOptions" style="height: 40vh" />
@@ -57,6 +58,7 @@ const mapOptions = {
 const { data: geojson } = await useAsyncData(`geojson-${path}`, () => {
   return queryContent('lignes').where({ _type: 'json', _path: voie._path }).findOne();
 });
+const voies = [geojson.value];
 
 const features = geojson.value.features;
 
