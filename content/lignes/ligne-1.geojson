@@ -1480,12 +1480,12 @@
       "properties": {
         "Réseau": "Structurant",
         "line": 1,
-        "status": "Réalisé dans le plan vélo 2024",
+        "status": "En travaux",
         "name": "Prom. Georges Pompidou",
-        "Réalisation": "Bande sur trottoir",
-        "COMMENTAIRE": "",
+        "Réalisation": "Piste cyclable",
+        "COMMENTAIRE": "Bande cyclable sur trottoir réalisé dans le plan vélo 2024. Transformée en piste cyclable sur chaussée en 2024",
         "Phase": "2019-2024",
-        "Typologie": "Bande cyclable sur trottoir",
+        "Typologie": "Piste cyclable",
         "calculated_length": 892.171
       },
       "geometry": {
