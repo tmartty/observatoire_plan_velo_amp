@@ -22,27 +22,13 @@
         </div>
         <PopoverGroup as="nav" class="hidden md:flex space-x-10">
           <NuxtLink
-            to="/carte-interactive"
+            v-for="navItem in navItems"
+            :to="navItem.path"
             class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
             @click="close()"
           >
-            Carte interactive
+            {{ navItem.name }}
           </NuxtLink>
-          <!-- <NuxtLink
-            to="/historique"
-            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
-            @click="close()"
-          >
-            Actualités
-          </NuxtLink> -->
-          <NuxtLink
-            to="/plan-officiel"
-            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
-            @click="close()"
-          >
-            Plan officiel
-          </NuxtLink>
-
           <Popover v-slot="{ open }" class="relative">
             <PopoverButton
               :class="[
@@ -176,6 +162,7 @@ import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from '@headlessui/
 
 const navItems = [
   { name: 'Carte interactive', path: '/carte-interactive' },
+  { name: 'Évolution', path: '/evolution' },
   { name: 'Plan officiel', path: '/plan-officiel' }
 ];
 
