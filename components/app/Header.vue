@@ -96,7 +96,7 @@
         focus
         class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden"
       >
-        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+        <div class="rounded-lg shadow-lg bg-white divide-y-2 divide-gray-50">
           <div class="pt-5 pb-6 px-5">
             <div class="flex items-center justify-between">
               <NuxtLink to="/" @click="close()">
