@@ -14,7 +14,7 @@
         </div>
         <div class="-mr-2 -my-2 md:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cvv-blue-600"
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100"
           >
             <span class="sr-only">Ouvrir menu</span>
             <Icon name="mdi:menu" class="h-6 w-6" aria-hidden="true" />
@@ -24,7 +24,8 @@
           <NuxtLink
             v-for="navItem in navItems"
             :to="navItem.path"
-            class="text-base font-medium text-gray-500 hover:text-cvv-blue-600"
+            class="text-base hover:text-cvv-blue-600 font-medium"
+            :class="[$route.path === navItem.path ? 'text-cvv-blue-600' : 'text-gray-500']"
             @click="close()"
           >
             {{ navItem.name }}
@@ -33,7 +34,7 @@
             <PopoverButton
               :class="[
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-cvv-blue-600 focus:outline-none focus:ring-2 focus:ring-cvv-blue-600 focus:ring-offset-2'
+                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-cvv-blue-600    '
               ]"
             >
               <span>Lignes</span>
@@ -107,7 +108,7 @@
               </NuxtLink>
               <div class="-mr-2">
                 <PopoverButton
-                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cvv-blue-600"
+                  class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100"
                 >
                   <span class="sr-only">Fermer menu</span>
                   <Icon name="mdi:close" class="h-6 w-6" aria-hidden="true" />
