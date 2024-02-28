@@ -76,10 +76,7 @@ function plotFeatures({ map, features }) {
   // plotPostponedSections({ map, features });
   // plotPerspective({ map, features });
 
-  const tailwindMdBreakpoint = 768;
-  if (window.innerWidth > tailwindMdBreakpoint) {
-    fitBounds({ map, features: props.features });
-  }
+  fitBounds({ map, features: props.features });
 }
 
 onMounted(() => {
