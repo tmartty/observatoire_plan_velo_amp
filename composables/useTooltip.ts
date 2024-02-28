@@ -55,6 +55,8 @@ export const useTooltip = () => {
   const { getLineColor } = useColors();
 
   function getTooltipHtml(feature: Feature) {
+    console.log(Object.entries(feature.properties).map(([key, value]) => `${key}: ${value}`).join('\n'));
+
     const color = getLineColor(feature.properties.ligne);
     return `
       <div class="not-prose text-black">
