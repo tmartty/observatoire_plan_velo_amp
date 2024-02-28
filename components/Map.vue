@@ -75,6 +75,11 @@ function plotFeatures({ map, features }) {
   // plotUnknownSections({ map, features });
   // plotPostponedSections({ map, features });
   // plotPerspective({ map, features });
+
+  const tailwindMdBreakpoint = 768;
+  if (window.innerWidth > tailwindMdBreakpoint) {
+    fitBounds({ map, features: props.features });
+  }
 }
 
 onMounted(() => {
@@ -157,11 +162,6 @@ onMounted(() => {
     map.on('dataloading', () => {
       if (map.getLayer('place-other')) map.moveLayer('place-other', null);
     });
-
-    const tailwindMdBreakpoint = 768;
-    if (window.innerWidth > tailwindMdBreakpoint) {
-      fitBounds({ map, features: props.features });
-    }
   });
 
   watch(
