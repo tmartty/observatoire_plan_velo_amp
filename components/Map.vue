@@ -61,7 +61,8 @@ const {
   fitBounds
 } = useMap();
 
-const { getTooltipHtml, getTooltipPerspective } = useTooltip();
+const { getTooltipHtml } = useTooltip();
+// const { getTooltipHtml, getTooltipPerspective } = useTooltip();
 
 function plotFeatures({ map, features }) {
   // plotBaseBikeInfrastructure({ map });
@@ -181,24 +182,24 @@ onMounted(() => {
       return;
     }
 
-    const isPerspectiveLayerClicked = features.some(({ layer }) => layer.id === 'perspectives');
+    // const isPerspectiveLayerClicked = features.some(({ layer }) => layer.id === 'perspectives');
 
-    if (isPerspectiveLayerClicked) {
-      const feature = features.find(({ layer }) => layer.id === 'perspectives');
-      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
-        .setLngLat(e.lngLat)
-        .setHTML(getTooltipPerspective(feature.properties))
-        .addTo(map);
-    } else {
-      const { line, name } = features[0].properties;
-      const feature = props.features.find(
-        feature => feature.properties.line === line && feature.properties.name === name
-      );
-      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
-        .setLngLat(e.lngLat)
-        .setHTML(getTooltipHtml(feature))
-        .addTo(map);
-    }
+    // if (isPerspectiveLayerClicked) {
+    //   const feature = features.find(({ layer }) => layer.id === 'perspectives');
+    //   new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+    //     .setLngLat(e.lngLat)
+    //     .setHTML(getTooltipPerspective(feature.properties))
+    //     .addTo(map);
+    // } else {
+    const { ligne, nom } = features[0].properties;
+    const feature = props.features.find(
+      feature => feature.properties.ligne === ligne && feature.properties.nom === nom
+    );
+    new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+      .setLngLat(e.lngLat)
+      .setHTML(getTooltipHtml(feature))
+      .addTo(map);
+    // }
   });
 });
 </script>

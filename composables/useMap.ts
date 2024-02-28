@@ -147,16 +147,16 @@ export const useMap = () => {
 
   function plotDoneSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-    .filter(feature => feature.properties.status.includes('Réalisé'))
+      .filter(feature => feature.properties.statut.includes('Réalisé'))
       .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
+        const lineA = featureA.properties.ligne;
+        const lineB = featureB.properties.ligne;
         return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
       })
       .map(feature => ({
         ...feature,
         properties: {
-          color: getLineColor(feature.properties.line),
+          color: getLineColor(feature.properties.ligne),
           ...feature.properties
         }
       }));
@@ -179,23 +179,23 @@ export const useMap = () => {
       source: 'done-sections',
       paint: {
         'line-width': 6,
-        'line-color': ['get', 'color'],
+        'line-color': ['get', 'color']
       }
     });
   }
 
   function plotWipSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-    .filter(feature => feature.properties.status.includes('travaux'))
+      .filter(feature => feature.properties.statut.includes('travaux'))
       .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
+        const lineA = featureA.properties.ligne;
+        const lineB = featureB.properties.ligne;
         return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
       })
       .map(feature => ({
         ...feature,
         properties: {
-          color: getLineColor(feature.properties.line),
+          color: getLineColor(feature.properties.ligne),
           ...feature.properties
         }
       }));
@@ -246,16 +246,16 @@ export const useMap = () => {
 
   function plotPlannedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-      .filter(feature => feature.properties.status.includes('A réaliser'))
+      .filter(feature => feature.properties.statut.includes('A réaliser'))
       .sort((featureA, featureB) => {
-        const lineA = featureA.properties.line;
-        const lineB = featureB.properties.line;
+        const lineA = featureA.properties.ligne;
+        const lineB = featureB.properties.ligne;
         return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
       })
       .map(feature => ({
         ...feature,
         properties: {
-          color: getLineColor(feature.properties.line),
+          color: getLineColor(feature.properties.ligne),
           ...feature.properties
         }
       }));
@@ -274,23 +274,23 @@ export const useMap = () => {
       paint: {
         'line-width': 4,
         'line-color': ['get', 'color'],
-        'line-dasharray': [1, 1],
+        'line-dasharray': [1, 1]
       }
     });
   }
 
   // function plotVarianteSections({ map, features }: { map: any; features: LineStringFeature[] }) {
   //   const sections = features
-  //     .filter(feature => feature.properties.status === 'variante')
+  //     .filter(feature => feature.properties.statut === 'variante')
   //     .sort((featureA, featureB) => {
-  //       const lineA = featureA.properties.line;
-  //       const lineB = featureB.properties.line;
+  //       const lineA = featureA.properties.ligne;
+  //       const lineB = featureB.properties.ligne;
   //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
   //     })
   //     .map(feature => ({
   //       ...feature,
   //       properties: {
-  //         color: getLineColor(feature.properties.line),
+  //         color: getLineColor(feature.properties.ligne),
   //         ...feature.properties
   //       }
   //     }));
@@ -335,16 +335,16 @@ export const useMap = () => {
 
   // function plotVariantePostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
   //   const sections = features
-  //     .filter(feature => feature.properties.status === 'variante-postponed')
+  //     .filter(feature => feature.properties.statut === 'variante-postponed')
   //     .sort((featureA, featureB) => {
-  //       const lineA = featureA.properties.line;
-  //       const lineB = featureB.properties.line;
+  //       const lineA = featureA.properties.ligne;
+  //       const lineB = featureB.properties.ligne;
   //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
   //     })
   //     .map(feature => ({
   //       ...feature,
   //       properties: {
-  //         color: getLineColor(feature.properties.line),
+  //         color: getLineColor(feature.properties.ligne),
   //         ...feature.properties
   //       }
   //     }));
@@ -389,16 +389,16 @@ export const useMap = () => {
 
   // function plotUnknownSections({ map, features }: { map: any; features: LineStringFeature[] }) {
   //   const sections = features
-  //     .filter(feature => feature.properties.status === 'unknown')
+  //     .filter(feature => feature.properties.statut === 'unknown')
   //     .sort((featureA, featureB) => {
-  //       const lineA = featureA.properties.line;
-  //       const lineB = featureB.properties.line;
+  //       const lineA = featureA.properties.ligne;
+  //       const lineB = featureB.properties.ligne;
   //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
   //     })
   //     .map(feature => ({
   //       ...feature,
   //       properties: {
-  //         color: getLineColor(feature.properties.line),
+  //         color: getLineColor(feature.properties.ligne),
   //         ...feature.properties
   //       }
   //     }));
@@ -461,16 +461,16 @@ export const useMap = () => {
 
   // function plotPostponedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
   //   const sections = features
-  //     .filter(feature => feature.properties.status === 'postponed')
+  //     .filter(feature => feature.properties.statut === 'postponed')
   //     .sort((featureA, featureB) => {
-  //       const lineA = featureA.properties.line;
-  //       const lineB = featureB.properties.line;
+  //       const lineA = featureA.properties.ligne;
+  //       const lineB = featureB.properties.ligne;
   //       return sortOrder.indexOf(lineA) - sortOrder.indexOf(lineB);
   //     })
   //     .map(feature => ({
   //       ...feature,
   //       properties: {
-  //         color: getLineColor(feature.properties.line),
+  //         color: getLineColor(feature.properties.ligne),
   //         ...feature.properties
   //       }
   //     }));
@@ -533,7 +533,7 @@ export const useMap = () => {
   //     .map(feature => ({
   //       ...feature,
   //       properties: {
-  //         color: getLineColor(feature.properties.line),
+  //         color: getLineColor(feature.properties.ligne),
   //         ...feature.properties
   //       }
   //     }));
@@ -604,24 +604,28 @@ export const useMap = () => {
   }
 
   // plot base bike infrastructure from marseille_all_bike_lanes.geojson file
-  async function plotBaseBikeInfrastructure({ map }: { map: any; }) {
-    const apiUrl = "https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%3Barea%5B%22name%22%3D%22Marseille%22%5D%2D%3E%2EsearchArea%3B%28way%5B%22highway%22%7E%22cycleway%7Ccycleway%5Flane%7Ccycleway%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22bicycle%22%7E%22designated%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22opposite%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22opposite%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22lane%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22lane%22%5D%28area%2EsearchArea%29%3B%29%3Bout%20ids%20geom%3B%3E%3Bout%20skel%20qt%3B%0A";
+  async function plotBaseBikeInfrastructure({ map }: { map: any }) {
+    const apiUrl =
+      'https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%3Barea%5B%22name%22%3D%22Marseille%22%5D%2D%3E%2EsearchArea%3B%28way%5B%22highway%22%7E%22cycleway%7Ccycleway%5Flane%7Ccycleway%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22bicycle%22%7E%22designated%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22track%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22opposite%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22opposite%5Ftrack%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aleft%22%3D%22lane%22%5D%28area%2EsearchArea%29%3Bway%5B%22cycleway%3Aright%22%3D%22lane%22%5D%28area%2EsearchArea%29%3B%29%3Bout%20ids%20geom%3B%3E%3Bout%20skel%20qt%3B%0A';
     const data = await fetchBikeLanesGeojsonData(apiUrl);
 
     map.addSource('base-infrastructure', {
       type: 'geojson',
       data: data
     });
-    map.addLayer({
-      id: 'base-infrastructure',
-      type: 'line',
-      source: 'base-infrastructure',
-      paint: {
-        'line-width': 1,
-        'line-color': '#000000',
-      }
-      // push layer to the background
-    }, 'highlight');
+    map.addLayer(
+      {
+        id: 'base-infrastructure',
+        type: 'line',
+        source: 'base-infrastructure',
+        paint: {
+          'line-width': 1,
+          'line-color': '#000000'
+        }
+        // push layer to the background
+      },
+      'highlight'
+    );
   }
 
   async function fetchBikeLanesGeojsonData(apiUrl: string): Promise<any> {
@@ -629,30 +633,30 @@ export const useMap = () => {
     const data = await response.json();
 
     const geojson = {
-        type: "FeatureCollection",
-        features: data.elements.map((element: any) => {
-            if (!element.geometry) return [];
-            const feature = {
-                type: "Feature",
-                properties: {
-                    id: element.id,
-                    tags: element.tags,
-                },
-                geometry: {
-                    type: "LineString",
-                    coordinates: element.geometry.map((geometry: any) => {
-                        return [geometry.lon, geometry.lat];
-                    })
-                },
-            };
-            return feature;
-        }),
+      type: 'FeatureCollection',
+      features: data.elements.map((element: any) => {
+        if (!element.geometry) return [];
+        const feature = {
+          type: 'Feature',
+          properties: {
+            id: element.id,
+            tags: element.tags
+          },
+          geometry: {
+            type: 'LineString',
+            coordinates: element.geometry.map((geometry: any) => {
+              return [geometry.lon, geometry.lat];
+            })
+          }
+        };
+        return feature;
+      })
     };
 
     geojson.features = geojson.features.filter((feature: any) => feature.type);
 
     return geojson;
-}
+  }
 
   return {
     plotBaseBikeInfrastructure,

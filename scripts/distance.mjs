@@ -22,13 +22,13 @@ function checkDistance(sections) {
     const distance = section.properties.distance;
     const computedDistance = getLineStringDistance(section.geometry);
     if (Math.abs(distance - computedDistance) > 100) {
-      console.log({ name: section.properties.name, line: section.properties.line, distance, computedDistance })
+      console.log({ name: section.properties.nom, line: section.properties.ligne, distance, computedDistance })
     }
   }
 }
 
 function checkStatus(sections) {
-  const status = sections.map(section => section.properties.status);
+  const status = sections.map(section => section.properties.statut);
   const uniqStatus = [...new Set(status)];
   console.log('uniqStatus >>', uniqStatus)
 }
@@ -48,7 +48,7 @@ function checkHandleDuplicate(sections) {
 
   console.log('ligne, id, tronçon, status, distance')
   for (const section of sectionsWithoutDuplicates) {
-    console.log(`${section.properties.line}, ${section.properties.id || ''}, ${section.properties.name}, ${section.properties.status}, ${section.properties.distance}`)
+    console.log(`${section.properties.ligne}, ${section.properties.id || ''}, ${section.properties.nom}, ${section.properties.statut}, ${section.properties.distance}`)
   }
 }
 

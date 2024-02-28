@@ -27,9 +27,9 @@ const { voies } = defineProps({
 
 const features = getAllUniqLineStrings(voies);
 
-const doneFeatures = features.filter(feature => feature.properties.status.includes('Réalisé'));
-const workInProgressFeatures = features.filter(feature => feature.properties.status.includes('travaux'));
-const missingFeatures = features.filter(feature => feature.properties.status.includes('A réaliser'));
+const doneFeatures = features.filter(feature => feature.properties.statut.includes('Réalisé'));
+const workInProgressFeatures = features.filter(feature => feature.properties.statut.includes('travaux'));
+const missingFeatures = features.filter(feature => feature.properties.statut.includes('A réaliser'));
 
 const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
 const workInProgressDistance = workInProgressFeatures.reduce(

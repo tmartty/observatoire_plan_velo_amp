@@ -62,8 +62,8 @@ const voies = [geojson.value];
 
 const features = geojson.value.features;
 
-const doneFeatures = features.filter(feature => feature.properties.status.includes('Réalisé'));
-const missingFeatures = features.filter(feature => feature.properties.status.includes('A réaliser'));
+const doneFeatures = features.filter(feature => feature.properties.statut.includes('Réalisé'));
+const missingFeatures = features.filter(feature => feature.properties.statut.includes('A réaliser'));
 
 const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
 const missingDistance = missingFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);

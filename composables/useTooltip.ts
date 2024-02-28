@@ -6,10 +6,16 @@ type Feature = {
   type: string;
   properties: {
     id?: string;
-    line: number;
-    name: string;
-    status: Status;
-    doneAt?: string;
+    ligne: number;
+    nom: string;
+    phase: string;
+    statut: Status;
+    date_realisation: string;
+    typologie: string;
+    typologie_interne: string;
+    commentaire: string;
+    calculated_length: number;
+    reseau: string;
   };
   geometry: {
     type: string;
@@ -49,21 +55,21 @@ export const useTooltip = () => {
   const { getLineColor } = useColors();
 
   function getTooltipHtml(feature: Feature) {
-    const color = getLineColor(feature.properties.line);
+    const color = getLineColor(feature.properties.ligne);
     return `
       <div class="not-prose text-black">
         <div class="h-10 flex items-center" style="background-color: ${color}">
           <div class="p-2">
-            <a class='text-white font-bold text-lg hover:underline' href='/ligne-${feature.properties.line}'>
-              Ligne ${feature.properties.line}
+            <a class='text-white font-bold text-lg hover:underline' href='/ligne-${feature.properties.ligne}'>
+              Ligne ${feature.properties.ligne}
             </a>
           </div>
         </div>
         <div class='p-2 flex flex-col gap-2'>
-          <div class='text-xl leading-tight'>${feature.properties.name}</div>
+          <div class='text-xl leading-tight'>${feature.properties.nom}</div>
           <div class='text-md leading-tight'>
-            <span class='text-xs leading-tight font-bold'>${feature.properties.Typologie ? feature.properties.Typologie + ' ' : ''}</span>
-            <span>${feature.properties.status}</span>
+            <span class='text-xs leading-tight font-bold'>${feature.properties.typologie ? feature.properties.typologie + ' ' : ''}</span>
+            <span>${feature.properties.statut}</span>
             <span class='italic'>${feature.properties.calculated_length ? ` (${Math.round(feature.properties.calculated_length)}m)` : ''}</span>
           </div>
         </div>
@@ -72,12 +78,12 @@ export const useTooltip = () => {
   }
 
   function getTooltipPerspective(properties: PerspectiveProperties) {
-    const color = getLineColor(properties.line);
+    const color = getLineColor(properties.ligne);
     return `
       <div class="h-10 flex items-center not-prose text-black" style="background-color: ${color}">
         <div class="p-2">
-          <a class='text-white font-bold text-lg hover:underline' href='/ligne-${properties.line}'>
-            Voie Lyonnaise ${properties.line}
+          <a class='text-white font-bold text-lg hover:underline' href='/ligne-${properties.ligne}'>
+            Ligne ${properties.ligne}
           </a>
         </div>
       </div>

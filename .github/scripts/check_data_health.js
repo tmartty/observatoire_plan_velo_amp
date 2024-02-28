@@ -48,15 +48,15 @@ function checkGeoJsonDataHealth() {
 
               // 3 - check if status is valid
               const validStatus = ['done', 'wip', 'planned', 'postponed', 'unknown', 'variante', 'variante-postponed'];
-              if (!validStatus.includes(properties.status)) {
-                console.error(`Invalid status '${properties.status}' in LineString properties of file: ${filePath}`);
+              if (!validStatus.includes(properties.statut)) {
+                console.error(`Invalid status '${properties.statut}' in LineString properties of file: ${filePath}`);
                 process.exit(1);
               }
 
               // 4 - Check if all done section have a doneAt property
-              if (properties.status === 'done') {
+              if (properties.statut === 'done') {
                 if (!properties.hasOwnProperty('doneAt')) {
-                  console.error(`Missing key 'doneAt' in VL ${properties.line}, tronçon: ${properties.name}`);
+                  console.error(`Missing key 'doneAt' in VL ${properties.ligne}, tronçon: ${properties.nom}`);
                   process.exit(1);
                 }
 
@@ -81,7 +81,7 @@ function checkGeoJsonDataHealth() {
                 const dateRegex = /^\d{2}\/\d{2}\/\d{4}$/;
                 if (!dateRegex.test(properties.doneAt)) {
                   console.error(
-                    `Invalid doneAt format '${properties.doneAt}' in VL ${properties.line}, tronçon: ${properties.name}`
+                    `Invalid doneAt format '${properties.doneAt}' in VL ${properties.ligne}, tronçon: ${properties.nom}`
                   );
                   process.exit(1);
                 }
