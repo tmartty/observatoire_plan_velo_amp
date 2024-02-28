@@ -188,10 +188,8 @@ onMounted(() => {
     //     .setHTML(getTooltipPerspective(feature.properties))
     //     .addTo(map);
     // } else {
-    const { ligne, nom } = features[0].properties;
-    const feature = props.features.find(
-      feature => feature.properties.ligne === ligne && feature.properties.nom === nom
-    );
+    const { ligne, id } = features[0].properties;
+    const feature = props.features.find(feature => feature.properties.ligne === ligne && feature.properties.id === id);
     new maplibregl.Popup({ closeButton: false, closeOnClick: true })
       .setLngLat(e.lngLat)
       .setHTML(getTooltipHtml(feature))
