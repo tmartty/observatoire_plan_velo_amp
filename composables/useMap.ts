@@ -599,7 +599,10 @@ export const useMap = () => {
       for (const coord of [...allLineStringsCoordinates, ...allPointsCoordinates]) {
         bounds.extend(coord);
       }
-      map.fitBounds(bounds, { padding: 20 });
+      map.fitBounds(bounds, {
+        maxZoom: 14,
+        padding: 20
+      });
     }
   }
 
