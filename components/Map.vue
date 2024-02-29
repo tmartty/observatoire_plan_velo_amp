@@ -64,8 +64,7 @@ const {
   fitBounds
 } = useMap();
 
-const { getTooltipHtml } = useTooltip();
-// const { getTooltipHtml, getTooltipPerspective } = useTooltip();
+const { getTooltipSectionInfo, getTooltipParking } = useTooltip();
 
 function plotFeatures({ map, features }) {
   // plotBaseBikeInfrastructure({ map });
@@ -215,29 +214,31 @@ onMounted(() => {
       return;
     }
 
-    // const isPerspectiveLayerClicked = features.some(({ layer }) => layer.id === 'perspectives');
+    const isParking = features.some(({ layer }) => layer.id === 'bike-parking');
 
-    // if (isPerspectiveLayerClicked) {
-    //   const feature = features.find(({ layer }) => layer.id === 'perspectives');
-    //   new maplibregl.Popup({ closeButton: false, closeOnClick: true })
-    //     .setLngLat(e.lngLat)
-    //     .setHTML(getTooltipPerspective(feature.properties))
-    //     .addTo(map);
-    // } else {
-    const { ligne, id } = features[0].properties;
-    const feature = props.features.find(feature => feature.properties.ligne === ligne && feature.properties.id === id);
-    new maplibregl.Popup({ closeButton: false, closeOnClick: true })
-      .setLngLat(e.lngLat)
-      .setHTML(getTooltipHtml(feature))
-      .addTo(map);
-    // }
+    if (isParking) {
+      const feature = features.find(({ layer }) => layer.id === 'bike-parking');
+      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+        .setLngLat(e.lngLat)
+        .setHTML(getTooltipParking(feature.properties))
+        .addTo(map);
+    } else {
+      const { ligne, id } = features[0].properties;
+      const feature = props.features.find(
+        feature => feature.properties.ligne === ligne && feature.properties.id === id
+      );
+      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+        .setLngLat(e.lngLat)
+        .setHTML(getTooltipSectionInfo(feature))
+        .addTo(map);
+    }
   });
 });
 </script>
 
 <style>
 .maplibregl-popup-content {
-  @apply p-0 rounded-lg overflow-hidden max-w-full w-56;
+  @apply p-0 rounded-lg overflow-hidden max-w-full;
 }
 
 .maplibregl-info {

@@ -1,12 +1,21 @@
 import maplibregl from 'maplibre-gl';
 
+type Status = 'done' | 'wip' | 'planned' | 'postponed' | 'variante';
+
 type LineStringFeature = {
   type: 'Feature';
   properties: {
-    line: number;
-    name: string;
-    status: string;
-    doneAt?: string;
+    id?: string;
+    ligne: number;
+    nom: string;
+    phase: string;
+    statut: Status;
+    date_realisation: string;
+    typologie: string;
+    typologie_interne: string;
+    commentaire: string;
+    calculated_length: number;
+    reseau: string;
   };
   geometry: {
     type: 'LineString';
@@ -25,6 +34,41 @@ type PointFeature = {
     type: 'Point';
     coordinates: [number, number];
   };
+};
+
+// bike parking types translated to French, possible values source:
+// https://wiki.openstreetmap.org/wiki/Key:bicycle_parking
+interface Translations {
+  [key: string]: string;
+}
+
+const parkingTypes: Translations = {
+  stands: 'arceaux',
+  wide_stands: 'arceaux larges',
+  bollard: 'potelet',
+  wave: 'vague',
+  handlebar_holder: 'porte guidon',
+  streetpod: 'streetpod',
+  rack: 'rack',
+  wall_loops: 'boucles murales',
+  safe_loops: 'boucles sécurisées',
+  building: 'bâtiment',
+  shed: 'abri',
+  'two-tier': 'à deux niveaux',
+  lockers: 'casiers',
+  tree: 'arbre',
+  ground_slots: 'emplacements au sol',
+  crossbar: 'barre transversale',
+  rope: 'corde',
+  floor: 'sol',
+  informal: 'informel',
+  saddle_holder: 'porte-selle',
+  arcadia: 'arcadia',
+  anchors: 'ancrages',
+  lean_and_stick: 'appui et collage',
+  upright_stands: 'supports verticaux',
+  hoop: 'cerceau',
+  wheelbender: 'cintreur de roue'
 };
 
 // features plotted last are on top
@@ -609,7 +653,7 @@ export const useMap = () => {
   // plot bike parking spots from OSM API
   async function plotBikeParking({ map }: { map: any }) {
     const apiUrl =
-      'https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%3Barea%283600076469%29%2D%3E%2EsearchArea%3B%28node%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3Bway%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3Brelation%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3B%29%3Bout%20ids%20geom%3B%3E%3Bout%20skel%20qt%3B%0A';
+      'https://overpass-api.de/api/interpreter?data=%5Bout%3Ajson%5D%3Barea%283600076469%29%2D%3E%2EsearchArea%3B%28node%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3Bway%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3Brelation%5B%22amenity%22%3D%22bicycle%5Fparking%22%5D%28area%2EsearchArea%29%3B%29%3Bout%20geom%3B%3E%3Bout%20skel%20qt%3B%0A';
     const data = await fetchBikeParkingGeojsonData(apiUrl);
 
     map.addSource('bike-parking', {
@@ -705,7 +749,11 @@ export const useMap = () => {
           const feature = {
             type: 'Feature',
             properties: {
-              id: element.id
+              id: element.id,
+              capacity: element.tags ? element.tags.capacity : '???',
+              type: element.tags
+                ? parkingTypes[element.tags.bicycle_parking] || element.tags.bicycle_parking
+                : 'type inconnu'
             },
             geometry: {
               type: 'Point',

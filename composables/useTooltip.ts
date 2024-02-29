@@ -23,10 +23,16 @@ type Feature = {
   };
 };
 
-type PerspectiveProperties = {
-  line: number;
-  imgUrl: string;
+type ParkingProperties = {
+  id: number;
+  type: string;
+  capacity: number;
 };
+
+// type PerspectiveProperties = {
+//   line: number;
+//   imgUrl: string;
+// };
 
 // function getStatusText(status: Status, doneAt?: string): string {
 //   const statusText = {
@@ -54,12 +60,16 @@ function getDoneAtText(doneAt: string): string {
 export const useTooltip = () => {
   const { getLineColor } = useColors();
 
-  function getTooltipHtml(feature: Feature) {
-    console.log(Object.entries(feature.properties).map(([key, value]) => `${key}: ${value}`).join('\n'));
+  function getTooltipSectionInfo(feature: Feature) {
+    console.log(
+      Object.entries(feature.properties)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join('\n')
+    );
 
     const color = getLineColor(feature.properties.ligne);
     return `
-      <div class="not-prose text-black">
+      <div class="not-prose text-black w-56">
         <div class="h-10 flex items-center" style="background-color: ${color}">
           <div class="p-2">
             <a class='text-white font-bold text-lg hover:underline' href='/ligne-${feature.properties.ligne}'>
@@ -79,6 +89,27 @@ export const useTooltip = () => {
     `;
   }
 
+  function getTooltipParking(data: ParkingProperties) {
+    console.log(
+      Object.entries(data)
+        .map(([key, value]) => `${key}: ${value}`)
+        .join('\n')
+    );
+
+    return `
+      <div class="not-prose text-black">
+        <div class="h-10 flex items-center" style="background-color: #429ada;">
+          <div class="p-2 text-white font-bold text-lg text-center">
+            ${data.type || 'type inconnu'}
+          </div>
+        </div>
+        <div class='p-2 flex flex-col gap-2'>
+           ${data.capacity ? `capacité pour ${data.capacity} vélos` : 'capacité inconnue'}
+        </div>
+      </div>
+    `;
+  }
+
   // function getTooltipPerspective(properties: PerspectiveProperties) {
   //   const color = getLineColor(properties.ligne);
   //   return `
@@ -93,6 +124,5 @@ export const useTooltip = () => {
   //   `;
   // }
 
-  // return { getTooltipHtml, getTooltipPerspective };
-  return { getTooltipHtml };
+  return { getTooltipSectionInfo, getTooltipParking };
 };
