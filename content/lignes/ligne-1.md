@@ -1,7 +1,7 @@
 ---
 name: Ligne 1 - Littoral
 line: 1
-color: '#1d4ed8'
+color: '#a95cdd'
 from: L’Estaque
 to: Montredon
 distance: 0

@@ -1,7 +1,7 @@
 ---
 name: Ligne 2 - Est Huveaune
 line: 2
-color: '#b91c1c'
+color: '#cc2b38'
 from: Les plages David
 to: La Penne-sur-Huveaune
 distance: 0
