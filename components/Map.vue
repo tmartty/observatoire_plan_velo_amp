@@ -16,6 +16,7 @@ import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import style from '@/assets/map-styles.json';
 import AllBikeInfrastructureControl from '@/maplibre/AllBikeInfrastructureControl';
+import BikeParkingControl from '@/maplibre/BikeParkingControl';
 import LegendControl from '@/maplibre/LegendControl';
 import FullscreenControl from '@/maplibre/FullscreenControl';
 import ShrinkControl from '@/maplibre/ShrinkControl';
@@ -35,6 +36,7 @@ const props = defineProps({
 const defaultOptions = {
   logo: true,
   legend: true,
+  bikeParking: true,
   allBikeInfrastructureBaseLayer: true,
   geolocation: false,
   fullscreen: false,
@@ -48,6 +50,7 @@ const options = { ...defaultOptions, ...props.options };
 const legendModalComponent = ref(null);
 
 const {
+  plotBikeParking,
   plotBaseBikeInfrastructure,
   plotUnderlinedSections,
   plotPlannedSections,
@@ -120,6 +123,7 @@ onMounted(() => {
     });
     map.addControl(legendControl, 'top-right');
   }
+  // OSM bike infastucture
   if (options.allBikeInfrastructureBaseLayer) {
     const allBikeInfrastructureControl = new AllBikeInfrastructureControl({
       // if it doesn't exist, create the base layer that shows all bike infrastructure based on OSM
@@ -150,6 +154,38 @@ onMounted(() => {
       }
     });
     map.addControl(allBikeInfrastructureControl, 'top-right');
+  }
+  // OSM bike parking spots
+  if (options.bikeParking) {
+    const bikeParkingControl = new BikeParkingControl({
+      // if it doesn't exist, create the base layer based on OSM
+      // otherwise, toggle it's visibility
+      onClick: async () => {
+        if (map.getLayer('bike-parking')) {
+          const visibility = map.getLayoutProperty('bike-parking', 'visibility');
+          map.setLayoutProperty(
+            'bike-parking',
+            'visibility',
+            visibility === 'visible' || !visibility ? 'none' : 'visible'
+          );
+        } else {
+          // create an overlay on the map while the data is loading
+          map.addLayer({
+            id: 'loading-overlay',
+            type: 'background',
+            paint: {
+              'background-color': 'rgba(0, 0, 0, 0.25)'
+            }
+          });
+
+          await plotBikeParking({ map });
+
+          // remove the loading spinner and overlay
+          map.removeLayer('loading-overlay');
+        }
+      }
+    });
+    map.addControl(bikeParkingControl, 'top-right');
   }
 
   map.on('load', () => {
@@ -210,6 +246,14 @@ onMounted(() => {
   pointer-events: auto;
   background-image: url('~/maplibre/info.svg');
   background-size: 85%;
+}
+
+.maplibregl-parking {
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: auto;
+  background-image: url("data:image/svg+xml,%3Csvg width='24px' height='24px' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill-rule='nonzero' d='M6 3h7a6 6 0 1 1 0 12h-3v6H6V3zm4 4v4h3a2 2 0 1 0 0-4h-3z'/%3E%3C/g%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns:dc='http://purl.org/dc/elements/1.1/' xmlns:cc='http://creativecommons.org/ns%23' xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns%23' xmlns:svg='http://www.w3.org/2000/svg' xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='-1.4 -1.4 16.80 16.80' id='svg2' fill='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3Crect x='-1.4' y='-1.4' width='16.80' height='16.80' rx='0' fill='%23fff' strokewidth='0'%3E%3C/rect%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cmetadata id='metadata8'%3E%3Crdf:rdf%3E%3Ccc:work rdf:about=''%3E%3Cdc:format%3Eimage/svg+xml%3C/dc:format%3E%3Cdc:type rdf:resource='http://purl.org/dc/dcmitype/StillImage'%3E%3C/dc:type%3E%3Cdc:title%3E%3C/dc:title%3E%3C/cc:work%3E%3C/rdf:rdf%3E%3C/metadata%3E%3Cdefs id='defs6'%3E%3C/defs%3E%3Crect width='14' height='14' x='0' y='0' id='canvas' style='fill:none;stroke:none;visibility:hidden'%3E%3C/rect%3E%3Cpath d='m 0,0 0,10 2.000077,0 0,-3.5 2.500097,0 c 1.976154,3e-7 3.500135,-1 3.500135,-3.25 C 8.000309,1 6.4871,2e-7 4.968942,0 z m 2.000077,2 2.500097,0 c 0.963608,0 1.500058,0.5254308 1.500058,1.25 0,0.7245692 -0.631804,1.25 -1.500058,1.25 l -2.500097,0 z M 9,7 9,7.5938559 9.500367,8 l 0,0.75 -3.000116,0 0,-0.25 0.50002,0 c 0.479412,0 0.455442,-0.5 0,-0.5 L 5.500213,8 c -0.50002,0 -0.50002,0.452061 0,0.5 l 0.500019,0 0,0.25 -0.562522,1.28125 C 5.296384,10.001436 5.147956,10 5.000193,10 c -1.02182,0 -2.000077,0.793929 -2.000077,2 0,1.206071 0.978257,2 2.000077,2 1.02182,0 1.937575,-0.856429 1.937575,-2.0625 0,-0.150759 -0.0039,-0.302075 -0.03125,-0.4375 l 0.843783,0 1.821945,-2 0.365639,0.78125 C 9.383285,10.615837 9.000348,11.229684 9.000348,12 c 0,1.206071 0.978257,2 2.000077,2 C 12.022246,14 12.938,13.143571 12.938,11.9375 12.938,10.731429 12.022246,10 11.000425,10 c -0.15008,0 -0.292278,0.02946 -0.437517,0.0625 L 10.000386,8.75 10,7.8 z m -2.593502,2.5 2.193834,0 -1.193796,1.25 -0.843782,0 C 6.422636,10.56342 6.258266,10.401358 6.062734,10.28125 z M 5.000193,11 c 0.635098,0 1.000039,0.549217 1.000039,1 0,0.450783 -0.364941,1 -1.000039,1 -0.635098,0 -1.000038,-0.549217 -1.000038,-1 0,-0.450783 0.36494,-1 1.000038,-1 z m 6.000232,0 c 0.635099,0 1.000039,0.549217 1.000039,1 0,0.450783 -0.36494,1 -1.000039,1 -0.635098,0 -1.000039,-0.549217 -1.000039,-1 0,-0.450783 0.364941,-1 1.000039,-1 z' id='parking-bicycle' style='fill:%23000000;fill-rule:evenodd'%3E%3C/path%3E%3C/g%3E%3C/svg%3E"); */
 }
 
 .maplibregl-bike {
