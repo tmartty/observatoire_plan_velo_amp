@@ -6,7 +6,7 @@
       v-if="options.logo"
       class="my-0 absolute bottom-0 right-0 z-10 p-2 md:p-4 size-16 md:size-24"
       src="/logos/collectif_velos_en_ville.png"
-      alt="logo la ville à vélo"
+      alt="logo Collectif Vélos en Ville"
     />
   </div>
 </template>
