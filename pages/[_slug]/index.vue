@@ -1,5 +1,5 @@
 <template>
-  <ContentFrame>
+  <ContentFrame class="pt-8">
     <template #header>
       <h1
         class="text-3xl text-center leading-8 font-bold tracking-tight sm:text-4xl text-white rounded-md px-4 py-2"
@@ -8,11 +8,9 @@
         {{ voie.name }}
       </h1>
     </template>
-    <!-- <h2>Aperçu</h2> -->
     <Overview :voie="voie" />
     <ContentRenderer :value="voie" />
   </ContentFrame>
-
   <AdherezAuCollectif class="pb-10" />
 </template>
 
