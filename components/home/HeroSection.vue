@@ -35,9 +35,9 @@
               >
                 Observatoire
               </span>
-              <span class="mt-1 block text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                <span class="block text-gray-900">Plan Vélo</span>
-                <span class="block text-cvv-blue-600">Marseillaise</span>
+              <span class="mt-1 block tracking-tight font-extrabold">
+                <span class="text-3xl sm:text-4xl xl:text-5xl block text-gray-900">Plan Vélo Métropole</span>
+                <span class="text-3xl sm:text-4xl xl:text-5xl block text-cvv-blue-600">Aix-Marseille-Provence</span>
               </span>
             </h1>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
