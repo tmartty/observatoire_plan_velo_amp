@@ -49,6 +49,10 @@ const stats = [
     distance: `${Math.round(workInProgressDistance / 1000)} km`,
     percent: `${getPercent(workInProgressDistance)}%`
   },
-  { name: 'Prévus', distance: `${Math.round(missingDistance / 1000)} km`, percent: `${getPercent(missingDistance)}%` }
+  {
+    name: 'Manquants',
+    distance: `${Math.round(missingDistance / 1000)} km`,
+    percent: `${getPercent(missingDistance)}%`
+  }
 ];
 </script>
