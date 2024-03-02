@@ -21,7 +21,7 @@ const description =
   'Découvrez la carte interactive des pistes cyclables de Marseille. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
 const COVER_IMAGE_URL = '';
 useHead({
-  title: 'Carte à jour des lignes du Plan Vélo de Marseille',
+  title: 'Carte à jour des lignes du Plan Vélo Métropole Aix-Marseille-Provence',
   meta: [
     // description
     { hid: 'description', name: 'description', content: description },

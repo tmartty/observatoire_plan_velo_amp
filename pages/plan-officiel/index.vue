@@ -10,7 +10,7 @@
       <img
         src="/images/carte-piste-cyclable-plan-velo.jpg"
         class="object-contain hover:cursor-zoom-in max-h-[130vh]"
-        alt="plan officiel du plan vélo métropolitain"
+        alt="carte officiel du Plan Vélo Métropole Aix-Marseille-Provence"
         title="Cliquez pour agrandir la carte"
       />
     </a>
@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-const description = 'Découvrez le plan officiel du plan vélo métropolitain.';
+const description = 'Découvrez le plan officiel du Plan Vélo Métropole Aix-Marseille-Provence.';
 const COVER_IMAGE_URL = `${process.env.BASE_URL}/images/carte-piste-cyclable-plan-velo.jpg`;
 useHead({
   title: 'Plan des lignes vélo sécurisées',

@@ -18,10 +18,10 @@ const { data: voies } = await useAsyncData(() => {
 const features = voies.value.map(voie => voie.features).flat();
 
 const description =
-  'Découvrez la carte interactive du Plan Vélo Marseillais. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
+  'Découvrez la carte interactive du Plan Vélo Métropole Aix-Marseille-Provence. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
 const COVER_IMAGE_URL = '';
 useHead({
-  title: 'Carte à jour du Plan Vélo Marseillais',
+  title: 'Carte à jour du Plan Vélo Métropole Aix-Marseille-Provence',
   meta: [
     // description
     { hid: 'description', name: 'description', content: description },
