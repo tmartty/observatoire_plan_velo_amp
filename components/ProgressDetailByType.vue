@@ -57,13 +57,14 @@ doneFeaturesByType = Object.fromEntries(
   })
 );
 
-console.log(doneFeaturesByType);
-
+const totalMeters = data => {
+  return data.reduce((acc, feature) => acc + feature.properties.calculated_length, 0) / 10;
+};
 const totalKms = data => {
-  return Math.round(data.reduce((acc, feature) => acc + feature.properties.calculated_length, 0) / 100) / 10;
+  return Math.round(totalMeters(data)) / 100;
 };
 const totalPercentage = data => {
-  return Math.round((totalKms(data) / totalKms(doneFeatures)) * 100);
+  return Math.round((totalMeters(data) / totalMeters(doneFeatures)) * 100);
 };
 
 function hexToRgb(hex) {
