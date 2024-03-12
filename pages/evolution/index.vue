@@ -33,8 +33,8 @@ definePageMeta({
 });
 
 const filters = ref([
-  { label: 'avant 2019', match: year => year < 2019, isChecked: false },
-  { label: '2019-2023', match: year => year >= 2019 && year < 2024, isChecked: true },
+  { label: 'avant 2019', match: year => year < 2019, isChecked: true },
+  { label: '2019-2023', match: year => year >= 2019 && year < 2024, isChecked: false },
   { label: '2024', match: year => year == 2024, isChecked: false }
 ]);
 
