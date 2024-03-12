@@ -12,20 +12,25 @@
               ? 1
               : index === 'Voie verte'
                 ? 0.6
-                : index === 'Bande cyclable sur trottoir'
-                  ? 0.5
-                  : index === 'Bande cyclable'
-                    ? 0.4
-                    : 0.3
+                : index === 'Bande cyclable'
+                  ? 0.4
+                  : index === 'Bande cyclable à hauteur de trottoir'
+                    ? 0.2
+                    : 0.2
           })`
         }"
         :title="`${index} : ${totalKms(data)} km`"
+        @hover="highlightFeaturesWithType(index)"
       >
         {{ totalPercentage(data) }}%
       </div>
     </div>
     <ul>
-      <li v-for="(data, index) in doneFeaturesByType" class="text-sm p-1 leading-none">
+      <li
+        v-for="(data, index) in doneFeaturesByType"
+        class="text-sm p-1 leading-none"
+        @hover="highlightFeaturesWithType(index)"
+      >
         {{ totalPercentage(data) }}% {{ index }} ({{ totalKms(data) }} km)
       </li>
     </ul>
@@ -52,7 +57,7 @@ var doneFeaturesByType = doneFeatures.reduce((acc, feature) => {
 // sort keys
 doneFeaturesByType = Object.fromEntries(
   Object.entries(doneFeaturesByType).sort((a, b) => {
-    const order = ['Piste cyclable', 'Voie verte', 'Bande cyclable', 'Bande cyclable sur trottoir'];
+    const order = ['Piste cyclable', 'Voie verte', 'Bande cyclable', 'Bande cyclable à hauteur de trottoir'];
     return order.indexOf(a[0]) - order.indexOf(b[0]);
   })
 );
@@ -76,5 +81,11 @@ function hexToRgb(hex) {
         b: parseInt(result[3], 16)
       }
     : null;
+}
+
+function highlightFeaturesWithType(type) {
+  const features = doneFeaturesByType[type];
+  console.log(features);
+  // highlightFeatures(features);
 }
 </script>
