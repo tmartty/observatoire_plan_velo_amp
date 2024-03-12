@@ -21,7 +21,7 @@ const mapOptions = {
   shrink: true,
   onShrinkControlClick: () => {
     const route = useRoute();
-    return navigateTo({ path: `/${route.params._slug}` });
+    return navigateTo({ path: `/${route.params._ligne}` });
   }
 };
 
