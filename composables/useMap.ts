@@ -119,7 +119,7 @@ export const useMap = () => {
   function plotUnderlinedSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
       .filter(feature => feature.geometry.type === 'LineString')
-      .map((feature, index) => ({ id: index, ...feature }));
+      .map((feature, index) => ({ id: feature.properties.id, ...feature }));
 
     if (sections.length === 0 && !map.getLayer('highlight')) {
       return;
@@ -622,6 +622,13 @@ export const useMap = () => {
   //   });
   // }
 
+  function highlightFeatures({ map, features, value }: { map: any; features: LineStringFeature[]; value: boolean }) {
+    if (!map.getSource('all-sections')) return;
+    for (const feature of features) {
+      map.setFeatureState({ source: 'all-sections', id: feature.properties.id }, { hover: value });
+    }
+  }
+
   function fitBounds({ map, features }: { map: any; features: Array<LineStringFeature | PointFeature> }) {
     const allLineStringsCoordinates = features
       .filter((feature): feature is LineStringFeature => feature.geometry.type === 'LineString')
@@ -781,6 +788,7 @@ export const useMap = () => {
     // plotUnknownSections,
     // plotPostponedSections,
     // plotPerspective,
-    fitBounds
+    fitBounds,
+    highlightFeatures
   };
 };

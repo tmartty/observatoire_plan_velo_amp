@@ -12,6 +12,7 @@
 </template>
 
 <script setup>
+// import { useMapStore } from '@/stores/map';
 import maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import style from '@/assets/map-styles.json';
@@ -88,6 +89,9 @@ onMounted(() => {
     zoom: 12,
     attributionControl: false
   });
+
+  // useMapStore().setMap(map);
+
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
   map.addControl(new maplibregl.AttributionControl({ compact: false }), 'bottom-left');
   if (options.fullscreen) {

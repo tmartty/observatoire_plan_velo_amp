@@ -20,17 +20,12 @@
           })`
         }"
         :title="`${index} : ${totalKms(data)} km`"
-        @hover="highlightFeaturesWithType(index)"
       >
         {{ totalPercentage(data) }}%
       </div>
     </div>
     <ul>
-      <li
-        v-for="(data, index) in doneFeaturesByType"
-        class="text-sm p-1 leading-none"
-        @hover="highlightFeaturesWithType(index)"
-      >
+      <li v-for="(data, index) in doneFeaturesByType" class="text-sm p-1 leading-none">
         {{ totalPercentage(data) }}% {{ index }} ({{ totalKms(data) }} km)
       </li>
     </ul>
@@ -38,6 +33,9 @@
 </template>
 
 <script setup>
+// import { useMapStore } from '@/stores/map';
+// const { highlightFeatures } = useMap();
+
 const { features, color } = defineProps({
   features: { type: Array, required: true },
   color: { type: String, required: false, default: '#429ada' }
@@ -83,9 +81,10 @@ function hexToRgb(hex) {
     : null;
 }
 
-function highlightFeaturesWithType(type) {
-  const features = doneFeaturesByType[type];
-  console.log(features);
-  // highlightFeatures(features);
-}
+// function highlightFeaturesWithType(type, value) {
+//   const map = useMapStore().map;
+//   if (!map) return;
+//   const features = doneFeaturesByType[type];
+//   highlightFeatures({ map, features, value });
+// }
 </script>
