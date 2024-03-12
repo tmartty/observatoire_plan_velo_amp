@@ -22,7 +22,12 @@
     "vitest": "^1.2.2"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
     "highcharts-vue": "^1.4.3",
-    "maplibre-gl": "^3.6.2"
+    "maplibre-gl": "^3.6.2",
+    "pinia": "^2.1.7"
+  },
+  "overrides": {
+    "vue": "latest"
   }
 }

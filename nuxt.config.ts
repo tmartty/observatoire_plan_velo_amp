@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       maptilerKey: process.env.MAPTILER_KEY
     }
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-icon'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-icon', '@pinia/nuxt'],
   content: {
     markdown: {
       tags: { h1: 'h1', h2: 'h2', h3: 'h3', h4: 'h4', h5: 'h5', h6: 'h6' }
