@@ -77,8 +77,6 @@ function plotFeatures({ map, features }) {
   // plotUnknownSections({ map, features });
   // plotPostponedSections({ map, features });
   // plotPerspective({ map, features });
-
-  fitBounds({ map, features: props.features });
 }
 
 onMounted(() => {
@@ -189,6 +187,7 @@ onMounted(() => {
 
   map.on('load', () => {
     plotFeatures({ map, features: props.features });
+    fitBounds({ map, features: props.features });
   });
   // make sure the "place-other" layer remains on top for better visibility
   map.on('dataloading', () => {
