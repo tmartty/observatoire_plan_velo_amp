@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 flex items-center">
+  <div class="py-8 flex flex-col items-center">
     <!-- link when clicking the image to full size -->
     <a
       href="/images/carte-piste-cyclable-plan-velo.jpg"
@@ -14,6 +14,13 @@
         title="Cliquez pour agrandir la carte"
       />
     </a>
+    <HomeLinesSection />
+    <NuxtLink
+      to="/carte-interactive"
+      class="mt-12 flex items-center justify-center px-4 py-3 border border-cvv-blue-600 text-base font-medium rounded-md text-white bg-cvv-blue-600 sm:px-8 duration-100 hover:bg-white hover:text-cvv-blue-600"
+    >
+      Voir la carte complète
+    </NuxtLink>
   </div>
 </template>
 
