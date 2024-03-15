@@ -56,10 +56,10 @@
                   Carte interactive
                 </NuxtLink>
                 <NuxtLink
-                  to="/plan-officiel"
+                  to="/evolution"
                   class="flex items-center justify-center px-4 py-3 text-base font-medium rounded-md text-cvv-blue-600 border border-cvv-blue-600 sm:px-8 duration-100 hover:bg-cvv-blue-600 hover:text-white"
                 >
-                  Plan officiel
+                  Évolution
                 </NuxtLink>
               </div>
             </div>
@@ -68,13 +68,13 @@
             class="mt-12 relative sm:max-w-lg sm:mx-auto lg:-mt-24 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center"
           >
             <div class="relative mx-auto w-full rounded-lg shadow-lg">
-              <div class="relative block w-full bg-white rounded-lg overflow-hidden">
+              <NuxtLink to="/plan-officiel" class="relative block w-full bg-white rounded-lg overflow-hidden">
                 <img
                   class="w-full opacity-90"
-                  src="/images/marseille-a-velo-2.png"
+                  src="/images/carte-piste-cyclable-plan-velo.jpg"
                   alt="Piste cyclable de la Canebière"
                 />
-              </div>
+              </NuxtLink>
             </div>
           </div>
         </div>
