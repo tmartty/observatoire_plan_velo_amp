@@ -24,7 +24,7 @@
   "dependencies": {
     "@pinia/nuxt": "^0.5.1",
     "highcharts-vue": "^1.4.3",
-    "maplibre-gl": "^3.6.2",
+    "maplibre-gl": "^4.1.1",
     "pinia": "^2.1.7"
   },
   "overrides": {
