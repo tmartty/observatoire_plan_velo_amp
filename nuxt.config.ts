@@ -1,8 +1,8 @@
 const TITLE = 'Observatoire Plan Vélo Métropole Aix-Marseille-Provence';
 const DESCRIPTION =
   "Plateforme citoyenne et associative, par Vélos en Ville. Etat d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du Plan Vélo Métropole Aix-Marseille-Provence";
-const BASE_URL = 'https://observatoire-plan-velo-amp.vercel.app/';
-const COVER_IMAGE_URL = '';
+const BASE_URL = 'https://observatoire.velosenville.org/';
+const COVER_IMAGE_URL = 'https://observatoire.velosenville.org/images/carte-piste-cyclable-plan-velo.jpg';
 
 export default defineNuxtConfig({
   app: {
