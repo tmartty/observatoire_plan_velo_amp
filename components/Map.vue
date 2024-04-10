@@ -2,12 +2,14 @@
   <div class="relative">
     <LegendModal ref="legendModalComponent" />
     <div id="map" class="relative rounded-lg h-full w-full" />
-    <img
+    <a
       v-if="options.logo"
       class="my-0 absolute bottom-0 right-0 z-10 p-2 md:p-4 size-16 md:size-24"
-      src="/logos/collectif_velos_en_ville.png"
-      alt="logo Collectif Vélos en Ville"
-    />
+      href="https://velosenville.org"
+      target="_blank"
+    >
+      <img class="m-0" src="/logos/collectif_velos_en_ville.png" alt="logo Collectif Vélos en Ville" />
+    </a>
   </div>
 </template>
 
