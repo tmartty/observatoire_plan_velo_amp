@@ -18,7 +18,7 @@ const { data: lignes } = await useAsyncData(() => {
 const features = lignes.value.map(ligne => ligne.features).flat();
 
 const description =
-  'Découvrez la carte interactive des pistes cyclables de Marseille. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
+  'Découvrez la carte interactive des aménagements cyclables de Marseille. Itinéraires rue par rue. Plan régulièrement mis à jour pour une information complète.';
 const COVER_IMAGE_URL = '';
 useHead({
   title: 'Carte à jour des lignes du Plan Vélo Métropole Aix-Marseille-Provence',
