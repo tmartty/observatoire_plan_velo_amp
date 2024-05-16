@@ -42,7 +42,7 @@
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl text-center">
           <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Où en est le projet ?</h2>
           <p class="text-xl text-gray-500">
-            Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de 26,6 kms.
+            Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de 22,6 kms.
             <br />
             Les travaux devraient être rattrapés lors de la deuxième phase entre 2024-2030.
           </p>
