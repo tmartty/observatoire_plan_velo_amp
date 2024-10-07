@@ -93,10 +93,14 @@
         <h2>Réutilisation du contenu du site</h2>
         <p>
           Toute réutilisation brute des cartographies interactives du site, des chiffres du tableau de bord et des
-          détails écrits des tronçons de chaque ligne doivent faire systématiquement mention du nom de l’association
-          contributrice « Collectif Vélos en Ville ».
+          détails écrits des tronçons de chaque ligne doivent faire systématiquement mention du nom de la plateforme «
+          Observatoire Plan Vélo » (avec lien vers
+          <a href="https://observatoire.velosenville.org/" rel="noopener noreferrer" target="_blank"></a
+          ><a href="https://observatoire.velosenville.org/" rel="nofollow">www.observatoire.velosenville.org</a>) et du
+          nom de l’association contributrice « Collectif Vélos en Ville » (avec lien vers
+          <a href="https://www.velosenville.org/" rel="noopener noreferrer" target="_blank"></a
+          ><a href="https://www.velosenville.org/" rel="nofollow">www.velosenville.org</a>).
         </p>
-
         <h2>Limitation de responsabilité</h2>
         <p>
           Nous nous efforçons de fournir sur notre site web des informations exactes, complètes et à jour. Cependant, le
