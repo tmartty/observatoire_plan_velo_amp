@@ -10,4 +10,32 @@ trafic: '-'
 cover: '-'
 ---
 
-##
+## Sections
+
+### Bd Mireille Lauze
+
+<em>information à compléter</em>
+
+---
+
+### Route de la légion
+
+<em>information à compléter</em>
+
+---
+
+### Chemin de l'huveaune
+
+<em>information à compléter</em>
+
+---
+
+### Sentier pédestre de l'huveaune
+
+<em>information à compléter</em>
+
+---
+
+### Bd de la gare
+
+<em>information à compléter</em>
