@@ -94,12 +94,13 @@ export const useTooltip = () => {
             <span>${feature.properties.statut}</span>
             <span class='italic'>${feature.properties.calculated_length ? ` (${Math.round(feature.properties.calculated_length)}m)` : ''}</span>
           </div>
-          <a class='italic inline-flex text-right hover:underline items-center gap-2 justify-end' href='${getSectionDetailsUrl(feature.properties)}'>
-            voir le detail <svg class='size-5' data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          </a>
-        </div>
-      </div>
-    `;
+          </div>
+          </div>
+          `;
+    // TODO: re-enable link for detail on each section
+    // <a class='italic inline-flex text-right hover:underline items-center gap-2 justify-end' href='${getSectionDetailsUrl(feature.properties)}'>
+    //   voir le detail <svg class='size-5' data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    // </a>
   }
 
   function getTooltipParking(data: ParkingProperties) {

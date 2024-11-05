@@ -9,7 +9,8 @@
       </h1>
     </template>
     <Overview :voie="voie" />
-    <ContentRenderer :value="voie" />
+    <!-- TODO: re-enable detail on each section -->
+    <!-- <ContentRenderer :value="voie" /> -->
   </ContentFrame>
   <AdherezAuCollectif class="pb-10" />
 </template>
