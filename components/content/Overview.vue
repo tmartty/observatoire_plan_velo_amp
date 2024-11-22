@@ -43,7 +43,7 @@
         <Map :features="features" :options="mapOptions" style="height: 40vh" />
       </ClientOnly>
     </section>
-    <ProgressDetailByType :features="features" :color="voie.color" class="mt-8" />
+    <ProgressDetailByType :features="features" :color="voie.color" class="mt-16" />
   </div>
 </template>
 

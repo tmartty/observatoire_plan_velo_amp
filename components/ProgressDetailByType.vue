@@ -1,35 +1,39 @@
 <template>
-  <div>
-    <h3>Qualité des infrastructures réalisés</h3>
-    <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden">
+  <div
+    class="my-8 relative px-2 pt-8 pb-2 border-2 rounded-xl max-w-2xl mx-auto"
+    :style="{ 'border-color': `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}` }"
+  >
+    <div
+      class="absolute -top-4 left-0 right-0 w-fit rounded-md px-2 py-1 mx-auto text-center text-lg text-white"
+      :style="{ 'background-color': `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}` }"
+    >
+      Typologie des aménagements réalisés
+    </div>
+    <div
+      v-for="(data, index) in doneFeaturesByType"
+      :key="index"
+      :title="`${totalKms(data)} km`"
+      class="grid grid-cols-[1fr_2px_1fr] gap-x-4"
+      :style="{ color: `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}` }"
+    >
+      <div class="py-1 font-semibold text-base sm:text-base text-right whitespace-nowrap">
+        {{ index }}
+      </div>
       <div
-        v-for="(data, index) in doneFeaturesByType"
-        :key="index"
-        class="text-xs font-medium text-white text-center p-1 leading-none cursor-pointer"
-        :style="{
-          width: `${totalPercentage(data)}%`,
-          'background-color': `rgba(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}, ${
-            index === 'Piste cyclable'
-              ? 1
-              : index === 'Voie verte'
-                ? 0.6
-                : index === 'Bande cyclable'
-                  ? 0.4
-                  : index === 'Bande cyclable à hauteur de trottoir'
-                    ? 0.2
-                    : 0.2
-          })`
-        }"
-        :title="`${index} : ${totalKms(data)} km`"
-      >
-        {{ totalPercentage(data) }}%
+        class=""
+        :style="{ 'background-color': `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}` }"
+      />
+      <div class="flex items-center">
+        <div
+          class="grow-1 h-1 sm:h-2 mr-4 rounded-full"
+          :style="{
+            width: `${totalPercentage(data)}%`,
+            'background-color': `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b}`
+          }"
+        />
+        <div class="shrink-0 text-sm sm:text-base font-semibold">{{ totalPercentage(data) }}%</div>
       </div>
     </div>
-    <ul>
-      <li v-for="(data, index) in doneFeaturesByType" :key="index" class="text-sm p-1 leading-none">
-        {{ totalPercentage(data) }}% {{ index }} ({{ totalKms(data) }} km)
-      </li>
-    </ul>
   </div>
 </template>
 
@@ -84,11 +88,4 @@ function hexToRgb(hex) {
       }
     : null;
 }
-
-// function highlightFeaturesWithType(type, value) {
-//   const map = useMapStore().map;
-//   if (!map) return;
-//   const features = doneFeaturesByType[type];
-//   highlightFeatures({ map, features, value });
-// }
 </script>
