@@ -14,7 +14,6 @@ type LineStringFeature = {
     typologie: string;
     typologie_interne: string;
     commentaire: string;
-    calculated_length: number;
     reseau: string;
   };
   geometry: {
@@ -191,7 +190,7 @@ export const useMap = () => {
 
   function plotDoneSections({ map, features }: { map: any; features: LineStringFeature[] }) {
     const sections = features
-      .filter(feature => feature.properties.statut.includes('Réalisé'))
+      .filter(feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation)
       .sort((featureA, featureB) => {
         const lineA = featureA.properties.ligne;
         const lineB = featureB.properties.ligne;

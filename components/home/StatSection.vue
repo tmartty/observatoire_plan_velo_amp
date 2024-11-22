@@ -42,7 +42,8 @@
         <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl text-center">
           <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Où en est le projet ?</h2>
           <p class="text-xl text-gray-500">
-            Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de 22,6 kms.
+            Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de
+            {{ firstStageSectionsLength }} kms.
             <br />
             Les travaux devraient être rattrapés lors de la deuxième phase entre 2024-2030.
           </p>
@@ -55,7 +56,25 @@
 </template>
 
 <script setup>
+const { getDistance } = useStats();
+
 const { data: lignes } = await useAsyncData(() => {
   return queryContent('lignes').where({ _type: 'json' }).find();
+});
+
+const firstStageSections = computed(() => {
+  return lignes.value
+    .map(voie => voie.features)
+    .flat()
+    .filter(feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation)
+    .filter(
+      feature =>
+        Number(feature.properties.date_realisation) >= 2019 && Number(feature.properties.date_realisation) < 2024
+    );
+});
+
+const firstStageSectionsLength = computed(() => {
+  const doneDistance = getDistance({ features: firstStageSections.value });
+  return Math.round(doneDistance / 100) / 10;
 });
 </script>

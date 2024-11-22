@@ -48,6 +48,7 @@
 </template>
 
 <script setup>
+const { getDistance } = useStats();
 const { path } = useRoute();
 
 const { voie } = defineProps({ voie: Object });
@@ -66,10 +67,12 @@ const { data: geojson } = await useAsyncData(`geojson-${path}`, () => {
 
 const features = geojson.value.features;
 
-const doneFeatures = features.filter(feature => feature.properties.statut.includes('Réalisé'));
+const doneFeatures = features.filter(
+  feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation
+);
 const missingFeatures = features.filter(feature => feature.properties.statut.includes('A réaliser'));
 
-const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
-const missingDistance = missingFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
+const doneDistance = getDistance({ features: doneFeatures });
+const missingDistance = getDistance({ features: missingFeatures });
 const percentageComplete = Math.round((doneDistance / (doneDistance + missingDistance)) * 100);
 </script>

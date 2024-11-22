@@ -17,7 +17,6 @@ type Feature = {
     typologie: string;
     typologie_interne: string;
     commentaire: string;
-    calculated_length: number;
     reseau: string;
   };
   geometry: {
@@ -63,7 +62,7 @@ function getDoneAtText(doneAt: string): string {
 export const useTooltip = () => {
   const { getLineColor } = useColors();
 
-  function getTooltipSectionInfo(feature: Feature) {
+  function getTooltipSectionInfo(feature: any) {
     console.log(
       Object.entries(feature.properties)
         .map(([key, value]) => `${key}: ${value}`)
@@ -92,7 +91,7 @@ export const useTooltip = () => {
           <div class='text-md leading-tight'>
             <span class='text-xs leading-tight font-bold'>${feature.properties.typologie ? feature.properties.typologie + ' ' : ''}</span>
             <span>${feature.properties.statut}</span>
-            <span class='italic'>${feature.properties.calculated_length ? ` (${Math.round(feature.properties.calculated_length)}m)` : ''}</span>
+            <span class='italic'>(${getDistance({ features: [feature] })}m)</span>
           </div>
           </div>
           </div>

@@ -4,6 +4,7 @@
     <div class="max-w-2xl mx-auto bg-gray-200 rounded-full flex overflow-hidden">
       <div
         v-for="(data, index) in doneFeaturesByType"
+        :key="index"
         class="text-xs font-medium text-white text-center p-1 leading-none cursor-pointer"
         :style="{
           width: `${totalPercentage(data)}%`,
@@ -25,7 +26,7 @@
       </div>
     </div>
     <ul>
-      <li v-for="(data, index) in doneFeaturesByType" class="text-sm p-1 leading-none">
+      <li v-for="(data, index) in doneFeaturesByType" :key="index" class="text-sm p-1 leading-none">
         {{ totalPercentage(data) }}% {{ index }} ({{ totalKms(data) }} km)
       </li>
     </ul>
@@ -35,6 +36,7 @@
 <script setup>
 // import { useMapStore } from '@/stores/map';
 // const { highlightFeatures } = useMap();
+const { getDistance } = useStats();
 
 const { features, color } = defineProps({
   features: { type: Array, required: true },
@@ -42,8 +44,10 @@ const { features, color } = defineProps({
 });
 
 // separate done features by the "typologie" property
-const doneFeatures = features.filter(feature => feature.properties.statut.includes('Réalisé'));
-var doneFeaturesByType = doneFeatures.reduce((acc, feature) => {
+const doneFeatures = features.filter(
+  feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation
+);
+let doneFeaturesByType = doneFeatures.reduce((acc, feature) => {
   const type = feature.properties.typologie;
   if (!acc[type]) {
     acc[type] = [];
@@ -61,7 +65,7 @@ doneFeaturesByType = Object.fromEntries(
 );
 
 const totalMeters = data => {
-  return data.reduce((acc, feature) => acc + feature.properties.calculated_length, 0) / 10;
+  return getDistance({ features: data }) / 10;
 };
 const totalKms = data => {
   return Math.round(totalMeters(data)) / 100;
@@ -71,7 +75,7 @@ const totalPercentage = data => {
 };
 
 function hexToRgb(hex) {
-  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
   return result
     ? {
         r: parseInt(result[1], 16),

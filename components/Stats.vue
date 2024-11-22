@@ -19,7 +19,7 @@
 </template>
 
 <script setup>
-const { getAllUniqLineStrings } = useStats();
+const { getAllUniqLineStrings, getDistance } = useStats();
 
 const { voies } = defineProps({
   voies: { type: Array, required: true }
@@ -27,23 +27,27 @@ const { voies } = defineProps({
 
 const features = getAllUniqLineStrings(voies);
 
-const doneFeatures = features.filter(feature => feature.properties.statut.includes('Réalisé'));
+const doneFeatures = features.filter(
+  feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation
+);
 const workInProgressFeatures = features.filter(feature => feature.properties.statut.includes('travaux'));
 const missingFeatures = features.filter(feature => feature.properties.statut.includes('A réaliser'));
 
-const doneDistance = doneFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
-const workInProgressDistance = workInProgressFeatures.reduce(
-  (acc, feature) => acc + feature.properties.calculated_length,
-  0
-);
-const missingDistance = missingFeatures.reduce((acc, feature) => acc + feature.properties.calculated_length, 0);
+const doneDistance = getDistance({ features: doneFeatures });
+const workInProgressDistance = getDistance({ features: workInProgressFeatures });
+const missingDistance = getDistance({ features: missingFeatures });
+const totalDistance = doneDistance + workInProgressDistance + missingDistance;
 
-function getPercent(distance) {
-  return Math.round((distance / (doneDistance + workInProgressDistance + missingDistance)) * 100);
+function getPercent(distanceToCalculate) {
+  return Math.round((distanceToCalculate / totalDistance) * 100);
 }
 
 const stats = [
-  { name: 'Réalisés', distance: `${Math.round(doneDistance / 1000)} km`, percent: `${getPercent(doneDistance)}%` },
+  {
+    name: 'Réalisés',
+    distance: `${Math.round(doneDistance / 1000)} km`,
+    percent: `${getPercent(doneDistance)}%`
+  },
   {
     name: 'En travaux',
     distance: `${Math.round(workInProgressDistance / 1000)} km`,
