@@ -1,6 +1,6 @@
 const TITLE = 'Observatoire Plan Vélo Métropole Aix-Marseille-Provence';
 const DESCRIPTION =
-  "Plateforme citoyenne et associative, par Vélos en Ville. Etat d'avancement, cartes interactives des itinéraires, détails, travaux : suivez le développement du Plan Vélo Métropole Aix-Marseille-Provence";
+  "Une initiative du Collectif Vélos en Ville pour suivre le développement du plan vélo métropolitain : etat d'avancement, cartes interactives des itinéraires, détails, travaux.";
 const BASE_URL = 'https://observatoire.velosenville.org/';
 const COVER_IMAGE_URL = 'https://observatoire.velosenville.org/images/carte-piste-cyclable-plan-velo.jpg';
 
