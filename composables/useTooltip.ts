@@ -108,6 +108,19 @@ export const useTooltip = () => {
         .map(([key, value]) => `${key}: ${value}`)
         .join('\n')
     );
+
+    return `
+      <div class="not-prose text-black">
+        <div class="h-10 flex items-center" style="background-color: #429ada;">
+          <div class="p-2 text-white font-bold text-lg text-center">
+            ${data.type || 'type inconnu'}
+          </div>
+        </div>
+        <div class='p-2 flex flex-col gap-2'>
+           ${data.capacity ? `capacité pour ${data.capacity} vélos` : 'capacité inconnue'}
+        </div>
+      </div>
+    `;
   }
 
   function getSectionDetailsUrl(properties: Feature['properties']) {
