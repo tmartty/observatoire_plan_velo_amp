@@ -51,6 +51,7 @@
       </div>
       <ProgressBar :voies="lignes" class="mt-8 md:mt-10" />
       <Stats :voies="lignes" class="mt-8" />
+      <ProgressDetailByType :features="doneFeatures" class="mt-16" />
     </div>
   </div>
 </template>
@@ -60,6 +61,13 @@ const { getDistance } = useStats();
 
 const { data: lignes } = await useAsyncData(() => {
   return queryContent('lignes').where({ _type: 'json' }).find();
+});
+
+const doneFeatures = computed(() => {
+  return lignes.value
+    .map(voie => voie.features)
+    .flat()
+    .filter(feature => feature.properties.statut.includes('Réalisé') && feature.properties.date_realisation);
 });
 
 const firstStageSections = computed(() => {
