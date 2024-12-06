@@ -55,9 +55,8 @@
         <p>
           À partir de ces tracés, nous avons ainsi pu déterminer les linéaires d’aménagement à réaliser pour chacune des
           lignes et pour chacune d’elles les portions à réaliser durant les deux phases du plan, 2019 – 2024 et 2024 –
-          2023. Ces linéaires théoriques représentent au total 126,7 km sur notre carte soit sensiblement le même
-          chiffre de 125,2km si on additionne les chiffres indiqués dans le visuel de la métropole ci-dessus (130kms
-          annoncés dans le dossier).
+          2023. Ces linéaires théoriques représentent au total 120 km sur notre carte soit sensiblement le même chiffre
+          de 125km si on additionne les chiffres indiqués dans le visuel de la métropole ci-dessus.
         </p>
         <p>
           Des relevés de terrain ont ensuite permis, de tracer et d’évaluer sur cette même carte la part des
