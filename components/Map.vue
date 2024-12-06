@@ -15,7 +15,7 @@
 
 <script setup>
 // import { useMapStore } from '@/stores/map';
-import maplibregl from 'maplibre-gl';
+import { Map, NavigationControl, AttributionControl, GeolocateControl, Popup } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import style from '@/assets/map-styles.json';
 import AllBikeInfrastructureControl from '@/maplibre/AllBikeInfrastructureControl';
@@ -83,7 +83,7 @@ function plotFeatures({ map, features }) {
 }
 
 onMounted(() => {
-  const map = new maplibregl.Map({
+  const map = new Map({
     container: 'map',
     style,
     // style: `https://api.maptiler.com/maps/dataviz/style.json?key=${maptilerKey}`,
@@ -94,8 +94,25 @@ onMounted(() => {
 
   // useMapStore().setMap(map);
 
-  map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-left');
-  map.addControl(new maplibregl.AttributionControl({ compact: false }), 'bottom-left');
+  // add Marseille city limits layer from URL
+  // map.on('load', () => {
+  //   map.addSource('marseille-city-limits', {
+  //     type: 'geojson',
+  //     data: '/data/arrondissements_marseille.geojson'
+  //   });
+  //   map.addLayer({
+  //     id: 'marseille-city-limits-fill',
+  //     source: 'marseille-city-limits',
+  //     type: 'fill',
+  //     paint: {
+  //       'fill-color': '#000',
+  //       'fill-opacity': 0.05
+  //     }
+  //   });
+  // });
+
+  map.addControl(new NavigationControl({ showCompass: false }), 'top-left');
+  map.addControl(new AttributionControl({ compact: false }), 'bottom-left');
   if (options.fullscreen) {
     const fullscreenControl = new FullscreenControl({
       onClick: () => options.onFullscreenControlClick()
@@ -104,7 +121,7 @@ onMounted(() => {
   }
   if (options.geolocation) {
     map.addControl(
-      new maplibregl.GeolocateControl({
+      new GeolocateControl({
         positionOptions: { enableHighAccuracy: true },
         // When active the map will receive updates to the device's location as it changes.
         trackUserLocation: true,
@@ -222,7 +239,7 @@ onMounted(() => {
 
     if (isParking) {
       const feature = features.find(({ layer }) => layer.id === 'bike-parking');
-      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+      new Popup({ closeButton: false, closeOnClick: true })
         .setLngLat(e.lngLat)
         .setHTML(getTooltipParking(feature.properties))
         .addTo(map);
@@ -231,7 +248,7 @@ onMounted(() => {
       const feature = props.features.find(
         feature => feature.properties.ligne === ligne && feature.properties.id === id
       );
-      new maplibregl.Popup({ closeButton: false, closeOnClick: true })
+      new Popup({ closeButton: false, closeOnClick: true })
         .setLngLat(e.lngLat)
         .setHTML(getTooltipSectionInfo(feature))
         .addTo(map);
