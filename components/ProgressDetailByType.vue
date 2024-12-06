@@ -16,7 +16,7 @@
       class="grid grid-cols-[1fr_2px_1fr] gap-x-4"
       :style="{ color: `rgb(${hexToRgb(color).r}, ${hexToRgb(color).g}, ${hexToRgb(color).b})` }"
     >
-      <div class="py-1 font-semibold text-base sm:text-base text-right whitespace-nowrap">
+      <div class="py-1 font-semibold text-sm sm:text-base text-right leading-tight">
         {{ index }}
       </div>
       <div
