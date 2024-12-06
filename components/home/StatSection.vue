@@ -5,9 +5,10 @@
         <div class="max-w-4xl mx-auto text-center">
           <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Le Plan Vélo, c'est quoi ?</h2>
           <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-            En 2019, la Métropole s’est engagée dans la mise en œuvre d’un plan vélo sur cinq ans afin de répondre aux
-            enjeux de qualité de l’air et de santé publique qui constituent l’un des quatre volets de l’Agenda
-            environnemental commun au Département des Bouches-du-Rhône et à la Métropole.
+            En 2019, la Métropole s’est engagée dans la mise en œuvre d’un plan vélo, avec une première échéance en 2024
+            et une seconde en 2030, afin de répondre aux enjeux de qualité de l’air et de santé publique qui constituent
+            l’un des quatre volets de l’Agenda environnemental commun au Département des Bouches-du-Rhône et à la
+            Métropole.
           </p>
         </div>
       </div>
@@ -18,14 +19,14 @@
             <div class="max-w-4xl mx-auto">
               <dl class="rounded-lg bg-white shadow-lg sm:grid sm:grid-cols-3">
                 <div class="flex flex-col border-b border-gray-100 p-6 text-center sm:border-0 sm:border-r">
-                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Lignes</dt>
+                  <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Lignes structurantes</dt>
                   <dd class="order-1 text-5xl font-extrabold text-cvv-blue-600">8</dd>
                 </div>
                 <div
                   class="flex flex-col border-t border-b border-gray-100 p-6 text-center sm:border-0 sm:border-l sm:border-r"
                 >
                   <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Distance</dt>
-                  <dd class="order-1 text-5xl font-extrabold text-cvv-blue-600">126km</dd>
+                  <dd class="order-1 text-5xl font-extrabold text-cvv-blue-600">120km</dd>
                 </div>
                 <div class="flex flex-col border-t border-gray-100 p-6 text-center sm:border-0 sm:border-l">
                   <dt class="order-2 mt-2 text-lg leading-6 font-medium text-gray-500">Budget</dt>
@@ -43,7 +44,7 @@
           <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Où en est le projet ?</h2>
           <p class="text-xl text-gray-500">
             Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de
-            {{ firstStageSectionsLength }} kms.
+            {{ firstStageSectionsLength }} km.
             <br />
             Les travaux devraient être rattrapés lors de la deuxième phase entre 2024-2030.
           </p>
