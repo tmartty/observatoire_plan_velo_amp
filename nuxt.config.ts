@@ -34,36 +34,19 @@ export default defineNuxtConfig({
           content: DESCRIPTION
         },
         { hid: 'twitter:image', name: 'twitter:image', content: COVER_IMAGE_URL }
-      ],
-      script: [
-        {
-          innerHTML: `
-            const _paq = (window._paq = window._paq || []);
-            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function () {
-              const u = 'https://stats.heureux-cyclage.org/';
-              _paq.push(['setTrackerUrl', u + 'matomo.php']);
-              _paq.push(['setSiteId', '18']);
-              const d = document;
-              const g = d.createElement('script');
-              const s = d.getElementsByTagName('script')[0];
-              g.async = true;
-              g.src = u + 'matomo.js';
-              s.parentNode.insertBefore(g, s);
-            })();
-          `
-        }
       ]
     }
   },
   runtimeConfig: {
     public: {
-      maptilerKey: process.env.MAPTILER_KEY
+      maptilerKey: process.env.MAPTILER_KEY,
+      matomo: {
+        host: 'https://stats.heureux-cyclage.org',
+        idSite: '18'
+      }
     }
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-icon', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/content', 'nuxt-icon', '@pinia/nuxt', '@openmost/nuxt-matomo'],
   content: {
     markdown: {
       tags: { h1: 'h1', h5: 'h5', h6: 'h6' }
