@@ -25,7 +25,8 @@
     "@pinia/nuxt": "^0.5.1",
     "highcharts-vue": "^1.4.3",
     "maplibre-gl": "^3.6.2",
-    "pinia": "^2.1.7"
+    "pinia": "^2.1.7",
+    "vue-matomo": "^4.2.0"
   },
   "overrides": {
     "vue": "latest"
