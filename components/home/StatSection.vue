@@ -46,7 +46,7 @@
             Après une première étape entre 2019 et 2024, nous n'avons vu que la construction de
             {{ firstStageSectionsLength }} km.
             <br />
-            Les travaux devraient être rattrapés lors de la deuxième phase entre 2024-2030.
+            Les travaux devraient être rattrapés lors de la deuxième phase entre 2025-2030.
           </p>
         </div>
       </div>
